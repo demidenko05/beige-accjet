@@ -74,9 +74,8 @@ public class PrcUsrPwd implements IPrc {
             if (isChn) {
               DataBaseLoginService srvDbl = (DataBaseLoginService) pRqDt
                 .getCtxAttr("JDBCRealm");
-              srvDbl.removeUser(usr);
-              pRqDt.setAttr("srvlRd", "../");
-              pRqDt.setAttr("rnd", "idx");
+              srvDbl.getUsers().clear();
+              pRqDt.setAttr("srvlRd", "/?logoff=true");
             } else {
               errMsg = "invalid_user_name_or_password";
             }

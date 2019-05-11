@@ -29,6 +29,7 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 package org.beigesoft.ajetty;
 
 import java.util.Map;
+import java.io.File;
 
 import org.beigesoft.fct.IFctAux;
 import org.beigesoft.fct.FctBlc;
@@ -60,6 +61,9 @@ public class FctAjet<RS> implements IFctAux<RS> {
     }
     if (UsrPwd.class.getSimpleName().equals(pBnNm)) {
       rz = crPuUsrPwd(pRvs, pFctApp);
+    }
+    if (IHpCrypt.class.getSimpleName().equals(pBnNm)) {
+      rz = crPuHpCrypt(pRvs, pFctApp);
     }
     return rz;
   }
@@ -112,6 +116,30 @@ public class FctAjet<RS> implements IFctAux<RS> {
     pFctApp.put(pRvs, UsrPwd.class.getSimpleName(), rz);
     pFctApp.lazLogStd(pRvs).info(pRvs, getClass(),
       UsrPwd.class.getSimpleName() + " has been created");
+    return rz;
+  }
+
+  /**
+   * <p>Lazy gets HpCrypt.</p>
+   * @param pRvs request scoped vars
+   * @param pFctApp main factory
+   * @return HpCrypt
+   * @throws Exception - an exception
+   */
+  private HpCrypt crPuHpCrypt(final Map<String, Object> pRvs,
+    final FctBlc pFctApp) throws Exception {
+    HpCrypt rz = new HpCrypt();
+    File webAppDir = new File(pFctApp.getAppPth());
+    rz.setKsDirPath(webAppDir.getParent() + File.separator + "ks");
+    File peDir = new File(webAppDir.getParent()
+      + File.separator + "pub-exch");
+    if (!peDir.exists() && !peDir.mkdir()) {
+      throw new Exception("Can't create directory: " + peDir);
+    }
+    rz.setPublicKeyDir(peDir.getPath());
+    pFctApp.put(pRvs, IHpCrypt.class.getSimpleName(), rz);
+    pFctApp.lazLogStd(pRvs).info(pRvs, getClass(),
+      HpCrypt.class.getSimpleName() + " has been created");
     return rz;
   }
 }

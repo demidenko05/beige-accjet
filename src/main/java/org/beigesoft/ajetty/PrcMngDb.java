@@ -77,8 +77,7 @@ public class PrcMngDb implements IPrc {
     if (dbNm != null && dbNm.length() > 2) {
       if ("change".equals(act)) {
         this.mngDb.changeDb(pRvs, dbNm);
-        pRqDt.setAttr("srvlRd", "../");
-        pRqDt.setAttr("rnd", "idx");
+        pRqDt.setAttr("srvlRd", "/?logoff=true");
       } else if ("delete".equals(act)) {
         this.mngDb.deleteDb(pRvs, dbNm);
       } else if ("backup".equals(act)) {
@@ -89,6 +88,7 @@ public class PrcMngDb implements IPrc {
         String dbIdStr = pRqDt.getParam("dbId");
         int dbId = Integer.parseInt(dbIdStr);
         this.mngDb.createDb(pRvs, dbNm, dbId);
+        pRqDt.setAttr("srvlRd", "/?logoff=true");
       }
     } else if ("encryptLogs".equals(act)) {
         this.mngDb.encryptLogs(pRvs);

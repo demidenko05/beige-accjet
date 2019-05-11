@@ -31,6 +31,7 @@ package org.beigesoft.ajetty;
 import java.util.HashSet;
 import java.util.Map;
 import java.sql.ResultSet;
+import java.security.KeyStore;
 
 import org.eclipse.jetty.security.DataBaseLoginService;
 
@@ -63,11 +64,16 @@ public class FctAppAjet implements IFctAsm<ResultSet> {
    */
   public FctAppAjet() throws Exception {
     this.fctBlc = new FctBlc<ResultSet>();
-    HashSet<IFctNm<IPrc>> fpas = new HashSet<IFctNm<IPrc>>();
+    HashSet<IFctNm<IPrc>> fpasad = new HashSet<IFctNm<IPrc>>();
     FctPrcNtrAd<ResultSet> fctPrcNtrAj = new FctPrcNtrAd<ResultSet>();
     fctPrcNtrAj.setFctApp(this);
-    fpas.add(fctPrcNtrAj);
-    this.fctBlc.setFctsPrcAd(fpas);
+    fpasad.add(fctPrcNtrAj);
+    this.fctBlc.setFctsPrcAd(fpasad);
+    HashSet<IFctNm<IPrc>> fpas = new HashSet<IFctNm<IPrc>>();
+    FctPrcNtr<ResultSet> fctPrcNtrAjb = new FctPrcNtr<ResultSet>();
+    fctPrcNtrAjb.setFctApp(this);
+    fpas.add(fctPrcNtrAjb);
+    this.fctBlc.setFctsPrc(fpas);
     this.fctBlc.getFctsAux().add(new FctSqlite());
     this.fctBlc.getFctsAux().add(new FctDbCp<ResultSet>());
     this.fctBlc.getFctsAux().add(new FctMail<ResultSet>());
@@ -142,5 +148,14 @@ public class FctAppAjet implements IFctAsm<ResultSet> {
       laz(pRvs, IRdb.class.getSimpleName());
     srvCr.setRdb(rdb);
     srvDbl.setSrvGetUserCredentials(srvCr);
+    srvDbl.getUsers().clear();
+    //crypto init:
+    HpCrypt ch = (HpCrypt) laz(pRvs, IHpCrypt.class.getSimpleName());
+    KeyStore ks = (KeyStore) pCtxAttrs.getAttr("ajettyKeystore");
+    ch.setKeyStore(ks);
+    String passw = (String) pCtxAttrs.getAttr("ksPassword");
+    ch.setKsPassword(passw.toCharArray());
+    Integer ajettyIn = (Integer) pCtxAttrs.getAttr("ajettyIn");
+    ch.setAjettyIn(ajettyIn);
   }
 }

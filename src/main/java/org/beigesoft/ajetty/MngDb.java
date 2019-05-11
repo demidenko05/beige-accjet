@@ -147,14 +147,14 @@ public class MngDb<RS> implements IMngDb {
   /**
    * <p>Creates new database.</p>
    * @param pRvs request scoped vars
-   * @param pDbName database name without extension
+   * @param pDbNm database name without extension
    * @param pDbId database ID
    * @throws Exception - an exception
    **/
   @Override
   public final void createDb(final Map<String, Object> pRvs,
-    final String pDbName, final int pDbId) throws Exception {
-    String dbNm = this.dbPref + pDbName + ".sqlite";
+    final String pDbNm, final int pDbId) throws Exception {
+    String dbNm = this.dbPref + pDbNm + ".sqlite";
     synchronized (this.fctApp) {
       if (!this.fctApp.getFctBlc().getDbUrl().equals(dbNm)) {
         this.fctApp.getFctBlc().setDbUrl(dbNm);
@@ -169,13 +169,13 @@ public class MngDb<RS> implements IMngDb {
   /**
    * <p>Changes database.</p>
    * @param pRvs request scoped vars
-   * @param pDbName database name without extension
+   * @param pDbNm database name without extension
    * @throws Exception - an exception
    **/
   @Override
   public final void changeDb(final Map<String, Object> pRvs,
-    final String pDbName) throws Exception {
-    String dbNm = this.dbPref + pDbName + ".sqlite";
+    final String pDbNm) throws Exception {
+    String dbNm = this.dbPref + pDbNm + ".sqlite";
     synchronized (this.fctApp) {
       if (!this.fctApp.getFctBlc().getDbUrl().equals(dbNm)) {
         this.fctApp.getFctBlc().setDbUrl(dbNm);
@@ -189,15 +189,15 @@ public class MngDb<RS> implements IMngDb {
   /**
    * <p>Deletes database in inner DB folder, NOT current DB!</p>
    * @param pRvs request scoped vars
-   * @param pDbName database name without extension
+   * @param pDbNm database name without extension
    * @throws Exception - an exception
    **/
   @Override
   public final void deleteDb(final Map<String, Object> pRvs,
-    final String pDbName) throws Exception {
-    String dbNm = this.dbPref + pDbName + ".sqlite";
+    final String pDbNm) throws Exception {
+    String dbNm = this.dbPref + pDbNm + ".sqlite";
     if (!dbNm.equals(this.fctApp.getFctBlc().getDbUrl())) {
-      File dbFile = new File(this.dbDir + File.separator + dbNm);
+      File dbFile = new File(this.dbDir + File.separator + pDbNm + ".sqlite");
       if (dbFile.exists() && !dbFile.delete()) {
         throw new ExcCode(ExcCode.WR, "Can't delete file: " + dbFile);
       }
@@ -207,20 +207,20 @@ public class MngDb<RS> implements IMngDb {
   /**
    * <p>Backups database.</p>
    * @param pRvs request scoped vars
-   * @param pDbName database name without extension
+   * @param pDbNm database name without extension
    * @throws Exception - an exception
    **/
   @Override
   public final void backupDb(final Map<String, Object> pRvs,
-    final String pDbName) throws Exception {
-    String dbPath = this.dbDir + File.separator + pDbName + ".sqlite";
+    final String pDbNm) throws Exception {
+    String dbPath = this.dbDir + File.separator + pDbNm + ".sqlite";
     File dbFile = new File(dbPath);
     if (dbFile.exists()) {
-      String encPath = this.backupDir + File.separator + pDbName + ".sqlten";
+      String encPath = this.backupDir + File.separator + pDbNm + ".sqlten";
       File dbBkFile = new File(encPath);
       if (dbBkFile.exists()) {
         Long time = new Date().getTime();
-        encPath = this.backupDir + File.separator + pDbName + time + ".sqlten";
+        encPath = this.backupDir + File.separator + pDbNm + time + ".sqlten";
       }
       this.hpCrypt.encryptFile(dbPath, encPath);
     }
@@ -229,17 +229,17 @@ public class MngDb<RS> implements IMngDb {
   /**
    * <p>Restores database from backup.</p>
    * @param pRvs request scoped vars
-   * @param pDbName database name without extension
+   * @param pDbNm database name without extension
    * @throws Exception - an exception
    **/
   @Override
   public final void restoreDb(final Map<String, Object> pRvs,
-    final String pDbName) throws Exception {
-    String encPath = this.backupDir + File.separator + pDbName + ".sqlten";
+    final String pDbNm) throws Exception {
+    String encPath = this.backupDir + File.separator + pDbNm + ".sqlten";
     File dbBkFile = new File(encPath);
     if (dbBkFile.exists()) {
       this.hpCrypt.decryptFile(encPath,
-        this.dbDir + File.separator + pDbName + ".sqlite");
+        this.dbDir + File.separator + pDbNm + ".sqlite");
     }
   }
 

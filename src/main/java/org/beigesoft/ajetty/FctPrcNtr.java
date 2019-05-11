@@ -30,20 +30,19 @@ package org.beigesoft.ajetty;
 
 import java.util.Map;
 import java.util.HashMap;
-import java.io.File;
 
 import org.beigesoft.fct.IFctNm;
 import org.beigesoft.fct.IFctAsm;
 import org.beigesoft.prc.IPrc;
 
 /**
- * <p>Additional factory of processors for admin,
+ * <p>Additional factory of processors for base,
  * secure non-transactional requests.</p>
  *
  * @param <RS> platform dependent record set type
  * @author Yury Demidenko
  */
-public class FctPrcNtrAd<RS> implements IFctNm<IPrc> {
+public class FctPrcNtr<RS> implements IFctNm<IPrc> {
 
   /**
    * <p>Main factory.</p>
@@ -69,8 +68,8 @@ public class FctPrcNtrAd<RS> implements IFctNm<IPrc> {
     if (rz == null) {
       synchronized (this) {
         rz = this.procs.get(pPrNm);
-        if (rz == null && PrcMngDb.class.getSimpleName().equals(pPrNm)) {
-          rz = crPuPrcMngDb(pRvs);
+        if (rz == null && PrcUsrPwd.class.getSimpleName().equals(pPrNm)) {
+          rz = crPuPrcUsrPwd(pRvs);
         }
       }
     }
@@ -78,35 +77,21 @@ public class FctPrcNtrAd<RS> implements IFctNm<IPrc> {
   }
 
   /**
-   * <p>Create and put into the Map PrcMngDb.</p>
+   * <p>Creates and puts into MF PrcUsrPwd.</p>
    * @param pRvs request scoped vars
-   * @return PrcMngDb
+   * @return PrcUsrPwd
    * @throws Exception - an exception
    */
-  private PrcMngDb crPuPrcMngDb(
+  private PrcUsrPwd crPuPrcUsrPwd(
     final Map<String, Object> pRvs) throws Exception {
-    PrcMngDb rz = new PrcMngDb();
-    IHpCrypt ch = (IHpCrypt) this.fctApp
-      .laz(pRvs, IHpCrypt.class.getSimpleName());
-    rz.setHpCrypt(ch);
-    MngDb<RS> mngDb = new MngDb<RS>();
-    mngDb.setFctApp(this.fctApp);
-    mngDb.setHpCrypt(ch);
-    File webAppDir = new File(this.fctApp.getFctBlc().getAppPth());
-    mngDb.setLogDir(webAppDir);
-    mngDb.setDbDir(this.fctApp.getFctBlc().getAppPth());
-    mngDb.setDbPref("jdbc:sqlite:" + this.fctApp.getFctBlc().getAppPth()
-      + File.separator);
-    File bkDir = new File(webAppDir.getParent() + File.separator + "backup");
-    if (!bkDir.exists() && !bkDir.mkdir()) {
-      throw new Exception("Can't create directory: " + bkDir);
-    }
-    mngDb.setBackupDir(bkDir.getPath());
-    rz.setMngDb(mngDb);
-    rz.setLog(this.fctApp.getFctBlc().lazLogStd(pRvs));
-    this.procs.put(PrcMngDb.class.getSimpleName(), rz);
-    this.fctApp.getFctBlc().lazLogStd(pRvs).info(pRvs, getClass(), PrcMngDb
-      .class.getSimpleName() + " has been created.");
+    PrcUsrPwd rz = new PrcUsrPwd();
+    @SuppressWarnings("unchecked")
+    UsrPwd<RS> upw = (UsrPwd<RS>) this.fctApp
+      .laz(pRvs, UsrPwd.class.getSimpleName());
+    rz.setUsrPwd(upw);
+    this.procs.put(PrcUsrPwd.class.getSimpleName(), rz);
+    this.fctApp.getFctBlc().lazLogStd(pRvs).info(pRvs, getClass(),
+      PrcUsrPwd.class.getSimpleName() + " has been created");
     return rz;
   }
 

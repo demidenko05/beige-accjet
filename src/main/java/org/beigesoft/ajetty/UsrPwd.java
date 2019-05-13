@@ -30,6 +30,7 @@ package org.beigesoft.ajetty;
 
 import java.util.HashSet;
 import java.util.ArrayList;
+import java.util.Date;
 
 import org.beigesoft.mdl.IRecSet;
 import org.beigesoft.rdb.IRdb;
@@ -155,8 +156,8 @@ public class UsrPwd<RS> implements IUsrPwd {
       if (!recordSet.first()) {
         return false;
       }
-      String chnPwd = "update USTMC set VER=VER+1, PWD='" + pPwd
-        + "' where USR='" + pUserName + "';";
+      String chnPwd = "update USTMC set VER=" + new Date().getTime() + ", PWD='"
+        + pPwd + "' where USR='" + pUserName + "';";
       this.rdb.exec(chnPwd);
       this.rdb.commit();
       return true;

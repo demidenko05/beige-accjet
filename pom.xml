@@ -8,7 +8,8 @@
   <name>Beigesoft™ accountion all in one standalone WEB-application.</name>
 
   <description>Beigesoft™ accountion all in one is standalone JEE web application that runs on embedded A-Jetty.
-  </description>
+    Web-Store is included for study and tests purposes and you are also able to make full DB copy from cloud version,
+    and you can make price lists (in different price categories) and export it in CSV file to your customers or POS.</description>
   <url>https://sites.google.com/site/beigesoftware</url>
   <inceptionYear>2019</inceptionYear>
 
@@ -320,9 +321,9 @@
   </licenses>
   
   <scm>
-    <url>https://github.com/demidenko05/beigesoft-webcrud-jar.git</url>
-    <connection>scm:git:git@github.com:demidenko05/beigesoft-webcrud-jar.git</connection>
-    <developerConnection>scm:git:git@github.com:demidenko05/beigesoft-webcrud-jar.git</developerConnection>
+    <url>https://github.com/demidenko05/beige-accjet.git</url>
+    <connection>scm:git:git@github.com:demidenko05/beige-accjet.git</connection>
+    <developerConnection>scm:git:git@github.com:demidenko05/beige-accjet.git</developerConnection>
     <tag>HEAD</tag>
   </scm>
 

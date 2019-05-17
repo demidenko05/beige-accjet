@@ -129,7 +129,7 @@ public class FctAjet<RS> implements IFctAux<RS> {
   private HpCrypt crPuHpCrypt(final Map<String, Object> pRvs,
     final FctBlc pFctApp) throws Exception {
     HpCrypt rz = new HpCrypt();
-    File webAppDir = new File(pFctApp.getAppPth());
+    File webAppDir = new File(pFctApp.getFctDt().getAppPth());
     rz.setKsDirPath(webAppDir.getParent() + File.separator + "ks");
     File peDir = new File(webAppDir.getParent()
       + File.separator + "pub-exch");

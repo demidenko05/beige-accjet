@@ -141,7 +141,7 @@ public class MngDb<RS> implements IMngDb {
   @Override
   public final String retCurDbNm(
     final Map<String, Object> pRvs) throws Exception {
-    return this.fctApp.getFctBlc().getDbUrl();
+    return this.fctApp.getFctBlc().getFctDt().getDbUrl();
   }
 
   /**
@@ -156,9 +156,9 @@ public class MngDb<RS> implements IMngDb {
     final String pDbNm, final int pDbId) throws Exception {
     String dbNm = this.dbPref + pDbNm + ".sqlite";
     synchronized (this.fctApp) {
-      if (!this.fctApp.getFctBlc().getDbUrl().equals(dbNm)) {
-        this.fctApp.getFctBlc().setDbUrl(dbNm);
-        this.fctApp.getFctBlc().setNewDbId(pDbId);
+      if (!this.fctApp.getFctBlc().getFctDt().getDbUrl().equals(dbNm)) {
+        this.fctApp.getFctBlc().getFctDt().setDbUrl(dbNm);
+        this.fctApp.getFctBlc().getFctDt().setNewDbId(pDbId);
         this.fctApp.getFctBlc().release(pRvs);
         IReqDt rqDt = (IReqDt) pRvs.get("rqDt");
         this.fctApp.init(pRvs, new RqCtxAttr(rqDt));
@@ -177,8 +177,8 @@ public class MngDb<RS> implements IMngDb {
     final String pDbNm) throws Exception {
     String dbNm = this.dbPref + pDbNm + ".sqlite";
     synchronized (this.fctApp) {
-      if (!this.fctApp.getFctBlc().getDbUrl().equals(dbNm)) {
-        this.fctApp.getFctBlc().setDbUrl(dbNm);
+      if (!this.fctApp.getFctBlc().getFctDt().getDbUrl().equals(dbNm)) {
+        this.fctApp.getFctBlc().getFctDt().setDbUrl(dbNm);
         this.fctApp.getFctBlc().release(pRvs);
         IReqDt rqDt = (IReqDt) pRvs.get("rqDt");
         this.fctApp.init(pRvs, new RqCtxAttr(rqDt));
@@ -196,7 +196,7 @@ public class MngDb<RS> implements IMngDb {
   public final void deleteDb(final Map<String, Object> pRvs,
     final String pDbNm) throws Exception {
     String dbNm = this.dbPref + pDbNm + ".sqlite";
-    if (!dbNm.equals(this.fctApp.getFctBlc().getDbUrl())) {
+    if (!dbNm.equals(this.fctApp.getFctBlc().getFctDt().getDbUrl())) {
       File dbFile = new File(this.dbDir + File.separator + pDbNm + ".sqlite");
       if (dbFile.exists() && !dbFile.delete()) {
         throw new ExcCode(ExcCode.WR, "Can't delete file: " + dbFile);

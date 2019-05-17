@@ -68,12 +68,12 @@ public class FctAppAjet implements IFctAsm<ResultSet> {
     FctPrcNtrAd<ResultSet> fctPrcNtrAj = new FctPrcNtrAd<ResultSet>();
     fctPrcNtrAj.setFctApp(this);
     fpasad.add(fctPrcNtrAj);
-    this.fctBlc.setFctsPrcAd(fpasad);
+    this.fctBlc.getFctDt().setFctsPrcAd(fpasad);
     HashSet<IFctNm<IPrc>> fpas = new HashSet<IFctNm<IPrc>>();
     FctPrcNtr<ResultSet> fctPrcNtrAjb = new FctPrcNtr<ResultSet>();
     fctPrcNtrAjb.setFctApp(this);
     fpas.add(fctPrcNtrAjb);
-    this.fctBlc.setFctsPrc(fpas);
+    this.fctBlc.getFctDt().setFctsPrc(fpas);
     this.fctBlc.getFctsAux().add(new FctSqlite());
     this.fctBlc.getFctsAux().add(new FctDbCp<ResultSet>());
     this.fctBlc.getFctsAux().add(new FctMail<ResultSet>());

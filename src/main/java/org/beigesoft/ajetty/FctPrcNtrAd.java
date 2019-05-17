@@ -92,11 +92,11 @@ public class FctPrcNtrAd<RS> implements IFctNm<IPrc> {
     MngDb<RS> mngDb = new MngDb<RS>();
     mngDb.setFctApp(this.fctApp);
     mngDb.setHpCrypt(ch);
-    File webAppDir = new File(this.fctApp.getFctBlc().getAppPth());
+    File webAppDir = new File(this.fctApp.getFctBlc().getFctDt().getAppPth());
     mngDb.setLogDir(webAppDir);
-    mngDb.setDbDir(this.fctApp.getFctBlc().getAppPth());
-    mngDb.setDbPref("jdbc:sqlite:" + this.fctApp.getFctBlc().getAppPth()
-      + File.separator);
+    mngDb.setDbDir(this.fctApp.getFctBlc().getFctDt().getAppPth());
+    mngDb.setDbPref("jdbc:sqlite:" + this.fctApp.getFctBlc().getFctDt()
+      .getAppPth() + File.separator);
     File bkDir = new File(webAppDir.getParent() + File.separator + "backup");
     if (!bkDir.exists() && !bkDir.mkdir()) {
       throw new Exception("Can't create directory: " + bkDir);

@@ -32,7 +32,7 @@ import java.util.Map;
 import java.util.HashMap;
 import java.io.File;
 
-import org.beigesoft.fct.IFctNm;
+import org.beigesoft.fct.IFctPrc;
 import org.beigesoft.fct.IFctAsm;
 import org.beigesoft.prc.IPrc;
 
@@ -43,7 +43,7 @@ import org.beigesoft.prc.IPrc;
  * @param <RS> platform dependent record set type
  * @author Yury Demidenko
  */
-public class FctPrcNtrAd<RS> implements IFctNm<IPrc> {
+public class FctPrcNtrAd<RS> implements IFctPrc {
 
   /**
    * <p>Main factory.</p>

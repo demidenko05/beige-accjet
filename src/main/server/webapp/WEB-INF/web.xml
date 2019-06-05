@@ -10,7 +10,7 @@ See LICENSE in base folder
                       http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
   version="3.0"
   metadata-complete="true">
-  <display-name>Beigesoft™ Enterprise Information System<</display-name>
+  <display-name>Beigesoft™ Enterprise Information System</display-name>
   <jsp-property-group>
     <trim-directive-whitespaces>true</trim-directive-whitespaces>
   </jsp-property-group>
@@ -20,7 +20,7 @@ See LICENSE in base folder
   </context-param>
   <context-param>
     <param-name>iniBdFctCls</param-name>
-    <param-value>org.beigesoft.eis.IniBdFct</param-value>
+    <param-value>org.beigesoft.eis.IniEisFct</param-value>
   </context-param>
   <context-param>
     <param-name>newDbId</param-name>
@@ -335,6 +335,11 @@ description, distributable, and context-param elements.
     </servlet>
 
     <servlet>
+        <servlet-name>org.apache.jsp.WEB_002dINF.jsp.esiaj_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.WEB_002dINF.jsp.esiaj_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
         <servlet-name>org.apache.jsp.WEB_002dINF.jsp.afu_jsp</servlet-name>
         <servlet-class>org.apache.jsp.WEB_002dINF.jsp.afu_jsp</servlet-class>
     </servlet>
@@ -365,6 +370,11 @@ description, distributable, and context-param elements.
     </servlet>
 
     <servlet>
+        <servlet-name>org.apache.jsp.WEB_002dINF.jsp.eiaj_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.WEB_002dINF.jsp.eiaj_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
         <servlet-name>org.apache.jsp.WEB_002dINF.jsp.mbl_jsp</servlet-name>
         <servlet-class>org.apache.jsp.WEB_002dINF.jsp.mbl_jsp</servlet-class>
     </servlet>
@@ -372,6 +382,11 @@ description, distributable, and context-param elements.
     <servlet>
         <servlet-name>org.apache.jsp.WEB_002dINF.jsp.esj_jsp</servlet-name>
         <servlet-class>org.apache.jsp.WEB_002dINF.jsp.esj_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>org.apache.jsp.WEB_002dINF.jsp.eaedj_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.WEB_002dINF.jsp.eaedj_jsp</servlet-class>
     </servlet>
 
     <servlet>
@@ -405,8 +420,18 @@ description, distributable, and context-param elements.
     </servlet>
 
     <servlet>
+        <servlet-name>org.apache.jsp.WEB_002dINF.jsp.lcfj_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.WEB_002dINF.jsp.lcfj_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
         <servlet-name>org.apache.jsp.WEB_002dINF.jsp.doj_jsp</servlet-name>
         <servlet-class>org.apache.jsp.WEB_002dINF.jsp.doj_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>org.apache.jsp.WEB_002dINF.jsp.eaej_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.WEB_002dINF.jsp.eaej_jsp</servlet-class>
     </servlet>
 
     <servlet>
@@ -460,8 +485,38 @@ description, distributable, and context-param elements.
     </servlet>
 
     <servlet>
+        <servlet-name>org.apache.jsp.WEB_002dINF.jsp.pi.roHe_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.WEB_002dINF.jsp.pi.roHe_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>org.apache.jsp.WEB_002dINF.jsp.pi.acc_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.WEB_002dINF.jsp.pi.acc_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
         <servlet-name>org.apache.jsp.WEB_002dINF.jsp.pi.piFo_jsp</servlet-name>
         <servlet-class>org.apache.jsp.WEB_002dINF.jsp.pi.piFo_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>org.apache.jsp.WEB_002dINF.jsp.pi.sac_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.WEB_002dINF.jsp.pi.sac_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>org.apache.jsp.WEB_002dINF.jsp.pi.roDe_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.WEB_002dINF.jsp.pi.roDe_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>org.apache.jsp.WEB_002dINF.jsp.mbl.pi.roHe_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.WEB_002dINF.jsp.mbl.pi.roHe_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>org.apache.jsp.WEB_002dINF.jsp.mbl.pi.roDe_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.WEB_002dINF.jsp.mbl.pi.roDe_jsp</servlet-class>
     </servlet>
 
     <servlet>
@@ -730,6 +785,16 @@ description, distributable, and context-param elements.
     </servlet>
 
     <servlet>
+        <servlet-name>org.apache.jsp.WEB_002dINF.jsp.st.saTy_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.WEB_002dINF.jsp.st.saTy_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>org.apache.jsp.WEB_002dINF.jsp.st.mnth_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.WEB_002dINF.jsp.st.mnth_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
         <servlet-name>org.apache.jsp.WEB_002dINF.jsp.st.usRlTmc_jsp</servlet-name>
         <servlet-class>org.apache.jsp.WEB_002dINF.jsp.st.usRlTmc_jsp</servlet-class>
     </servlet>
@@ -850,6 +915,11 @@ description, distributable, and context-param elements.
     </servlet>
 
     <servlet>
+        <servlet-name>org.apache.jsp.WEB_002dINF.jsp.in.idsa_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.WEB_002dINF.jsp.in.idsa_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
         <servlet-name>org.apache.jsp.WEB_002dINF.jsp.in.enm_jsp</servlet-name>
         <servlet-class>org.apache.jsp.WEB_002dINF.jsp.in.enm_jsp</servlet-class>
     </servlet>
@@ -895,8 +965,23 @@ description, distributable, and context-param elements.
     </servlet>
 
     <servlet>
+        <servlet-name>org.apache.jsp.WEB_002dINF.jsp.in.acc_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.WEB_002dINF.jsp.in.acc_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>org.apache.jsp.WEB_002dINF.jsp.in.saTy_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.WEB_002dINF.jsp.in.saTy_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
         <servlet-name>org.apache.jsp.WEB_002dINF.jsp.in.dis_jsp</servlet-name>
         <servlet-class>org.apache.jsp.WEB_002dINF.jsp.in.dis_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>org.apache.jsp.WEB_002dINF.jsp.in.mnth_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.WEB_002dINF.jsp.in.mnth_jsp</servlet-class>
     </servlet>
 
     <servlet>
@@ -930,6 +1015,11 @@ description, distributable, and context-param elements.
     </servlet>
 
     <servlet>
+        <servlet-name>org.apache.jsp.WEB_002dINF.jsp.in.idos_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.WEB_002dINF.jsp.in.idos_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
         <servlet-name>org.apache.jsp.WEB_002dINF.jsp.in.str_jsp</servlet-name>
         <servlet-class>org.apache.jsp.WEB_002dINF.jsp.in.str_jsp</servlet-class>
     </servlet>
@@ -947,6 +1037,11 @@ description, distributable, and context-param elements.
     <servlet>
         <servlet-name>org.apache.jsp.WEB_002dINF.jsp.in.bln_jsp</servlet-name>
         <servlet-class>org.apache.jsp.WEB_002dINF.jsp.in.bln_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>org.apache.jsp.WEB_002dINF.jsp.in.sac_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.WEB_002dINF.jsp.in.sac_jsp</servlet-class>
     </servlet>
 
     <servlet>
@@ -1025,6 +1120,16 @@ description, distributable, and context-param elements.
     </servlet>
 
     <servlet>
+        <servlet-name>org.apache.jsp.WEB_002dINF.jsp.tml.edae_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.WEB_002dINF.jsp.tml.edae_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>org.apache.jsp.WEB_002dINF.jsp.tml.edia_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.WEB_002dINF.jsp.tml.edia_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
         <servlet-name>org.apache.jsp.WEB_002dINF.jsp.tml.bum_jsp</servlet-name>
         <servlet-class>org.apache.jsp.WEB_002dINF.jsp.tml.bum_jsp</servlet-class>
     </servlet>
@@ -1047,6 +1152,11 @@ description, distributable, and context-param elements.
     <servlet>
         <servlet-name>org.apache.jsp.WEB_002dINF.jsp.tml.var_jsp</servlet-name>
         <servlet-class>org.apache.jsp.WEB_002dINF.jsp.tml.var_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>org.apache.jsp.WEB_002dINF.jsp.tml.edaed_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.WEB_002dINF.jsp.tml.edaed_jsp</servlet-class>
     </servlet>
 
     <servlet>
@@ -1105,13 +1215,33 @@ description, distributable, and context-param elements.
     </servlet>
 
     <servlet>
+        <servlet-name>org.apache.jsp.WEB_002dINF.jsp.ls.ace_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.WEB_002dINF.jsp.ls.ace_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
         <servlet-name>org.apache.jsp.WEB_002dINF.jsp.ls.liAc_jsp</servlet-name>
         <servlet-class>org.apache.jsp.WEB_002dINF.jsp.ls.liAc_jsp</servlet-class>
     </servlet>
 
     <servlet>
+        <servlet-name>org.apache.jsp.WEB_002dINF.jsp.ls.acae_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.WEB_002dINF.jsp.ls.acae_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>org.apache.jsp.WEB_002dINF.jsp.ls.acia_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.WEB_002dINF.jsp.ls.acia_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
         <servlet-name>org.apache.jsp.WEB_002dINF.jsp.ls.eml_jsp</servlet-name>
         <servlet-class>org.apache.jsp.WEB_002dINF.jsp.ls.eml_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>org.apache.jsp.WEB_002dINF.jsp.ls.lfia_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.WEB_002dINF.jsp.ls.lfia_jsp</servlet-class>
     </servlet>
 
     <servlet>
@@ -1170,6 +1300,11 @@ description, distributable, and context-param elements.
     </servlet-mapping>
 
     <servlet-mapping>
+        <servlet-name>org.apache.jsp.WEB_002dINF.jsp.esiaj_jsp</servlet-name>
+        <url-pattern>/WEB-INF/jsp/esiaj.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
         <servlet-name>org.apache.jsp.WEB_002dINF.jsp.afu_jsp</servlet-name>
         <url-pattern>/WEB-INF/jsp/afu.jsp</url-pattern>
     </servlet-mapping>
@@ -1200,6 +1335,11 @@ description, distributable, and context-param elements.
     </servlet-mapping>
 
     <servlet-mapping>
+        <servlet-name>org.apache.jsp.WEB_002dINF.jsp.eiaj_jsp</servlet-name>
+        <url-pattern>/WEB-INF/jsp/eiaj.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
         <servlet-name>org.apache.jsp.WEB_002dINF.jsp.mbl_jsp</servlet-name>
         <url-pattern>/WEB-INF/jsp/mbl.jsp</url-pattern>
     </servlet-mapping>
@@ -1207,6 +1347,11 @@ description, distributable, and context-param elements.
     <servlet-mapping>
         <servlet-name>org.apache.jsp.WEB_002dINF.jsp.esj_jsp</servlet-name>
         <url-pattern>/WEB-INF/jsp/esj.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.WEB_002dINF.jsp.eaedj_jsp</servlet-name>
+        <url-pattern>/WEB-INF/jsp/eaedj.jsp</url-pattern>
     </servlet-mapping>
 
     <servlet-mapping>
@@ -1240,8 +1385,18 @@ description, distributable, and context-param elements.
     </servlet-mapping>
 
     <servlet-mapping>
+        <servlet-name>org.apache.jsp.WEB_002dINF.jsp.lcfj_jsp</servlet-name>
+        <url-pattern>/WEB-INF/jsp/lcfj.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
         <servlet-name>org.apache.jsp.WEB_002dINF.jsp.doj_jsp</servlet-name>
         <url-pattern>/WEB-INF/jsp/doj.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.WEB_002dINF.jsp.eaej_jsp</servlet-name>
+        <url-pattern>/WEB-INF/jsp/eaej.jsp</url-pattern>
     </servlet-mapping>
 
     <servlet-mapping>
@@ -1295,8 +1450,38 @@ description, distributable, and context-param elements.
     </servlet-mapping>
 
     <servlet-mapping>
+        <servlet-name>org.apache.jsp.WEB_002dINF.jsp.pi.roHe_jsp</servlet-name>
+        <url-pattern>/WEB-INF/jsp/pi/roHe.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.WEB_002dINF.jsp.pi.acc_jsp</servlet-name>
+        <url-pattern>/WEB-INF/jsp/pi/acc.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
         <servlet-name>org.apache.jsp.WEB_002dINF.jsp.pi.piFo_jsp</servlet-name>
         <url-pattern>/WEB-INF/jsp/pi/piFo.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.WEB_002dINF.jsp.pi.sac_jsp</servlet-name>
+        <url-pattern>/WEB-INF/jsp/pi/sac.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.WEB_002dINF.jsp.pi.roDe_jsp</servlet-name>
+        <url-pattern>/WEB-INF/jsp/pi/roDe.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.WEB_002dINF.jsp.mbl.pi.roHe_jsp</servlet-name>
+        <url-pattern>/WEB-INF/jsp/mbl/pi/roHe.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.WEB_002dINF.jsp.mbl.pi.roDe_jsp</servlet-name>
+        <url-pattern>/WEB-INF/jsp/mbl/pi/roDe.jsp</url-pattern>
     </servlet-mapping>
 
     <servlet-mapping>
@@ -1565,6 +1750,16 @@ description, distributable, and context-param elements.
     </servlet-mapping>
 
     <servlet-mapping>
+        <servlet-name>org.apache.jsp.WEB_002dINF.jsp.st.saTy_jsp</servlet-name>
+        <url-pattern>/WEB-INF/jsp/st/saTy.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.WEB_002dINF.jsp.st.mnth_jsp</servlet-name>
+        <url-pattern>/WEB-INF/jsp/st/mnth.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
         <servlet-name>org.apache.jsp.WEB_002dINF.jsp.st.usRlTmc_jsp</servlet-name>
         <url-pattern>/WEB-INF/jsp/st/usRlTmc.jsp</url-pattern>
     </servlet-mapping>
@@ -1685,6 +1880,11 @@ description, distributable, and context-param elements.
     </servlet-mapping>
 
     <servlet-mapping>
+        <servlet-name>org.apache.jsp.WEB_002dINF.jsp.in.idsa_jsp</servlet-name>
+        <url-pattern>/WEB-INF/jsp/in/idsa.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
         <servlet-name>org.apache.jsp.WEB_002dINF.jsp.in.enm_jsp</servlet-name>
         <url-pattern>/WEB-INF/jsp/in/enm.jsp</url-pattern>
     </servlet-mapping>
@@ -1730,8 +1930,23 @@ description, distributable, and context-param elements.
     </servlet-mapping>
 
     <servlet-mapping>
+        <servlet-name>org.apache.jsp.WEB_002dINF.jsp.in.acc_jsp</servlet-name>
+        <url-pattern>/WEB-INF/jsp/in/acc.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.WEB_002dINF.jsp.in.saTy_jsp</servlet-name>
+        <url-pattern>/WEB-INF/jsp/in/saTy.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
         <servlet-name>org.apache.jsp.WEB_002dINF.jsp.in.dis_jsp</servlet-name>
         <url-pattern>/WEB-INF/jsp/in/dis.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.WEB_002dINF.jsp.in.mnth_jsp</servlet-name>
+        <url-pattern>/WEB-INF/jsp/in/mnth.jsp</url-pattern>
     </servlet-mapping>
 
     <servlet-mapping>
@@ -1765,6 +1980,11 @@ description, distributable, and context-param elements.
     </servlet-mapping>
 
     <servlet-mapping>
+        <servlet-name>org.apache.jsp.WEB_002dINF.jsp.in.idos_jsp</servlet-name>
+        <url-pattern>/WEB-INF/jsp/in/idos.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
         <servlet-name>org.apache.jsp.WEB_002dINF.jsp.in.str_jsp</servlet-name>
         <url-pattern>/WEB-INF/jsp/in/str.jsp</url-pattern>
     </servlet-mapping>
@@ -1782,6 +2002,11 @@ description, distributable, and context-param elements.
     <servlet-mapping>
         <servlet-name>org.apache.jsp.WEB_002dINF.jsp.in.bln_jsp</servlet-name>
         <url-pattern>/WEB-INF/jsp/in/bln.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.WEB_002dINF.jsp.in.sac_jsp</servlet-name>
+        <url-pattern>/WEB-INF/jsp/in/sac.jsp</url-pattern>
     </servlet-mapping>
 
     <servlet-mapping>
@@ -1860,6 +2085,16 @@ description, distributable, and context-param elements.
     </servlet-mapping>
 
     <servlet-mapping>
+        <servlet-name>org.apache.jsp.WEB_002dINF.jsp.tml.edae_jsp</servlet-name>
+        <url-pattern>/WEB-INF/jsp/tml/edae.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.WEB_002dINF.jsp.tml.edia_jsp</servlet-name>
+        <url-pattern>/WEB-INF/jsp/tml/edia.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
         <servlet-name>org.apache.jsp.WEB_002dINF.jsp.tml.bum_jsp</servlet-name>
         <url-pattern>/WEB-INF/jsp/tml/bum.jsp</url-pattern>
     </servlet-mapping>
@@ -1882,6 +2117,11 @@ description, distributable, and context-param elements.
     <servlet-mapping>
         <servlet-name>org.apache.jsp.WEB_002dINF.jsp.tml.var_jsp</servlet-name>
         <url-pattern>/WEB-INF/jsp/tml/var.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.WEB_002dINF.jsp.tml.edaed_jsp</servlet-name>
+        <url-pattern>/WEB-INF/jsp/tml/edaed.jsp</url-pattern>
     </servlet-mapping>
 
     <servlet-mapping>
@@ -1940,13 +2180,33 @@ description, distributable, and context-param elements.
     </servlet-mapping>
 
     <servlet-mapping>
+        <servlet-name>org.apache.jsp.WEB_002dINF.jsp.ls.ace_jsp</servlet-name>
+        <url-pattern>/WEB-INF/jsp/ls/ace.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
         <servlet-name>org.apache.jsp.WEB_002dINF.jsp.ls.liAc_jsp</servlet-name>
         <url-pattern>/WEB-INF/jsp/ls/liAc.jsp</url-pattern>
     </servlet-mapping>
 
     <servlet-mapping>
+        <servlet-name>org.apache.jsp.WEB_002dINF.jsp.ls.acae_jsp</servlet-name>
+        <url-pattern>/WEB-INF/jsp/ls/acae.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.WEB_002dINF.jsp.ls.acia_jsp</servlet-name>
+        <url-pattern>/WEB-INF/jsp/ls/acia.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
         <servlet-name>org.apache.jsp.WEB_002dINF.jsp.ls.eml_jsp</servlet-name>
         <url-pattern>/WEB-INF/jsp/ls/eml.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.WEB_002dINF.jsp.ls.lfia_jsp</servlet-name>
+        <url-pattern>/WEB-INF/jsp/ls/lfia.jsp</url-pattern>
     </servlet-mapping>
 
     <servlet-mapping>

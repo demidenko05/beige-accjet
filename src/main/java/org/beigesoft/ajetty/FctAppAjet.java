@@ -28,23 +28,29 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 package org.beigesoft.ajetty;
 
+import java.util.Set;
 import java.util.HashSet;
+import java.util.LinkedHashSet;
 import java.util.Map;
 import java.sql.ResultSet;
 import java.security.KeyStore;
 
 import org.eclipse.jetty.security.DataBaseLoginService;
 
-import org.beigesoft.fct.IFctNm;
+import org.beigesoft.fct.IFctPrc;
+import org.beigesoft.fct.IFctPrcEnt;
 import org.beigesoft.fct.IFctAsm;
 import org.beigesoft.fct.FctBlc;
 import org.beigesoft.fct.FctDbCp;
-import org.beigesoft.prc.IPrc;
 import org.beigesoft.hld.IAttrs;
+import org.beigesoft.hld.IHlNmClSt;
 import org.beigesoft.rdb.IRdb;
 import org.beigesoft.rdb.Orm;
 import org.beigesoft.web.FctMail;
 import org.beigesoft.jdbc.FctSqlite;
+import org.beigesoft.acc.fct.FctAcc;
+import org.beigesoft.acc.fct.FctEnPrc;
+import org.beigesoft.acc.hld.HlAcEnPr;
 
 /**
  * <p>Final configuration factory for Sqlite JDBC.</p>
@@ -64,20 +70,30 @@ public class FctAppAjet implements IFctAsm<ResultSet> {
    */
   public FctAppAjet() throws Exception {
     this.fctBlc = new FctBlc<ResultSet>();
-    HashSet<IFctNm<IPrc>> fpasad = new HashSet<IFctNm<IPrc>>();
+    this.fctBlc.getFctsAux().add(new FctSqlite());
+    this.fctBlc.getFctsAux().add(new FctDbCp<ResultSet>());
+    this.fctBlc.getFctsAux().add(new FctMail<ResultSet>());
+    this.fctBlc.getFctsAux().add(new FctAcc<ResultSet>());
+    this.fctBlc.getFctsAux().add(new FctAjet<ResultSet>());
+    Set<IFctPrcEnt> fcsenpr = new HashSet<IFctPrcEnt>();
+    FctEnPrc<ResultSet> fcep = new FctEnPrc<ResultSet>();
+    fcep.setFctBlc(this.fctBlc);
+    fcsenpr.add(fcep);
+    this.fctBlc.getFctDt().setFctsPrcEnt(fcsenpr);
+    Set<IHlNmClSt> hldsBsEnPr = new LinkedHashSet<IHlNmClSt>();
+    hldsBsEnPr.add(new HlAcEnPr());
+    this.fctBlc.getFctDt().setHldsBsEnPr(hldsBsEnPr);
+    //a-jetty services:
+    HashSet<IFctPrc> fpasad = new HashSet<IFctPrc>();
     FctPrcNtrAd<ResultSet> fctPrcNtrAj = new FctPrcNtrAd<ResultSet>();
     fctPrcNtrAj.setFctApp(this);
     fpasad.add(fctPrcNtrAj);
     this.fctBlc.getFctDt().setFctsPrcAd(fpasad);
-    HashSet<IFctNm<IPrc>> fpas = new HashSet<IFctNm<IPrc>>();
+    HashSet<IFctPrc> fpas = new HashSet<IFctPrc>();
     FctPrcNtr<ResultSet> fctPrcNtrAjb = new FctPrcNtr<ResultSet>();
     fctPrcNtrAjb.setFctApp(this);
     fpas.add(fctPrcNtrAjb);
     this.fctBlc.getFctDt().setFctsPrc(fpas);
-    this.fctBlc.getFctsAux().add(new FctSqlite());
-    this.fctBlc.getFctsAux().add(new FctDbCp<ResultSet>());
-    this.fctBlc.getFctsAux().add(new FctMail<ResultSet>());
-    this.fctBlc.getFctsAux().add(new FctAjet<ResultSet>());
   }
 
   /**

@@ -110,9 +110,7 @@ public final class ed_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${frPlNm}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
       out.write("EdFrm\" action=\"");
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${frAct}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
-      out.write("\" method=\"POST\" enctype=\"multipart/form-data\">\n      <input type=\"hidden\" name=\"act\" value=\"");
-      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${acEntSv}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
-      out.write(",entEd,lst\">\n      <input type=\"hidden\" name=\"ent\" value=\"");
+      out.write("\" method=\"POST\" enctype=\"multipart/form-data\">\n      <input type=\"hidden\" name=\"act\" value=\"entSv,entEd,lst\">\n      <input type=\"hidden\" name=\"ent\" value=\"");
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${cls.simpleName}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
       out.write("\">\n      <input type=\"hidden\" name=\"pg\" value=\"");
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${param.pg}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));

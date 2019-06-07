@@ -42,7 +42,7 @@ import org.beigesoft.prc.IPrc;
  * @param <RS> platform dependent record set type
  * @author Yury Demidenko
  */
-public class FctPrcNtr<RS> implements IFctPrc {
+public class FcPrNtAj<RS> implements IFctPrc {
 
   /**
    * <p>Main factory.</p>

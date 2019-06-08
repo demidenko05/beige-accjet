@@ -99,7 +99,7 @@ public final class bum_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("</label>\n                  </td>\n                  <td>\n                    <div class=\"input-line\">\n                      <input type=\"date\" name =\"opDt\" value=\"");
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${srvDt.to8601Date(rvs.aupf.opDt)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
       out.write("\" onchange=\"bsInpChn(this);\">\n                    </div>\n                  </td>\n                </tr>\n                <tr>\n                  <td>\n                    <label>");
-      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${i18n.getMsg(\"lang\", rvs.upf.lng.iid)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${i18n.getMsg(\"lng\", rvs.upf.lng.iid)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
       out.write("</label>\n                  </td>\n                  <td>\n                    <div class=\"input-line\">\n                      <select name=\"lng\" onchange=\"bsInpChn(this);\">\n                        ");
       if (_jspx_meth_c_005fforEach_005f0(_jspx_page_context))
         return;
@@ -109,7 +109,7 @@ public final class bum_jsp extends org.apache.jasper.runtime.HttpJspBase
       if (_jspx_meth_c_005fforEach_005f1(_jspx_page_context))
         return;
       out.write("\n                      </select>\n                    </div>\n                  </td>\n                </tr>\n                <tr>\n                  <td>\n                    <label>");
-      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${i18n.getMsg(\"decimalGroupSep\", rvs.upf.lng.iid)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${i18n.getMsg(\"dcGrSp\", rvs.upf.lng.iid)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
       out.write("</label>\n                  </td>\n                  <td>\n                    <div class=\"input-line\">\n                      <select name=\"dcGrSp\" onchange=\"bsInpChn(this);\">\n                        ");
       if (_jspx_meth_c_005fforEach_005f2(_jspx_page_context))
         return;
@@ -324,7 +324,7 @@ public final class bum_jsp extends org.apache.jasper.runtime.HttpJspBase
           out.write(' ');
           out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${itmSel}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
           out.write('>');
-          out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${i18n.getMsg(it.nme)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
+          out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${i18n.getMsg(it.nme, rvs.upf.lng.iid)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
           out.write("</option>\n                        ");
           int evalDoAfterBody = _jspx_th_c_005fforEach_005f1.doAfterBody();
           if (evalDoAfterBody != javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN)
@@ -446,7 +446,7 @@ public final class bum_jsp extends org.apache.jasper.runtime.HttpJspBase
           out.write(' ');
           out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${itmSel}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
           out.write('>');
-          out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${i18n.getMsg(it.nme)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
+          out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${i18n.getMsg(it.nme, rvs.upf.lng.iid)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
           out.write("</option>\n                        ");
           int evalDoAfterBody = _jspx_th_c_005fforEach_005f2.doAfterBody();
           if (evalDoAfterBody != javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN)

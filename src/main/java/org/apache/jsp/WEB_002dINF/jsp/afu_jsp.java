@@ -90,11 +90,11 @@ public final class afu_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("\n</div>\n\n<div class=\"form-std form-70-33\"  style=\"top: initial;\">\n  <div class=\"dialog-title\">\n    ");
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${i18n.getMsg(\"add_first_user\", rvs.upf.lng.iid)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
       out.write("\n  </div>\n  <form method=\"post\">\n    <table class=\"tbl-fieldset\">\n      <tr>\n        <td>\n          <label>");
-      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${i18n.getMsg(\"user_name\", rvs.upf.lng.iid)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${i18n.getMsg(\"usr\", rvs.upf.lng.iid)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
       out.write(":</label>\n        </td>\n        <td>\n          <div style=\"display: flex;\">\n            <input required name=\"usr\" value=\"\">\n          </div>\n        </td>\n      </tr>\n      <tr>\n        <td>\n          <label>");
-      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${i18n.getMsg(\"user_pass\", rvs.upf.lng.iid)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${i18n.getMsg(\"pwd\", rvs.upf.lng.iid)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
       out.write(":</label>\n        </td>\n        <td>\n          <div style=\"display: flex;\">\n            <input type=\"password\" required name=\"pwd\" value=\"\">\n          </div>\n        </td>\n      </tr>\n      <tr>\n        <td>\n          <label>");
-      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${i18n.getMsg(\"user_pass_rep\", rvs.upf.lng.iid)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${i18n.getMsg(\"pwdc\", rvs.upf.lng.iid)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
       out.write(":</label>\n        </td>\n        <td>\n          <div style=\"display: flex;\">\n            <input type=\"password\" required name=\"pwdc\" value=\"\">\n          </div>\n        </td>\n      </tr>\n    </table>\n    <div>\n      <input type=\"submit\"/>\n    </div>\n  </form>\n</div>\n\n</body>\n</html>\n");
     } catch (java.lang.Throwable t) {
       if (!(t instanceof javax.servlet.jsp.SkipPageException)){

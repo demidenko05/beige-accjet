@@ -82,7 +82,9 @@ public final class lgn_jsp extends org.apache.jasper.runtime.HttpJspBase
       out = pageContext.getOut();
       _jspx_out = out;
 
-      out.write("\n\n<!DOCTYPE html>\n<html>\n<head>    \n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1, shrink-to-fit=no\">\n  <title>Beige WEB login</title>\n  <link rel=\"stylesheet\" href=\"../css/bsCmn.css\">\n  <link rel=\"icon\" type=\"image/png\" href=\"../img/favicon.png\">\n</head>\n<body>\n  ");
+      out.write("\n\n<!DOCTYPE html>\n<html>\n<head>    \n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1, shrink-to-fit=no\">\n  <link rel=\"stylesheet\" href=\"../css/bsCmn.css\">\n  <link rel=\"icon\" type=\"image/png\" href=\"../img/favicon.png\">\n  <title>");
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${pageContext.servletContext.getAttribute(\"i18n\").getMsg('app_name')}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
+      out.write("</title>\n</head>\n<body>\n  ");
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${pageContext.servletContext.getAttribute(\"sesTrk\").track(pageContext.request)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
       out.write('\n');
       out.write(' ');
@@ -158,7 +160,15 @@ public final class lgn_jsp extends org.apache.jasper.runtime.HttpJspBase
       do {
         out.write("\n    <div class=\"alert-20\">");
         out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${loginErrorJsp}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
-        out.write("</div>\n    \n    <div class=\"form-std form-33-33\">\n      <div class=\"dialog-title\">\n        Authorization\n      </div>\n      <form id=\"formLogin\" action=\"j_security_check\" method=\"post\">\n        <label>User</label>\n        <input type=\"text\" name=\"j_username\"/>\n        <label>Password</label>\n        <input type=\"password\" name=\"j_password\"/>\n        <div class=\"form-actions\">\n          <input type=\"submit\" value=\"Login\"/>\n          <a href=\"../\">Close</a>\n        </div>\n      </form>\n    </div>\n  ");
+        out.write("</div>\n    \n    <div class=\"form-std form-33-33\">\n      <div class=\"dialog-title\">\n        ");
+        out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${pageContext.servletContext.getAttribute(\"i18n\").getMsg('Authorization')}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
+        out.write("\n      </div>\n      <form id=\"formLogin\" action=\"j_security_check\" method=\"post\">\n        <label>");
+        out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${pageContext.servletContext.getAttribute(\"i18n\").getMsg('usr')}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
+        out.write("</label>\n        <input type=\"text\" name=\"j_username\"/>\n        <label>");
+        out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${pageContext.servletContext.getAttribute(\"i18n\").getMsg('pwd')}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
+        out.write("</label>\n        <input type=\"password\" name=\"j_password\"/>\n        <div class=\"form-actions\">\n          <input type=\"submit\" value=\"Login\"/>\n          <a href=\"../\">");
+        out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${pageContext.servletContext.getAttribute(\"i18n\").getMsg('Close')}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
+        out.write("</a>\n        </div>\n      </form>\n    </div>\n  ");
         int evalDoAfterBody = _jspx_th_c_005fif_005f1.doAfterBody();
         if (evalDoAfterBody != javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN)
           break;

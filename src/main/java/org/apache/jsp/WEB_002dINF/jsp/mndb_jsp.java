@@ -101,9 +101,9 @@ public final class mndb_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write(' ');
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${currDb}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
       out.write("</h4>\n      <table>\n      <tr>\n        <th style=\"padding: .4rem;\">");
-      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${i18n.getMsg(\"database\", rvs.upf.lng.iid)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${i18n.getMsg(\"Database\", rvs.upf.lng.iid)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
       out.write("</th>\n        <th style=\"padding: .4rem; width: 40%;\">");
-      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${i18n.getMsg(\"actions\", rvs.upf.lng.iid)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${i18n.getMsg(\"Actions\", rvs.upf.lng.iid)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
       out.write("</th>\n      </tr>\n      ");
       if (_jspx_meth_c_005fset_005f2(_jspx_page_context))
         return;
@@ -124,18 +124,18 @@ public final class mndb_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write(" in ");
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${backupDir}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
       out.write(":</h4>\n      <table>\n      <tr>\n        <th style=\"padding: .4rem;\">");
-      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${i18n.getMsg(\"database\", rvs.upf.lng.iid)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${i18n.getMsg(\"Database\", rvs.upf.lng.iid)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
       out.write("</th>\n        <th style=\"padding: .4rem;\">");
-      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${i18n.getMsg(\"actions\", rvs.upf.lng.iid)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${i18n.getMsg(\"Actions\", rvs.upf.lng.iid)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
       out.write("</th>\n      </tr>\n      ");
       if (_jspx_meth_c_005fforEach_005f1(_jspx_page_context))
         return;
       out.write("\n    </table>\n  </div>\n\n  <div style=\"border: solid 1px;\">\n    <div class=\"dialog-title\">\n      ");
-      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${i18n.getMsg(\"create_db_curr\", rvs.upf.lng.iid)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${i18n.getMsg(\"Create\", rvs.upf.lng.iid)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
       out.write("\n    </div>\n    <form method=\"post\">\n      <input type=\"hidden\" name=\"act\" value=\"create\">\n      <input type=\"hidden\" name=\"prc\" value=\"PrcMngDb\">\n      <table class=\"tbl-fieldset\">\n        <tr>\n          <td>\n            <label>");
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${i18n.getMsg(\"create_label\", rvs.upf.lng.iid)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
       out.write(":</label>\n          </td>\n          <td>\n            <div style=\"display: flex;\">\n              <input name=\"dbNm\" value=\"dbmy\">.sqlite\n            </div>\n          </td>\n        </tr>\n        <tr>\n          <td>\n            <label>");
-      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${i18n.getMsg(\"idDatabase\", rvs.upf.lng.iid)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${i18n.getMsg(\"dbId\", rvs.upf.lng.iid)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
       out.write(":</label>\n          </td>\n          <td>\n            <div style=\"display: flex;\">\n              <input type=\"number\" name=\"dbId\" value=\"2\">\n            </div>\n          </td>\n        </tr>\n      </table>\n      <div style=\"text-align: center;\">\n        ");
       if (_jspx_meth_c_005fset_005f6(_jspx_page_context))
         return;
@@ -269,7 +269,7 @@ public final class mndb_jsp extends org.apache.jasper.runtime.HttpJspBase
     // /WEB-INF/jsp/mndb.jsp(34,6) name = var type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_c_005fset_005f2.setVar("changeq");
     // /WEB-INF/jsp/mndb.jsp(34,6) name = value type = javax.el.ValueExpression reqTime = true required = false fragment = false deferredValue = true expectedTypeName = java.lang.Object deferredMethod = false methodSignature = null
-    _jspx_th_c_005fset_005f2.setValue(new org.apache.jasper.el.JspValueExpression("/WEB-INF/jsp/mndb.jsp(34,6) '${i18n.getMsg('change_db_curr', rvs.upf.lng.iid)}'",_jsp_getExpressionFactory().createValueExpression(_jspx_page_context.getELContext(),"${i18n.getMsg('change_db_curr', rvs.upf.lng.iid)}",java.lang.Object.class)).getValue(_jspx_page_context.getELContext()));
+    _jspx_th_c_005fset_005f2.setValue(new org.apache.jasper.el.JspValueExpression("/WEB-INF/jsp/mndb.jsp(34,6) '${i18n.getMsg('Сhange', rvs.upf.lng.iid)}'",_jsp_getExpressionFactory().createValueExpression(_jspx_page_context.getELContext(),"${i18n.getMsg('Сhange', rvs.upf.lng.iid)}",java.lang.Object.class)).getValue(_jspx_page_context.getELContext()));
     int _jspx_eval_c_005fset_005f2 = _jspx_th_c_005fset_005f2.doStartTag();
     if (_jspx_th_c_005fset_005f2.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
       _005fjspx_005ftagPool_005fc_005fset_0026_005fvar_005fvalue_005fnobody.reuse(_jspx_th_c_005fset_005f2);
@@ -290,7 +290,7 @@ public final class mndb_jsp extends org.apache.jasper.runtime.HttpJspBase
     // /WEB-INF/jsp/mndb.jsp(35,6) name = var type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_c_005fset_005f3.setVar("backupq");
     // /WEB-INF/jsp/mndb.jsp(35,6) name = value type = javax.el.ValueExpression reqTime = true required = false fragment = false deferredValue = true expectedTypeName = java.lang.Object deferredMethod = false methodSignature = null
-    _jspx_th_c_005fset_005f3.setValue(new org.apache.jasper.el.JspValueExpression("/WEB-INF/jsp/mndb.jsp(35,6) '${i18n.getMsg('backup', rvs.upf.lng.iid)}'",_jsp_getExpressionFactory().createValueExpression(_jspx_page_context.getELContext(),"${i18n.getMsg('backup', rvs.upf.lng.iid)}",java.lang.Object.class)).getValue(_jspx_page_context.getELContext()));
+    _jspx_th_c_005fset_005f3.setValue(new org.apache.jasper.el.JspValueExpression("/WEB-INF/jsp/mndb.jsp(35,6) '${i18n.getMsg('Backup', rvs.upf.lng.iid)}'",_jsp_getExpressionFactory().createValueExpression(_jspx_page_context.getELContext(),"${i18n.getMsg('Backup', rvs.upf.lng.iid)}",java.lang.Object.class)).getValue(_jspx_page_context.getELContext()));
     int _jspx_eval_c_005fset_005f3 = _jspx_th_c_005fset_005f3.doStartTag();
     if (_jspx_th_c_005fset_005f3.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
       _005fjspx_005ftagPool_005fc_005fset_0026_005fvar_005fvalue_005fnobody.reuse(_jspx_th_c_005fset_005f3);
@@ -345,7 +345,7 @@ public final class mndb_jsp extends org.apache.jasper.runtime.HttpJspBase
           out.write("\" onclick=\"bsCnfHref(this, '");
           out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${changeq}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
           out.write("?'); return false;\">");
-          out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${i18n.getMsg(\"change_db_curr\", rvs.upf.lng.iid)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
+          out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${i18n.getMsg(\"Change\", rvs.upf.lng.iid)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
           out.write("</a>\n            <br><br>\n            ");
           if (_jspx_meth_c_005fif_005f1(_jspx_th_c_005fforEach_005f0, _jspx_page_context, _jspx_push_body_count_c_005fforEach_005f0))
             return true;
@@ -393,7 +393,7 @@ public final class mndb_jsp extends org.apache.jasper.runtime.HttpJspBase
         out.write("\" onclick=\"bsCnfHref(this, '");
         out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${backupq}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
         out.write("?'); return false;\">");
-        out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${i18n.getMsg(\"backup\", rvs.upf.lng.iid)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
+        out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${i18n.getMsg(\"Backup\", rvs.upf.lng.iid)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
         out.write("</a>\n              <br><br>\n            ");
         int evalDoAfterBody = _jspx_th_c_005fif_005f1.doAfterBody();
         if (evalDoAfterBody != javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN)
@@ -419,7 +419,7 @@ public final class mndb_jsp extends org.apache.jasper.runtime.HttpJspBase
     // /WEB-INF/jsp/mndb.jsp(56,2) name = var type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_c_005fset_005f5.setVar("restoreq");
     // /WEB-INF/jsp/mndb.jsp(56,2) name = value type = javax.el.ValueExpression reqTime = true required = false fragment = false deferredValue = true expectedTypeName = java.lang.Object deferredMethod = false methodSignature = null
-    _jspx_th_c_005fset_005f5.setValue(new org.apache.jasper.el.JspValueExpression("/WEB-INF/jsp/mndb.jsp(56,2) '${i18n.getMsg('restore', rvs.upf.lng.iid)}'",_jsp_getExpressionFactory().createValueExpression(_jspx_page_context.getELContext(),"${i18n.getMsg('restore', rvs.upf.lng.iid)}",java.lang.Object.class)).getValue(_jspx_page_context.getELContext()));
+    _jspx_th_c_005fset_005f5.setValue(new org.apache.jasper.el.JspValueExpression("/WEB-INF/jsp/mndb.jsp(56,2) '${i18n.getMsg('Restore', rvs.upf.lng.iid)}'",_jsp_getExpressionFactory().createValueExpression(_jspx_page_context.getELContext(),"${i18n.getMsg('Restore', rvs.upf.lng.iid)}",java.lang.Object.class)).getValue(_jspx_page_context.getELContext()));
     int _jspx_eval_c_005fset_005f5 = _jspx_th_c_005fset_005f5.doStartTag();
     if (_jspx_th_c_005fset_005f5.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
       _005fjspx_005ftagPool_005fc_005fset_0026_005fvar_005fvalue_005fnobody.reuse(_jspx_th_c_005fset_005f5);
@@ -489,7 +489,7 @@ public final class mndb_jsp extends org.apache.jasper.runtime.HttpJspBase
         out.write("\" onclick=\"bsCnfHref(this, '");
         out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${restoreq}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
         out.write("?'); return false;\">");
-        out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${i18n.getMsg(\"restore\", rvs.upf.lng.iid)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
+        out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${i18n.getMsg(\"Restore\", rvs.upf.lng.iid)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
         out.write("</a>\n            </td>\n          ");
         int evalDoAfterBody = _jspx_th_c_005fif_005f2.doAfterBody();
         if (evalDoAfterBody != javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN)

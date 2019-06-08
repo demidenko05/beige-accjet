@@ -99,9 +99,9 @@ public final class adm_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write(".js\"></script>\n  <link rel=\"stylesheet\" href=\"../css/bsCmn.css\" />\n  <link rel=\"icon\" type=\"image/png\"  href=\"../img/favicon.png\">\n  <title>");
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${i18n.getMsg(\"app_name\", rvs.upf.lng.iid)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
       out.write("</title>\n</head>\n<body>\n\n  <div class=\"navbar\">\n    <div class=\"dropdown\">\n      <a href=\"#\" class=\"dropdown-btn\">...</a>\n      <div class=\"dropdown-content\">\n        <a href=\"../\">Home</a>\n        <a href=\"srv\">Refresh</a>\n        <a href=\"#\" onclick=\"bsGtAjx('GET', 'srv?act=lst&rnd=lhj&ent=EmCon&pg=1');\">");
-      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${i18n.getMsg(\"EmaCons\", rvs.upf.lng.iid)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${i18n.getMsg(\"EmCons\", rvs.upf.lng.iid)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
       out.write("</a>\n        <a href=\"#\" onclick=\"bsGtAjx('GET', 'srv?act=lst&rnd=lhj&ent=EmAdr&pg=1');\">");
-      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${i18n.getMsg(\"EmaAdrs\", rvs.upf.lng.iid)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${i18n.getMsg(\"EmAdrs\", rvs.upf.lng.iid)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
       out.write("</a>\n        <a href=\"#\" onclick=\"bsGtAjx('GET', 'srv?act=lst&rnd=lhj&ent=EmMsg&pg=1');\">");
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${i18n.getMsg(\"EmMsgs\", rvs.upf.lng.iid)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
       out.write("</a>\n        <a href=\"#\" onclick=\"bsGtAjx('GET', 'srv?act=lst&rnd=lhj&ent=UsTmc&pg=1');\">");
@@ -122,7 +122,7 @@ public final class adm_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("</button>\n        </div>\n     </div>\n  </dialog>\n\n  <dialog id=\"dlgI18n\" class=\"dlg dlg-alert\">\n      <div class=\"confirm\">\n        <div class=\"dialog-title confirm-title\">\n          ");
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${i18n.getMsg(\"changeUsPrf\", rvs.upf.lng.iid)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
       out.write("\n          <button onclick=\"document.getElementById('dlgI18n').close();\" class=\"btn-close btn-confirm\">x</button>\n        </div>\n        <form id=\"lngPrefFrm\" action=\"?\" method=\"POST\">\n          <div>\n            <table class=\"tbl-fieldset\">\n              <tbody>\n                <tr>\n                  <td>\n                    <label>");
-      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${i18n.getMsg(\"lang\", rvs.upf.lng.iid)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${i18n.getMsg(\"lng\", rvs.upf.lng.iid)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
       out.write("</label>\n                  </td>\n                  <td>\n                    <div class=\"input-line\">\n                      <select name=\"lng\" onchange=\"bsInpChn(this);\">\n                        ");
       if (_jspx_meth_c_005fforEach_005f0(_jspx_page_context))
         return;
@@ -132,7 +132,7 @@ public final class adm_jsp extends org.apache.jasper.runtime.HttpJspBase
       if (_jspx_meth_c_005fforEach_005f1(_jspx_page_context))
         return;
       out.write("\n                      </select>\n                    </div>\n                  </td>\n                </tr>\n                <tr>\n                  <td>\n                    <label>");
-      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${i18n.getMsg(\"decimalGroupSep\", rvs.upf.lng.iid)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${i18n.getMsg(\"dcGrSp\", rvs.upf.lng.iid)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
       out.write("</label>\n                  </td>\n                  <td>\n                    <div class=\"input-line\">\n                      <select name=\"dcGrSp\" onchange=\"bsInpChn(this);\">\n                        ");
       if (_jspx_meth_c_005fforEach_005f2(_jspx_page_context))
         return;

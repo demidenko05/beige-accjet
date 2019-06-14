@@ -7,7 +7,7 @@ xsi:schemaLocation="http://maven.apache.org/plugins/maven-assembly-plugin/assemb
   </formats>
   <files>
     <file>
-      <source>target${file.separator}${project.artifactId}.jar</source>
+      <source>target${file.separator}${project.artifactId}-jar-with-dependencies.jar</source>
       <outputDirectory>${file.separator}</outputDirectory>
     </file>
   </files>

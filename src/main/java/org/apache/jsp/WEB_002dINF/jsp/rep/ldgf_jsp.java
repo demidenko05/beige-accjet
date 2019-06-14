@@ -11,7 +11,7 @@ import javax.servlet.*;
 import javax.servlet.http.*;
 import javax.servlet.jsp.*;
 
-public final class blnf_jsp extends org.apache.jasper.runtime.HttpJspBase
+public final class ldgf_jsp extends org.apache.jasper.runtime.HttpJspBase
     implements org.apache.jasper.runtime.JspSourceDependent {
 
   private static final javax.servlet.jsp.JspFactory _jspxFactory =
@@ -87,12 +87,24 @@ public final class blnf_jsp extends org.apache.jasper.runtime.HttpJspBase
         _jspx_page_context.setAttribute("now", now, javax.servlet.jsp.PageContext.PAGE_SCOPE);
       }
       out.write("\n<dialog id=\"frmRepDlg\" class=\"dlg\" oncancel=\"return false;\">\n  <div class=\"form-std\">\n    <div class=\"dialog-title\">\n      ");
-      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${i18n.getMsg(\"trial_balance\", rvs.upf.lng.iid)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
-      out.write("\n      <button onclick=\"bsClsDlgCf('frmRep')\" class=\"btn-close\">x</button>\n    </div>\n    <form id=\"frmRepFrm\" action=\"ntr\" method=\"GET\" target=\"_blank\">\n      <input type=\"hidden\" name=\"prc\" value=\"PrcBln\">\n      <input type=\"hidden\" name=\"rnd\" value=\"bln\">\n\n      <table class=\"tbl-fieldset\">\n        <tr>\n          <td>\n            <label for=\"dt\">");
-      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${i18n.getMsg(\"dat\", rvs.upf.lng.iid)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
-      out.write(":</label>\n          </td>\n        </tr>\n        <tr>\n          <td>\n            <input type=\"datetime-local\" required name=\"dt\" value=\"");
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${i18n.getMsg(\"Ledger\", rvs.upf.lng.iid)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
+      out.write("\n      <button onclick=\"bsClsDlgCf('frmRep')\" class=\"btn-close\">x</button>\n    </div>\n    <form id=\"frmRepFrm\" action=\"ntr\" method=\"GET\" target=\"_blank\">\n      <input type=\"hidden\" name=\"prc\" value=\"PrLdgr\">\n      <table class=\"tbl-fieldset\">\n        <tr>\n          <td>\n            <label for=\"dt1\">");
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${i18n.getMsg(\"dt1\", rvs.upf.lng.iid)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
+      out.write(":</label>\n          </td>\n        </tr>\n        <tr>\n          <td>\n            <input autofocus type=\"datetime-local\" required name=\"dt1\" value=\"");
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${srvDt.to8601DateTime(now)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
-      out.write("\" onchange=\"bsInpChn(this);\"/> \n          </td>\n        </tr>\n      </table>\n      <div class=\"form-actions\">\n        <button type=\"button\" onclick=\"bsSbFrmNw('frmRepFrm', false);\">");
+      out.write("\" onchange=\"bsInpChn(this);\"/> \n          </td>\n        </tr>\n        <tr>\n          <td>\n            <label for=\"dt2\">");
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${i18n.getMsg(\"dt2\", rvs.upf.lng.iid)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
+      out.write(":</label>\n          </td>\n        </tr>\n        <tr>\n          <td>\n            <input type=\"datetime-local\" required name=\"dt2\" value=\"");
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${srvDt.to8601DateTime(now)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
+      out.write("\" onchange=\"bsInpChn(this);\"/> \n          </td>\n        </tr>\n        <tr>\n          <td>\n            <label for=\"ldgAccApVsb\">");
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${i18n.getMsg(\"Acnt\", rvs.upf.lng.iid)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
+      out.write(":</label>\n          </td>\n        <tr>\n        </tr>\n          <td>\n            <div class=\"input-line\">\n              <input class=\"picked-appearence\" id=\"ldgAccApVsb\" disabled=\"disabled\" type=\"text\">\n              <input id=\"ldgAccId\" required type=\"hidden\" name=\"accId\">\n              <input id=\"ldgAccAp\" required type=\"hidden\" name=\"accNm\">\n              <button type=\"button\" class=\"btn\" onclick=\"bsPick('Acnt','ldg','Acc','&mbl=");
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${param.mbl}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
+      out.write("');\">...</button>\n              <button type=\"button\" class=\"btn\" onclick=\"bsClrSelEnt('ldgAcc');bsClearSac('ldg','Sac');\">X</button>\n            </div>\n          </td>\n        </tr>\n        <tr>\n          <td>\n            <label for=\"ldgSacApVsb\">");
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${i18n.getMsg(\"subacc\", rvs.upf.lng.iid)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
+      out.write(":</label>\n          </td>\n        <tr>\n        </tr>\n          <td>\n            <div class=\"input-line\">\n              <input class=\"picked-appearence\" id=\"ldgSacApVsb\" disabled=\"disabled\" type=\"text\">\n              <input id=\"ldgSacId\" type=\"hidden\" name=\"saId\">\n              <input id=\"ldgSacAp\" type=\"hidden\" name=\"saNm\">\n              <button id=\"ldgAccSaPi\" type=\"button\" class=\"btn\" onclick=\"bsPickSac('Acc','ldg','Sac','&mbl=");
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${param.mbl}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
+      out.write("');\">...</button>\n              <button id=\"ldgAccSaCl\" type=\"button\" class=\"btn\" onclick=\"bsClearSac('ldg','Sac');\">X</button>\n            </div>\n          </td>\n        </tr>\n      </table>\n      <div class=\"form-actions\">\n        <button type=\"button\" onclick=\"bsSbFrmNw('frmRepFrm', false);\">");
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${i18n.getMsg(\"Report\", rvs.upf.lng.iid)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
       out.write("</button>\n        <button type=\"button\" onclick=\"bsClsDlgCf('frmRep');\">");
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${i18n.getMsg(\"Close\", rvs.upf.lng.iid)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));

@@ -67,7 +67,7 @@
                   <descriptorRefs>
                     <descriptorRef>jar-with-dependencies</descriptorRef>
                   </descriptorRefs>
-                  <appendAssemblyId>false</appendAssemblyId>
+                  <!--<appendAssemblyId>false</appendAssemblyId>-->
                   <archive>
                     <manifest>
                       <mainClass>org.beigesoft.ajetty.BootMain</mainClass>

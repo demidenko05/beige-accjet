@@ -96,27 +96,47 @@ public final class mbl_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${i18n.getMsg(\"Accounting\", rvs.upf.lng.iid)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
       out.write("</a>\n      <div class=\"dropdown-content\">\n        <a href=\"#\" onclick=\"bsGtAjx('GET', 'srv?act=lst&rnd=lhj&ent=AcStg&pg=1&mbl=mbl/');\">");
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${i18n.getMsg(\"AcStgs\", rvs.upf.lng.iid)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
+      out.write("</a>\n        <a href=\"#\" onclick=\"bsGtAjx('GET', 'srv?act=lst&rnd=lhj&ent=I18Acc&pg=1&mbl=mbl/');\">");
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${i18n.getMsg(\"I18Accs\", rvs.upf.lng.iid)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
+      out.write("</a>\n        <a href=\"#\" onclick=\"bsGtAjx('GET', 'srv?act=lst&rnd=lhj&ent=Curr&pg=1&mbl=mbl/');\">");
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${i18n.getMsg(\"Currs\", rvs.upf.lng.iid)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
+      out.write("</a>\n        <a href=\"#\" onclick=\"bsGtAjx('GET', 'srv?act=lst&rnd=lhj&ent=I18Curr&pg=1&mbl=mbl/');\">");
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${i18n.getMsg(\"I18Currs\", rvs.upf.lng.iid)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
       out.write("</a>\n        <a href=\"#\" onclick=\"bsGtAjx('GET', 'srv?act=lst&rnd=lhj&ent=Expn&pg=1&mbl=mbl/');\">");
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${i18n.getMsg(\"Expns\", rvs.upf.lng.iid)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
       out.write("</a>\n        <a href=\"#\" onclick=\"bsGtAjx('GET', 'srv?act=lst&rnd=lhj&ent=Bnka&pg=1&mbl=mbl/');\">");
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${i18n.getMsg(\"Bnkas\", rvs.upf.lng.iid)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
-      out.write("</a>\n        <a href=\"#\" onclick=\"bsGtAjx('GET', 'srv?act=lst&rnd=lhj&ent=Itm&pg=1&mbl=mbl/');\">");
-      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${i18n.getMsg(\"Itms\", rvs.upf.lng.iid)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
-      out.write("</a>\n        <a href=\"#\" onclick=\"bsGtAjx('GET', 'srv?act=lst&rnd=lhj&ent=ItmCt&pg=1&mbl=mbl/');\">");
-      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${i18n.getMsg(\"ItmCts\", rvs.upf.lng.iid)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
       out.write("</a>\n        <a href=\"#\" onclick=\"bsGtAjx('GET', 'srv?act=lst&rnd=lhj&ent=Acnt&pg=1&mbl=mbl/');\">");
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${i18n.getMsg(\"Acnts\", rvs.upf.lng.iid)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
       out.write("</a>\n        <a href=\"#\" onclick=\"bsGtAjx('GET', 'srv?act=lst&rnd=lhj&ent=InEntr&pg=1&mbl=mbl/');\">");
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${i18n.getMsg(\"InEntrs\", rvs.upf.lng.iid)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
       out.write("</a>\n        <a href=\"#\" onclick=\"bsGtAjx('GET', 'srv?act=lst&rnd=lhj&ent=Entr&pg=1&mbl=mbl/');\">");
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${i18n.getMsg(\"Entrs\", rvs.upf.lng.iid)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
-      out.write("</a>\n        <a href=\"#\" onclick=\"bsGtAjx('GET', 'ntr?rnd=blnj');\">");
+      out.write("</a>\n        <a href=\"#\" onclick=\"bsGtAjx('GET', 'ntr?rnd=blnj&mbl=mbl/');\">");
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${i18n.getMsg(\"trial_balance\", rvs.upf.lng.iid)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
-      out.write("</a>\n        <a href=\"#\" onclick=\"bsGtAjx('GET', 'ntr?rnd=blnsj');\">");
+      out.write("</a>\n        <a href=\"#\" onclick=\"bsGtAjx('GET', 'ntr?rnd=blnsj&mbl=mbl/');\">");
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${i18n.getMsg(\"balance_sheet\", rvs.upf.lng.iid)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
+      out.write("</a>\n        <a href=\"#\" onclick=\"bsGtAjx('GET', 'ntr?rnd=ldgj&mbl=mbl/');\">");
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${i18n.getMsg(\"Ledger\", rvs.upf.lng.iid)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
       out.write("</a>\n      </div>\n    </div>\n    <div class=\"dropdown\">\n      <a href=\"#\" class=\"dropdown-btn\">");
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${i18n.getMsg(\"Common\", rvs.upf.lng.iid)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
-      out.write("</a>\n      <div class=\"dropdown-content\">\n        <a href=\"#\" onclick=\"bsGtAjx('GET', 'srv?act=lst&rnd=lhj&ent=Lng&pg=1&mbl=mbl/');\">");
+      out.write("</a>\n      <div class=\"dropdown-content\">\n        <a href=\"#\" onclick=\"bsGtAjx('GET', 'srv?act=lst&rnd=lhj&ent=ItmCt&pg=1&mbl=mbl/');\">");
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${i18n.getMsg(\"ItmCts\", rvs.upf.lng.iid)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
+      out.write("</a>\n        <a href=\"#\" onclick=\"bsGtAjx('GET', 'srv?act=lst&rnd=lhj&ent=Itm&pg=1&mbl=mbl/');\">");
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${i18n.getMsg(\"Itms\", rvs.upf.lng.iid)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
+      out.write("</a>\n        <a href=\"#\" onclick=\"bsGtAjx('GET', 'srv?act=lst&rnd=lhj&ent=SrvCt&pg=1&mbl=mbl/');\">");
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${i18n.getMsg(\"SrvCts\", rvs.upf.lng.iid)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
+      out.write("</a>\n        <a href=\"#\" onclick=\"bsGtAjx('GET', 'srv?act=lst&rnd=lhj&ent=Srv&pg=1&mbl=mbl/');\">");
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${i18n.getMsg(\"Srvs\", rvs.upf.lng.iid)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
+      out.write("</a>\n        <a href=\"#\" onclick=\"bsGtAjx('GET', 'srv?act=lst&rnd=lhj&ent=DcrCt&pg=1&mbl=mbl/');\">");
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${i18n.getMsg(\"DcrCts\", rvs.upf.lng.iid)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
+      out.write("</a>\n        <a href=\"#\" onclick=\"bsGtAjx('GET', 'srv?act=lst&rnd=lhj&ent=DbCr&pg=1&mbl=mbl/');\">");
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${i18n.getMsg(\"DbCrs\", rvs.upf.lng.iid)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
+      out.write("</a>\n      </div>\n    </div>\n    <div class=\"dropdown\">\n      <a href=\"#\" class=\"dropdown-btn\">...</a>\n      <div class=\"dropdown-content\">\n        <a href=\"#\" onclick=\"bsGtAjx('GET', 'ntr?prc=About');\">");
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${i18n.getMsg(\"About\", rvs.upf.lng.iid)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
+      out.write("</a>\n        <a href=\"srv?rnd=mbl&mbl=mbl\">Refresh</a>\n        <a href=\"../\">Home</a>\n        <a href=\"#\" onclick=\"bsOpnDlg('dlgI18n');\">");
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${i18n.getMsg(\"changeUsPrf\", rvs.upf.lng.iid)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
+      out.write("</a>\n        <a href=\"#\" onclick=\"bsGtAjx('GET', 'srv?act=lst&rnd=lhj&ent=Lng&pg=1&mbl=mbl/');\">");
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${i18n.getMsg(\"Lngs\", rvs.upf.lng.iid)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
       out.write("</a>\n        <a href=\"#\" onclick=\"bsGtAjx('GET', 'srv?act=lst&rnd=lhj&ent=Cntr&pg=1&mbl=mbl/');\">");
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${i18n.getMsg(\"Cntrs\", rvs.upf.lng.iid)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
@@ -126,16 +146,12 @@ public final class mbl_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${i18n.getMsg(\"DcGrSps\", rvs.upf.lng.iid)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
       out.write("</a>\n        <a href=\"#\" onclick=\"bsGtAjx('GET', 'srv?act=lst&rnd=lhj&ent=UsPrf&pg=1&mbl=mbl/');\">");
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${i18n.getMsg(\"UsPrfs\", rvs.upf.lng.iid)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
-      out.write("</a>\n        <a href=\"ntr?prc=RefrI18n\" target=\"_blank\">");
-      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${i18n.getMsg(\"RefrI18n\", rvs.upf.lng.iid)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
       out.write("</a>\n        <a href=\"#\" onclick=\"bsGtAjx('GET', 'srv?act=lst&rnd=lhj&ent=CsvMth&pg=1&mbl=mbl/');\">");
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${i18n.getMsg(\"CsvMths\", rvs.upf.lng.iid)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
       out.write("</a>\n        <a href=\"#\" onclick=\"bsGtAjx('GET', 'srv?act=lst&rnd=lhj&ent=MaFrn&pg=1&mbl=mbl/');\">");
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${i18n.getMsg(\"MaFrns\", rvs.upf.lng.iid)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
-      out.write("</a>\n      </div>\n    </div>\n    <div class=\"dropdown\">\n      <a href=\"#\" class=\"dropdown-btn\">...</a>\n      <div class=\"dropdown-content\">\n        <a href=\"#\" onclick=\"bsGtAjx('GET', 'ntr?prc=About');\">");
-      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${i18n.getMsg(\"about\", rvs.upf.lng.iid)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
-      out.write("</a>\n        <a href=\"srv\">Refresh</a>\n        <a href=\"../\">Home</a>\n        <a href=\"#\" onclick=\"bsOpnDlg('dlgI18n');\">");
-      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${i18n.getMsg(\"changeUsPrf\", rvs.upf.lng.iid)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
+      out.write("</a>\n        <a href=\"ntr?prc=RefrI18n\" target=\"_blank\">");
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${i18n.getMsg(\"RefrI18n\", rvs.upf.lng.iid)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
       out.write("</a>\n        ");
       if (_jspx_meth_c_005fif_005f0(_jspx_page_context))
         return;
@@ -193,7 +209,7 @@ public final class mbl_jsp extends org.apache.jasper.runtime.HttpJspBase
     org.apache.taglibs.standard.tag.rt.core.IfTag _jspx_th_c_005fif_005f0 = (org.apache.taglibs.standard.tag.rt.core.IfTag) _005fjspx_005ftagPool_005fc_005fif_0026_005ftest.get(org.apache.taglibs.standard.tag.rt.core.IfTag.class);
     _jspx_th_c_005fif_005f0.setPageContext(_jspx_page_context);
     _jspx_th_c_005fif_005f0.setParent(null);
-    // /WEB-INF/jsp/mbl.jsp(59,8) name = test type = boolean reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /WEB-INF/jsp/mbl.jsp(67,8) name = test type = boolean reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_c_005fif_005f0.setTest(((java.lang.Boolean) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${not empty pageContext['request'].userPrincipal}", java.lang.Boolean.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false)).booleanValue());
     int _jspx_eval_c_005fif_005f0 = _jspx_th_c_005fif_005f0.doStartTag();
     if (_jspx_eval_c_005fif_005f0 != javax.servlet.jsp.tagext.Tag.SKIP_BODY) {
@@ -224,12 +240,12 @@ public final class mbl_jsp extends org.apache.jasper.runtime.HttpJspBase
     org.apache.taglibs.standard.tag.rt.core.IfTag _jspx_th_c_005fif_005f1 = (org.apache.taglibs.standard.tag.rt.core.IfTag) _005fjspx_005ftagPool_005fc_005fif_0026_005ftest.get(org.apache.taglibs.standard.tag.rt.core.IfTag.class);
     _jspx_th_c_005fif_005f1.setPageContext(_jspx_page_context);
     _jspx_th_c_005fif_005f1.setParent(null);
-    // /WEB-INF/jsp/mbl.jsp(62,8) name = test type = boolean reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /WEB-INF/jsp/mbl.jsp(70,8) name = test type = boolean reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_c_005fif_005f1.setTest(((java.lang.Boolean) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${pageContext.servletContext.getInitParameter('ormDir') eq 'sqlite'}", java.lang.Boolean.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false)).booleanValue());
     int _jspx_eval_c_005fif_005f1 = _jspx_th_c_005fif_005f1.doStartTag();
     if (_jspx_eval_c_005fif_005f1 != javax.servlet.jsp.tagext.Tag.SKIP_BODY) {
       do {
-        out.write("\n          <a href=\"ntr?prc=PrcUsrPwd\">");
+        out.write("\n          <a href=\"ntr?prc=PrcUsrPwd&mbl=mbl/\">");
         out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${i18n.getMsg(\"change_password\", rvs.upf.lng.iid)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
         out.write("</a>\n        ");
         int evalDoAfterBody = _jspx_th_c_005fif_005f1.doAfterBody();

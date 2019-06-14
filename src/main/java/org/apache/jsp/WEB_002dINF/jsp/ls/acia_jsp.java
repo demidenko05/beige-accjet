@@ -20,6 +20,7 @@ public final class acia_jsp extends org.apache.jasper.runtime.HttpJspBase
   private static java.util.Map<java.lang.String,java.lang.Long> _jspx_dependants;
 
   private org.apache.jasper.runtime.TagHandlerPool _005fjspx_005ftagPool_005fc_005fset_0026_005fvar_005fvalue_005fnobody;
+  private org.apache.jasper.runtime.TagHandlerPool _005fjspx_005ftagPool_005fc_005fif_0026_005ftest;
 
   private volatile javax.el.ExpressionFactory _el_expressionfactory;
   private volatile org.apache.tomcat.InstanceManager _jsp_instancemanager;
@@ -52,10 +53,12 @@ public final class acia_jsp extends org.apache.jasper.runtime.HttpJspBase
 
   public void _jspInit() {
     _005fjspx_005ftagPool_005fc_005fset_0026_005fvar_005fvalue_005fnobody = org.apache.jasper.runtime.TagHandlerPool.getTagHandlerPool(getServletConfig());
+    _005fjspx_005ftagPool_005fc_005fif_0026_005ftest = org.apache.jasper.runtime.TagHandlerPool.getTagHandlerPool(getServletConfig());
   }
 
   public void _jspDestroy() {
     _005fjspx_005ftagPool_005fc_005fset_0026_005fvar_005fvalue_005fnobody.release();
+    _005fjspx_005ftagPool_005fc_005fif_0026_005ftest.release();
   }
 
   public void _jspService(final javax.servlet.http.HttpServletRequest request, final javax.servlet.http.HttpServletResponse response)
@@ -86,7 +89,7 @@ public final class acia_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write('\n');
       if (_jspx_meth_c_005fset_005f0(_jspx_page_context))
         return;
-      out.write("\n<button onclick=\"window.open('srv?rnd=pre&act=entPr&ent=");
+      out.write("\n<button onclick=\"window.open('srv?rnd=prn&act=entPr&ent=");
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${cls.simpleName}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
       out.write('&');
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${idPar}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
@@ -101,16 +104,10 @@ public final class acia_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${flyPar}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
       out.write("');\">");
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${i18n.getMsg(\"Edit\", rvs.upf.lng.iid)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
-      out.write("</button>\n<button class=\"btn\" onclick=\"bsGtAjx('GET', 'srv/?rnd=dej&act=entCd&ent=");
-      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${cls.simpleName}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
-      out.write('&');
-      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${idPar}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
-      out.write("&pg=");
-      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${param.pg}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
-      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${flyPar}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
-      out.write("');\">");
-      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${i18n.getMsg(\"Delete\", rvs.upf.lng.iid)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
       out.write("</button>\n");
+      if (_jspx_meth_c_005fif_005f0(_jspx_page_context))
+        return;
+      out.write('\n');
     } catch (java.lang.Throwable t) {
       if (!(t instanceof javax.servlet.jsp.SkipPageException)){
         out = _jspx_out;
@@ -148,6 +145,42 @@ public final class acia_jsp extends org.apache.jasper.runtime.HttpJspBase
       return true;
     }
     _005fjspx_005ftagPool_005fc_005fset_0026_005fvar_005fvalue_005fnobody.reuse(_jspx_th_c_005fset_005f0);
+    return false;
+  }
+
+  private boolean _jspx_meth_c_005fif_005f0(javax.servlet.jsp.PageContext _jspx_page_context)
+          throws java.lang.Throwable {
+    javax.servlet.jsp.PageContext pageContext = _jspx_page_context;
+    javax.servlet.jsp.JspWriter out = _jspx_page_context.getOut();
+    //  c:if
+    org.apache.taglibs.standard.tag.rt.core.IfTag _jspx_th_c_005fif_005f0 = (org.apache.taglibs.standard.tag.rt.core.IfTag) _005fjspx_005ftagPool_005fc_005fif_0026_005ftest.get(org.apache.taglibs.standard.tag.rt.core.IfTag.class);
+    _jspx_th_c_005fif_005f0.setPageContext(_jspx_page_context);
+    _jspx_th_c_005fif_005f0.setParent(null);
+    // /WEB-INF/jsp/ls/acia.jsp(6,0) name = test type = boolean reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    _jspx_th_c_005fif_005f0.setTest(((java.lang.Boolean) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${ent.debt.compareTo(java.math.BigDecimal.ZERO) eq 0 && ent.cred.compareTo(java.math.BigDecimal.ZERO) eq 0}", java.lang.Boolean.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false)).booleanValue());
+    int _jspx_eval_c_005fif_005f0 = _jspx_th_c_005fif_005f0.doStartTag();
+    if (_jspx_eval_c_005fif_005f0 != javax.servlet.jsp.tagext.Tag.SKIP_BODY) {
+      do {
+        out.write("\n  <button class=\"btn\" onclick=\"bsGtAjx('GET', 'srv/?rnd=dej&act=entCd&ent=");
+        out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${cls.simpleName}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
+        out.write('&');
+        out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${idPar}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
+        out.write("&pg=");
+        out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${param.pg}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
+        out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${flyPar}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
+        out.write("');\">");
+        out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${i18n.getMsg(\"Delete\", rvs.upf.lng.iid)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
+        out.write("</button>\n");
+        int evalDoAfterBody = _jspx_th_c_005fif_005f0.doAfterBody();
+        if (evalDoAfterBody != javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN)
+          break;
+      } while (true);
+    }
+    if (_jspx_th_c_005fif_005f0.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
+      _005fjspx_005ftagPool_005fc_005fif_0026_005ftest.reuse(_jspx_th_c_005fif_005f0);
+      return true;
+    }
+    _005fjspx_005ftagPool_005fc_005fif_0026_005ftest.reuse(_jspx_th_c_005fif_005f0);
     return false;
   }
 }

@@ -102,7 +102,7 @@ public final class blns_jsp extends org.apache.jasper.runtime.HttpJspBase
       if (_jspx_meth_fmt_005fformatDate_005f0(_jspx_page_context))
         return;
       out.write("</title>\n</head>\n<body>\n  <div style=\"text-align: center;\">\n    <h4>\n      ");
-      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${rvs.as.org}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${rvs.astg.org}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
       out.write(" <br>\n      ");
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${i18n.getMsg(\"balance_sheet\", rvs.upf.lng.iid)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
       out.write(" <br>\n      ");
@@ -118,15 +118,15 @@ public final class blns_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("\n    <tr>\n      <td align=\"center\"><b>");
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${i18n.getMsg(\"total_assets\", rvs.upf.lng.iid)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
       out.write("</b></td>\n      <td align=\"right\"><b>");
-      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${numStr.frmt(rvs.blnSht.totAss.toString(),rvs.cpf.dcSpv,rvs.cpf.dcGrSpv,rvs.as.rpDp,rvs.upf.dgInGr)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${numStr.frmt(rvs.blnSht.totAss.toString(),rvs.cpf.dcSpv,rvs.cpf.dcGrSpv,rvs.astg.rpDp,rvs.upf.dgInGr)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
       out.write(' ');
-      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${rvs.as.curr.nme}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${rvs.astg.curr.nme}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
       out.write("</b></td>\n      <td align=\"center\"><b>");
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${i18n.getMsg(\"total_l_oe\", rvs.upf.lng.iid)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
       out.write("</b></td>\n      <td align=\"right\"><b>");
-      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${numStr.frmt(rvs.blnSht.totLia.add(rvs.blnSht.totOwe).toString(),rvs.cpf.dcSpv,rvs.cpf.dcGrSpv,rvs.as.rpDp,rvs.upf.dgInGr)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${numStr.frmt(rvs.blnSht.totLia.add(rvs.blnSht.totOwe).toString(),rvs.cpf.dcSpv,rvs.cpf.dcGrSpv,rvs.astg.rpDp,rvs.upf.dgInGr)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
       out.write(' ');
-      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${rvs.as.curr.nme}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${rvs.astg.curr.nme}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
       out.write("</b></td>\n    </tr>\n  </table>\n</body>\n</html>\n");
     } catch (java.lang.Throwable t) {
       if (!(t instanceof javax.servlet.jsp.SkipPageException)){
@@ -326,7 +326,7 @@ public final class blns_jsp extends org.apache.jasper.runtime.HttpJspBase
     if (_jspx_eval_c_005fif_005f1 != javax.servlet.jsp.tagext.Tag.SKIP_BODY) {
       do {
         out.write("\n              ");
-        out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${numStr.frmt(rvs.blnSht.lns.get(currIdx - 1).debit.toString(),rvs.cpf.dcSpv,rvs.cpf.dcGrSpv,rvs.as.rpDp,rvs.upf.dgInGr)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
+        out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${numStr.frmt(rvs.blnSht.lns.get(currIdx - 1).debit.toString(),rvs.cpf.dcSpv,rvs.cpf.dcGrSpv,rvs.astg.rpDp,rvs.upf.dgInGr)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
         out.write("\n            ");
         int evalDoAfterBody = _jspx_th_c_005fif_005f1.doAfterBody();
         if (evalDoAfterBody != javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN)
@@ -355,7 +355,7 @@ public final class blns_jsp extends org.apache.jasper.runtime.HttpJspBase
     if (_jspx_eval_c_005fif_005f2 != javax.servlet.jsp.tagext.Tag.SKIP_BODY) {
       do {
         out.write("\n              (");
-        out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${numStr.frmt(rvs.blnSht.lns.get(currIdx - 1).credit.toString(),rvs.cpf.dcSpv,rvs.cpf.dcGrSpv,rvs.as.rpDp,rvs.upf.dgInGr)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
+        out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${numStr.frmt(rvs.blnSht.lns.get(currIdx - 1).credit.toString(),rvs.cpf.dcSpv,rvs.cpf.dcGrSpv,rvs.astg.rpDp,rvs.upf.dgInGr)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
         out.write(")\n            ");
         int evalDoAfterBody = _jspx_th_c_005fif_005f2.doAfterBody();
         if (evalDoAfterBody != javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN)
@@ -446,7 +446,7 @@ public final class blns_jsp extends org.apache.jasper.runtime.HttpJspBase
     if (_jspx_eval_c_005fif_005f5 != javax.servlet.jsp.tagext.Tag.SKIP_BODY) {
       do {
         out.write("\n              ");
-        out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${numStr.frmt(rvs.blnSht.lns.get(rvs.blnSht.toLnAs + currIdx - 1).credit.toString(),rvs.cpf.dcSpv,rvs.cpf.dcGrSpv,rvs.as.rpDp,rvs.upf.dgInGr)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
+        out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${numStr.frmt(rvs.blnSht.lns.get(rvs.blnSht.toLnAs + currIdx - 1).credit.toString(),rvs.cpf.dcSpv,rvs.cpf.dcGrSpv,rvs.astg.rpDp,rvs.upf.dgInGr)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
         out.write("\n            ");
         int evalDoAfterBody = _jspx_th_c_005fif_005f5.doAfterBody();
         if (evalDoAfterBody != javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN)
@@ -475,7 +475,7 @@ public final class blns_jsp extends org.apache.jasper.runtime.HttpJspBase
     if (_jspx_eval_c_005fif_005f6 != javax.servlet.jsp.tagext.Tag.SKIP_BODY) {
       do {
         out.write("\n              (");
-        out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${numStr.frmt(rvs.blnSht.lns.get(rvs.blnSht.toLnAs + currIdx - 1).debit.toString(),rvs.cpf.dcSpv,rvs.cpf.dcGrSpv,rvs.as.rpDp,rvs.upf.dgInGr)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
+        out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${numStr.frmt(rvs.blnSht.lns.get(rvs.blnSht.toLnAs + currIdx - 1).debit.toString(),rvs.cpf.dcSpv,rvs.cpf.dcGrSpv,rvs.astg.rpDp,rvs.upf.dgInGr)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
         out.write(")\n            ");
         int evalDoAfterBody = _jspx_th_c_005fif_005f6.doAfterBody();
         if (evalDoAfterBody != javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN)
@@ -506,7 +506,7 @@ public final class blns_jsp extends org.apache.jasper.runtime.HttpJspBase
         out.write("\n          <td align=\"center\"><b>");
         out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${i18n.getMsg(\"total_l\", rvs.upf.lng.iid)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
         out.write("</b></td>\n          <td align=\"right\"><b>");
-        out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${numStr.frmt(rvs.blnSht.totLia.toString(),rvs.cpf.dcSpv,rvs.cpf.dcGrSpv,rvs.as.rpDp,rvs.upf.dgInGr)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
+        out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${numStr.frmt(rvs.blnSht.totLia.toString(),rvs.cpf.dcSpv,rvs.cpf.dcGrSpv,rvs.astg.rpDp,rvs.upf.dgInGr)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
         out.write("</b></td>\n        ");
         int evalDoAfterBody = _jspx_th_c_005fif_005f7.doAfterBody();
         if (evalDoAfterBody != javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN)
@@ -599,7 +599,7 @@ public final class blns_jsp extends org.apache.jasper.runtime.HttpJspBase
     if (_jspx_eval_c_005fif_005f10 != javax.servlet.jsp.tagext.Tag.SKIP_BODY) {
       do {
         out.write("\n              ");
-        out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${numStr.frmt(rvs.blnSht.lns.get(rvs.blnSht.toLnAs + currIdx - 3).credit.toString(),rvs.cpf.dcSpv,rvs.cpf.dcGrSpv,rvs.as.rpDp,rvs.upf.dgInGr)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
+        out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${numStr.frmt(rvs.blnSht.lns.get(rvs.blnSht.toLnAs + currIdx - 3).credit.toString(),rvs.cpf.dcSpv,rvs.cpf.dcGrSpv,rvs.astg.rpDp,rvs.upf.dgInGr)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
         out.write("\n            ");
         int evalDoAfterBody = _jspx_th_c_005fif_005f10.doAfterBody();
         if (evalDoAfterBody != javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN)
@@ -628,7 +628,7 @@ public final class blns_jsp extends org.apache.jasper.runtime.HttpJspBase
     if (_jspx_eval_c_005fif_005f11 != javax.servlet.jsp.tagext.Tag.SKIP_BODY) {
       do {
         out.write("\n              (");
-        out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${numStr.frmt(rvs.blnSht.lns.get(rvs.blnSht.toLnAs + currIdx - 3).debit.toString(),rvs.cpf.dcSpv,rvs.cpf.dcGrSpv,rvs.as.rpDp,rvs.upf.dgInGr)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
+        out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${numStr.frmt(rvs.blnSht.lns.get(rvs.blnSht.toLnAs + currIdx - 3).debit.toString(),rvs.cpf.dcSpv,rvs.cpf.dcGrSpv,rvs.astg.rpDp,rvs.upf.dgInGr)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
         out.write(")\n            ");
         int evalDoAfterBody = _jspx_th_c_005fif_005f11.doAfterBody();
         if (evalDoAfterBody != javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN)
@@ -659,7 +659,7 @@ public final class blns_jsp extends org.apache.jasper.runtime.HttpJspBase
         out.write("\n          <td align=\"center\"><b>");
         out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${i18n.getMsg(\"total_oe\", rvs.upf.lng.iid)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
         out.write("</b></td>\n          <td align=\"right\"><b>");
-        out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${numStr.frmt(rvs.blnSht.totOwe.toString(),rvs.cpf.dcSpv,rvs.cpf.dcGrSpv,rvs.as.rpDp,rvs.upf.dgInGr)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
+        out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${numStr.frmt(rvs.blnSht.totOwe.toString(),rvs.cpf.dcSpv,rvs.cpf.dcGrSpv,rvs.astg.rpDp,rvs.upf.dgInGr)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
         out.write("</b></td>\n        ");
         int evalDoAfterBody = _jspx_th_c_005fif_005f12.doAfterBody();
         if (evalDoAfterBody != javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN)

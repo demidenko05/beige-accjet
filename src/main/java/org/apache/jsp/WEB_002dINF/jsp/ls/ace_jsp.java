@@ -86,7 +86,7 @@ public final class ace_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write('\n');
       if (_jspx_meth_c_005fset_005f0(_jspx_page_context))
         return;
-      out.write("\n<button onclick=\"window.open('srv?rnd=pre&act=entPr&ent=");
+      out.write("\n<button onclick=\"window.open('srv?rnd=prn&act=entPr&ent=");
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${cls.simpleName}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
       out.write('&');
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${idPar}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));

@@ -602,7 +602,7 @@ public final class edia_jsp extends org.apache.jasper.runtime.HttpJspBase
         out.write("</th><th>");
         out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${i18n.getMsg('sacNm', rvs.upf.lng.iid)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
         out.write("</th>\n            <th>");
-        out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${i18n.getMsg('amount', rvs.upf.lng.iid)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
+        out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${i18n.getMsg('Amount', rvs.upf.lng.iid)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
         out.write("</th><th>");
         out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${i18n.getMsg('dscr', rvs.upf.lng.iid)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
         out.write("</th>\n          ");
@@ -632,7 +632,7 @@ public final class edia_jsp extends org.apache.jasper.runtime.HttpJspBase
     int _jspx_eval_c_005fif_005f5 = _jspx_th_c_005fif_005f5.doStartTag();
     if (_jspx_eval_c_005fif_005f5 != javax.servlet.jsp.tagext.Tag.SKIP_BODY) {
       do {
-        out.write("\n            | ");
+        out.write("\n            <th>| ");
         out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${i18n.getMsg('iid', rvs.upf.lng.iid)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
         out.write("\n            | ");
         out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${i18n.getMsg('acDb', rvs.upf.lng.iid)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
@@ -647,12 +647,12 @@ public final class edia_jsp extends org.apache.jasper.runtime.HttpJspBase
         out.write(' ');
         out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${i18n.getMsg('sacNm', rvs.upf.lng.iid)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
         out.write("\n            | ");
-        out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${i18n.getMsg('amount', rvs.upf.lng.iid)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
+        out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${i18n.getMsg('Amount', rvs.upf.lng.iid)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
         out.write(' ');
         out.write('|');
         out.write(' ');
         out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${i18n.getMsg('dscr', rvs.upf.lng.iid)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
-        out.write("\n          ");
+        out.write("</th>\n          ");
         int evalDoAfterBody = _jspx_th_c_005fif_005f5.doAfterBody();
         if (evalDoAfterBody != javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN)
           break;
@@ -1014,13 +1014,14 @@ public final class edia_jsp extends org.apache.jasper.runtime.HttpJspBase
     int _jspx_eval_c_005fif_005f9 = _jspx_th_c_005fif_005f9.doStartTag();
     if (_jspx_eval_c_005fif_005f9 != javax.servlet.jsp.tagext.Tag.SKIP_BODY) {
       do {
-        out.write("\n              | ");
+        out.write("\n              <td>| ");
         out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${ent.acDb.nme}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
         out.write(' ');
         out.write('|');
         out.write(' ');
         out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${ent.sadNm}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
-        out.write("\n              | ");
+        out.write('|');
+        out.write(' ');
         out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${ent.acCr.nme}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
         out.write(' ');
         out.write('|');
@@ -1034,7 +1035,7 @@ public final class edia_jsp extends org.apache.jasper.runtime.HttpJspBase
           return true;
         out.write("\n              | ");
         out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${ent.dscr}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
-        out.write("\n            ");
+        out.write("</td>\n            ");
         int evalDoAfterBody = _jspx_th_c_005fif_005f9.doAfterBody();
         if (evalDoAfterBody != javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN)
           break;
@@ -1056,7 +1057,7 @@ public final class edia_jsp extends org.apache.jasper.runtime.HttpJspBase
     org.apache.taglibs.standard.tag.rt.core.IfTag _jspx_th_c_005fif_005f10 = (org.apache.taglibs.standard.tag.rt.core.IfTag) _005fjspx_005ftagPool_005fc_005fif_0026_005ftest.get(org.apache.taglibs.standard.tag.rt.core.IfTag.class);
     _jspx_th_c_005fif_005f10.setPageContext(_jspx_page_context);
     _jspx_th_c_005fif_005f10.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_c_005fif_005f9);
-    // /WEB-INF/jsp/tml/edia.jsp(87,15) name = test type = boolean reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /WEB-INF/jsp/tml/edia.jsp(86,15) name = test type = boolean reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_c_005fif_005f10.setTest(((java.lang.Boolean) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${ent.cred.compareTo(java.math.Bigdecimal.ZERO) == 0}", java.lang.Boolean.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false)).booleanValue());
     int _jspx_eval_c_005fif_005f10 = _jspx_th_c_005fif_005f10.doStartTag();
     if (_jspx_eval_c_005fif_005f10 != javax.servlet.jsp.tagext.Tag.SKIP_BODY) {
@@ -1083,7 +1084,7 @@ public final class edia_jsp extends org.apache.jasper.runtime.HttpJspBase
     org.apache.taglibs.standard.tag.rt.core.IfTag _jspx_th_c_005fif_005f11 = (org.apache.taglibs.standard.tag.rt.core.IfTag) _005fjspx_005ftagPool_005fc_005fif_0026_005ftest.get(org.apache.taglibs.standard.tag.rt.core.IfTag.class);
     _jspx_th_c_005fif_005f11.setPageContext(_jspx_page_context);
     _jspx_th_c_005fif_005f11.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_c_005fif_005f9);
-    // /WEB-INF/jsp/tml/edia.jsp(88,15) name = test type = boolean reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /WEB-INF/jsp/tml/edia.jsp(87,15) name = test type = boolean reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_c_005fif_005f11.setTest(((java.lang.Boolean) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${ent.cred.compareTo(java.math.Bigdecimal.ZERO) != 0}", java.lang.Boolean.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false)).booleanValue());
     int _jspx_eval_c_005fif_005f11 = _jspx_th_c_005fif_005f11.doStartTag();
     if (_jspx_eval_c_005fif_005f11 != javax.servlet.jsp.tagext.Tag.SKIP_BODY) {
@@ -1110,7 +1111,7 @@ public final class edia_jsp extends org.apache.jasper.runtime.HttpJspBase
     org.apache.taglibs.standard.tag.rt.core.IfTag _jspx_th_c_005fif_005f12 = (org.apache.taglibs.standard.tag.rt.core.IfTag) _005fjspx_005ftagPool_005fc_005fif_0026_005ftest.get(org.apache.taglibs.standard.tag.rt.core.IfTag.class);
     _jspx_th_c_005fif_005f12.setPageContext(_jspx_page_context);
     _jspx_th_c_005fif_005f12.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_c_005fforEach_005f1);
-    // /WEB-INF/jsp/tml/edia.jsp(92,14) name = test type = boolean reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /WEB-INF/jsp/tml/edia.jsp(91,14) name = test type = boolean reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_c_005fif_005f12.setTest(((java.lang.Boolean) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${empty ent.rvId}", java.lang.Boolean.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false)).booleanValue());
     int _jspx_eval_c_005fif_005f12 = _jspx_th_c_005fif_005f12.doStartTag();
     if (_jspx_eval_c_005fif_005f12 != javax.servlet.jsp.tagext.Tag.SKIP_BODY) {
@@ -1174,10 +1175,10 @@ public final class edia_jsp extends org.apache.jasper.runtime.HttpJspBase
     org.apache.taglibs.standard.tag.rt.core.SetTag _jspx_th_c_005fset_005f16 = (org.apache.taglibs.standard.tag.rt.core.SetTag) _005fjspx_005ftagPool_005fc_005fset_0026_005fvar_005fvalue_005fnobody.get(org.apache.taglibs.standard.tag.rt.core.SetTag.class);
     _jspx_th_c_005fset_005f16.setPageContext(_jspx_page_context);
     _jspx_th_c_005fset_005f16.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_c_005fif_005f12);
-    // /WEB-INF/jsp/tml/edia.jsp(93,16) name = var type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /WEB-INF/jsp/tml/edia.jsp(92,16) name = var type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_c_005fset_005f16.setVar("idPar");
-    // /WEB-INF/jsp/tml/edia.jsp(93,16) name = value type = javax.el.ValueExpression reqTime = true required = false fragment = false deferredValue = true expectedTypeName = java.lang.Object deferredMethod = false methodSignature = null
-    _jspx_th_c_005fset_005f16.setValue(new org.apache.jasper.el.JspValueExpression("/WEB-INF/jsp/tml/edia.jsp(93,16) '${hldUvd.idHtml(rvs,ent)}'",_jsp_getExpressionFactory().createValueExpression(_jspx_page_context.getELContext(),"${hldUvd.idHtml(rvs,ent)}",java.lang.Object.class)).getValue(_jspx_page_context.getELContext()));
+    // /WEB-INF/jsp/tml/edia.jsp(92,16) name = value type = javax.el.ValueExpression reqTime = true required = false fragment = false deferredValue = true expectedTypeName = java.lang.Object deferredMethod = false methodSignature = null
+    _jspx_th_c_005fset_005f16.setValue(new org.apache.jasper.el.JspValueExpression("/WEB-INF/jsp/tml/edia.jsp(92,16) '${hldUvd.idHtml(rvs,ent)}'",_jsp_getExpressionFactory().createValueExpression(_jspx_page_context.getELContext(),"${hldUvd.idHtml(rvs,ent)}",java.lang.Object.class)).getValue(_jspx_page_context.getELContext()));
     int _jspx_eval_c_005fset_005f16 = _jspx_th_c_005fset_005f16.doStartTag();
     if (_jspx_th_c_005fset_005f16.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
       _005fjspx_005ftagPool_005fc_005fset_0026_005fvar_005fvalue_005fnobody.reuse(_jspx_th_c_005fset_005f16);
@@ -1195,11 +1196,11 @@ public final class edia_jsp extends org.apache.jasper.runtime.HttpJspBase
     org.apache.taglibs.standard.tag.rt.core.SetTag _jspx_th_c_005fset_005f17 = (org.apache.taglibs.standard.tag.rt.core.SetTag) _005fjspx_005ftagPool_005fc_005fset_0026_005fvar_005fvalue_005fscope_005fnobody.get(org.apache.taglibs.standard.tag.rt.core.SetTag.class);
     _jspx_th_c_005fset_005f17.setPageContext(_jspx_page_context);
     _jspx_th_c_005fset_005f17.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_c_005fif_005f3);
-    // /WEB-INF/jsp/tml/edia.jsp(106,6) name = var type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /WEB-INF/jsp/tml/edia.jsp(105,6) name = var type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_c_005fset_005f17.setVar("ent");
-    // /WEB-INF/jsp/tml/edia.jsp(106,6) name = value type = javax.el.ValueExpression reqTime = true required = false fragment = false deferredValue = true expectedTypeName = java.lang.Object deferredMethod = false methodSignature = null
-    _jspx_th_c_005fset_005f17.setValue(new org.apache.jasper.el.JspValueExpression("/WEB-INF/jsp/tml/edia.jsp(106,6) '${rvs.uvs.ent}'",_jsp_getExpressionFactory().createValueExpression(_jspx_page_context.getELContext(),"${rvs.uvs.ent}",java.lang.Object.class)).getValue(_jspx_page_context.getELContext()));
-    // /WEB-INF/jsp/tml/edia.jsp(106,6) name = scope type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /WEB-INF/jsp/tml/edia.jsp(105,6) name = value type = javax.el.ValueExpression reqTime = true required = false fragment = false deferredValue = true expectedTypeName = java.lang.Object deferredMethod = false methodSignature = null
+    _jspx_th_c_005fset_005f17.setValue(new org.apache.jasper.el.JspValueExpression("/WEB-INF/jsp/tml/edia.jsp(105,6) '${rvs.uvs.ent}'",_jsp_getExpressionFactory().createValueExpression(_jspx_page_context.getELContext(),"${rvs.uvs.ent}",java.lang.Object.class)).getValue(_jspx_page_context.getELContext()));
+    // /WEB-INF/jsp/tml/edia.jsp(105,6) name = scope type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_c_005fset_005f17.setScope("request");
     int _jspx_eval_c_005fset_005f17 = _jspx_th_c_005fset_005f17.doStartTag();
     if (_jspx_th_c_005fset_005f17.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
@@ -1218,11 +1219,11 @@ public final class edia_jsp extends org.apache.jasper.runtime.HttpJspBase
     org.apache.taglibs.standard.tag.rt.core.SetTag _jspx_th_c_005fset_005f18 = (org.apache.taglibs.standard.tag.rt.core.SetTag) _005fjspx_005ftagPool_005fc_005fset_0026_005fvar_005fvalue_005fscope_005fnobody.get(org.apache.taglibs.standard.tag.rt.core.SetTag.class);
     _jspx_th_c_005fset_005f18.setPageContext(_jspx_page_context);
     _jspx_th_c_005fset_005f18.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_c_005fif_005f3);
-    // /WEB-INF/jsp/tml/edia.jsp(107,6) name = var type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /WEB-INF/jsp/tml/edia.jsp(106,6) name = var type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_c_005fset_005f18.setVar("cls");
-    // /WEB-INF/jsp/tml/edia.jsp(107,6) name = value type = javax.el.ValueExpression reqTime = true required = false fragment = false deferredValue = true expectedTypeName = java.lang.Object deferredMethod = false methodSignature = null
-    _jspx_th_c_005fset_005f18.setValue(new org.apache.jasper.el.JspValueExpression("/WEB-INF/jsp/tml/edia.jsp(107,6) '${rvs.uvs.cls}'",_jsp_getExpressionFactory().createValueExpression(_jspx_page_context.getELContext(),"${rvs.uvs.cls}",java.lang.Object.class)).getValue(_jspx_page_context.getELContext()));
-    // /WEB-INF/jsp/tml/edia.jsp(107,6) name = scope type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /WEB-INF/jsp/tml/edia.jsp(106,6) name = value type = javax.el.ValueExpression reqTime = true required = false fragment = false deferredValue = true expectedTypeName = java.lang.Object deferredMethod = false methodSignature = null
+    _jspx_th_c_005fset_005f18.setValue(new org.apache.jasper.el.JspValueExpression("/WEB-INF/jsp/tml/edia.jsp(106,6) '${rvs.uvs.cls}'",_jsp_getExpressionFactory().createValueExpression(_jspx_page_context.getELContext(),"${rvs.uvs.cls}",java.lang.Object.class)).getValue(_jspx_page_context.getELContext()));
+    // /WEB-INF/jsp/tml/edia.jsp(106,6) name = scope type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_c_005fset_005f18.setScope("request");
     int _jspx_eval_c_005fset_005f18 = _jspx_th_c_005fset_005f18.doStartTag();
     if (_jspx_th_c_005fset_005f18.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {

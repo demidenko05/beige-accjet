@@ -2,13 +2,13 @@ site: https://sites.google.com/site/beigesoftware
 
 beigesoft-accjet.zip is archive of standalone JEE web application that runs on embedded A-Jetty.
 
-Beigesoft™ Accounting for MS Windows/Mac/*Nix beige-accjet.bin.zip
+Beigesoft™ Enterprise Information System for MS Windows/Mac/*Nix beige-accjet.bin.zip
 you can find in central Maven repository https://search.maven.org/#search%7Cga%7C1%7Cg%3A%22org.beigesoft%22
 or https://repo1.maven.org/maven2/org/beigesoft/beige-accjet/
 
 ------------------------------------------------------------------------------------------------------------
 
-At first you should better read article <a href="https://sites.google.com/site/beigesoftware/bobs-pizza/acc-android">Beigesoft™ Accounting on Android:</a> https://sites.google.com/site/beigesoftware/bobs-pizza/acc-android
+At first you should better read article Beigesoft™ Accounting on Android: https://sites.google.com/site/beigesoftware/bobs-pizza/acc-android
 
 This application never waste your time because of:
   1. It provides sufficient functionality:  
@@ -34,7 +34,7 @@ Web-Store is included for pricing, study, and tests purposes and you are also ab
 You can make price lists (in different price categories) and export it in CSV file to your customers or POS.
 
 --------------------------------------------------------------------------------------------------------------
-Вам лучше прочесть для начала <a href="https://sites.google.com/site/beigesoftware/acc-iv">Пример использования Беижсофт Бухгалтерии:</a> https://sites.google.com/site/beigesoftware/acc-iv
+Вам лучше прочесть для начала Пример использования Беижсофт Бухгалтерии: https://sites.google.com/site/beigesoftware/acc-iv
 
 Преимущества Беижсофт Бухгалтерии:
 

@@ -256,8 +256,8 @@ public final class idsa_jsp extends org.apache.jasper.runtime.HttpJspBase
         out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${ent.ver}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
         out.write("\"/> \n  ");
         org.apache.jasper.runtime.JspRuntimeLibrary.include(request, response, "reo.jsp", out, false);
-        out.write("\n  <tr>\n    <td>\n      <label for=\"MaFrn.clsNm\">");
-        out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${i18n.getMsg(\"confirm_reason\", rvs.upf.lng.iid)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
+        out.write("\n  <tr>\n    <td>\n      <label for=\"cnfSacChNm\">");
+        out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${i18n.getMsg(\"confirm_reason_changing_name\", rvs.upf.lng.iid)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
         out.write("</label>\n    </td>\n  <tr>\n  </tr>\n    <td>\n      <div class=\"input-line\">\n        <select ");
         out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${auFoc}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
         out.write(" name=\"cnfSacChNm\" onchange=\"bsInpChn(this);\">\n          ");

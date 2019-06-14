@@ -80,7 +80,7 @@ public final class aco_jsp extends org.apache.jasper.runtime.HttpJspBase
 
       out.write("\n\n<div class=\"form-actions\">\n  <input style=\"display: none\" id=\"");
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${frPlNm}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
-      out.write("EdFrmFa\" type=\"submit\"/>\n  <button type=\"button\" onclick=\"bsSbFrmAjx('");
+      out.write("EdFrmFs\" type=\"submit\"/>\n  <button type=\"button\" onclick=\"bsSbFrmAjx('");
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${frPlNm}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
       out.write("EdFrm', true, 'rnd=esoj');\">");
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${i18n.getMsg(\"Save\", rvs.upf.lng.iid)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));

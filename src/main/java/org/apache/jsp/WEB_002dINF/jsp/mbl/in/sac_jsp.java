@@ -82,9 +82,9 @@ public final class sac_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${i18n.getMsg(fdNm, rvs.upf.lng.iid)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
       out.write("</label>\n  </td>\n<tr>\n</tr>\n  <td>\n    <div class=\"input-line\">\n      <input class=\"picked-appearence\" id=\"SacntsacApVsb\" disabled=\"disabled\" type=\"text\" value=\"");
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${ent.saNm}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
-      out.write("\">\n      <input id=\"SacntsacAp\" type=\"hidden\" name=\"Sacnt.saNm\" value=\"");
+      out.write("\">\n      <input id=\"SacntsacAp\" required type=\"hidden\" name=\"Sacnt.saNm\" value=\"");
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${ent.saNm}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
-      out.write("\">\n      <input id=\"SacntsacId\" type=\"hidden\" name=\"Sacnt.saId\" value=\"");
+      out.write("\">\n      <input id=\"SacntsacId\" required type=\"hidden\" name=\"Sacnt.saId\" value=\"");
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${ent.saId}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
       out.write("\">\n      <button type=\"button\" class=\"btn\" onclick=\"bsPick('");
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${hlTySac.get(ent.saTy).simpleName}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));

@@ -95,7 +95,7 @@ public final class saTy_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write('\n');
       if (_jspx_meth_c_005fif_005f1(_jspx_page_context))
         return;
-      out.write("\n<tr>\n  <td>\n    <label for=\"MaFrn.saTy\">");
+      out.write("\n<tr>\n  <td>\n    <label for=\"Acnt.saTy\">");
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${i18n.getMsg(\"saTy\", rvs.upf.lng.iid)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
       out.write("</label>\n  </td>\n<tr>\n</tr>\n  <td>\n    <div class=\"input-line\">\n      <select name=\"Acnt.saTy\" onchange=\"bsInpChn(this);\">\n        <option value=\"\" ");
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${emptsel}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));

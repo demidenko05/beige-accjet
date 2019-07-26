@@ -11,7 +11,7 @@ import javax.servlet.*;
 import javax.servlet.http.*;
 import javax.servlet.jsp.*;
 
-public final class dbc_jsp extends org.apache.jasper.runtime.HttpJspBase
+public final class acimp_jsp extends org.apache.jasper.runtime.HttpJspBase
     implements org.apache.jasper.runtime.JspSourceDependent {
 
   private static final javax.servlet.jsp.JspFactory _jspxFactory =
@@ -80,10 +80,12 @@ public final class dbc_jsp extends org.apache.jasper.runtime.HttpJspBase
       out = pageContext.getOut();
       _jspx_out = out;
 
-      out.write("\n\n\n<!DOCTYPE html>\n<html>\n<head>\n  <meta charset=\"UTF-8\">\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1, shrink-to-fit=no\">\n  <title>Clear current database then get identical copy of another one</title>\n  <link rel=\"stylesheet\" href=\"../css/bsCmn.css\">\n  <link rel=\"icon\" type=\"image/png\" href=\"../img/favicon.png\">\n</head>\n<body style=\"padding: 20px;\">\n  <a class=\"btn\" href=\"../\">");
+      out.write("\n\n\n<!DOCTYPE html>\n<html>\n<head>\n  <meta charset=\"UTF-8\">\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1, shrink-to-fit=no\">\n  <title>");
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${i18n.getMsg(\"import_acc\", rvs.upf.lng.iid)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
+      out.write("</title>\n  <link rel=\"stylesheet\" href=\"../css/bsCmn.css\">\n  <link rel=\"icon\" type=\"image/png\" href=\"../img/favicon.png\">\n</head>\n<body style=\"padding: 20px;\">\n  <a class=\"btn\" href=\"../\">");
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${i18n.getMsg(\"home\", rvs.upf.lng.iid)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
       out.write("</a>\n  <div class=\"form-std form-70-33\"  style=\"top: initial;\">\n    <div class=\"dialog-title\">\n      ");
-      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${i18n.getMsg(\"get_db_copy\", rvs.upf.lng.iid)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${i18n.getMsg(\"import_acc\", rvs.upf.lng.iid)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
       out.write("\n    </div>\n    <form method=\"post\" action=\"txt\">\n      <table class=\"tbl-fieldset\">\n        <tr>\n          <td>\n            <label>");
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${i18n.getMsg(\"usr\", rvs.upf.lng.iid)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
       out.write(":</label>\n          </td>\n          <td>\n            <div style=\"display: flex;\">\n              <input name=\"usr\" value=\"\">\n            </div>\n          </td>\n        </tr>\n        <tr>\n          <td>\n            <label>");
@@ -92,7 +94,11 @@ public final class dbc_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${i18n.getMsg(\"url_source\", rvs.upf.lng.iid)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
       out.write(":</label>\n          </td>\n          <td>\n            <div style=\"display: flex;\">\n              <b>https://</b> <input name=\"urlSrc\" value=\"localhost:8443/beige-web/adm/xml\">\n            </div>\n          </td>\n        </tr>\n        <tr>\n          <td>\n            <label>");
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${i18n.getMsg(\"max_records_per_transaction\", rvs.upf.lng.iid)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
-      out.write(":</label>\n          </td>\n          <td>\n            <div style=\"display: flex;\">\n              <input type=\"number\" name=\"maxRecs\" value=\"100\">\n              <input type=\"hidden\" name=\"prc\" value=\"DbImp\">\n            </div>\n          </td>\n        </tr>\n      </table>\n      <div>\n        ");
+      out.write(":</label>\n          </td>\n          <td>\n            <div style=\"display: flex;\">\n              <input type=\"number\" name=\"maxRecs\" value=\"100\">\n              <input type=\"hidden\" name=\"prc\" value=\"AccImp\">\n            </div>\n          </td>\n        </tr>\n        <tr>\n          <td>\n            <label for=\"rpAcMtApVsb\">");
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${i18n.getMsg(\"RplAcc\", rvs.upf.lng.iid)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
+      out.write(":</label>\n          </td>\n        <tr>\n        </tr>\n          <td>\n            <div class=\"input-line\">\n              <input class=\"picked-appearence\" id=\"rpAcMtApVsb\" disabled=\"disabled\" type=\"text\">\n              <input id=\"rpAcMtId\" required type=\"hidden\" name=\"rpAcMtId\">\n              <button type=\"button\" class=\"btn\" onclick=\"bsPick('RplAcc','','rpAcMt','&mbl=");
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${param.mbl}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
+      out.write("');\">...</button>\n              <button type=\"button\" class=\"btn\" onclick=\"bsClrSelEnt('rpAcMt');\">X</button>\n            </div>\n          </td>\n        </tr>\n      </table>\n      <div>\n        ");
       if (_jspx_meth_c_005fset_005f0(_jspx_page_context))
         return;
       out.write("\n        <input type=\"submit\" onclick=\"msCnfSbm(this, '");
@@ -125,10 +131,10 @@ public final class dbc_jsp extends org.apache.jasper.runtime.HttpJspBase
     org.apache.taglibs.standard.tag.rt.core.SetTag _jspx_th_c_005fset_005f0 = (org.apache.taglibs.standard.tag.rt.core.SetTag) _005fjspx_005ftagPool_005fc_005fset_0026_005fvar_005fvalue_005fnobody.get(org.apache.taglibs.standard.tag.rt.core.SetTag.class);
     _jspx_th_c_005fset_005f0.setPageContext(_jspx_page_context);
     _jspx_th_c_005fset_005f0.setParent(null);
-    // /WEB-INF/jsp/dbc.jsp(64,8) name = var type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /WEB-INF/jsp/acimp.jsp(79,8) name = var type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_c_005fset_005f0.setVar("cdagcMsg");
-    // /WEB-INF/jsp/dbc.jsp(64,8) name = value type = javax.el.ValueExpression reqTime = true required = false fragment = false deferredValue = true expectedTypeName = java.lang.Object deferredMethod = false methodSignature = null
-    _jspx_th_c_005fset_005f0.setValue(new org.apache.jasper.el.JspValueExpression("/WEB-INF/jsp/dbc.jsp(64,8) '${i18n.getMsg('clear_db_and_get_copy', rvs.upf.lng.iid)}'",_jsp_getExpressionFactory().createValueExpression(_jspx_page_context.getELContext(),"${i18n.getMsg('clear_db_and_get_copy', rvs.upf.lng.iid)}",java.lang.Object.class)).getValue(_jspx_page_context.getELContext()));
+    // /WEB-INF/jsp/acimp.jsp(79,8) name = value type = javax.el.ValueExpression reqTime = true required = false fragment = false deferredValue = true expectedTypeName = java.lang.Object deferredMethod = false methodSignature = null
+    _jspx_th_c_005fset_005f0.setValue(new org.apache.jasper.el.JspValueExpression("/WEB-INF/jsp/acimp.jsp(79,8) '${i18n.getMsg('import_acc', rvs.upf.lng.iid)}'",_jsp_getExpressionFactory().createValueExpression(_jspx_page_context.getELContext(),"${i18n.getMsg('import_acc', rvs.upf.lng.iid)}",java.lang.Object.class)).getValue(_jspx_page_context.getELContext()));
     int _jspx_eval_c_005fset_005f0 = _jspx_th_c_005fset_005f0.doStartTag();
     if (_jspx_th_c_005fset_005f0.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
       _005fjspx_005ftagPool_005fc_005fset_0026_005fvar_005fvalue_005fnobody.reuse(_jspx_th_c_005fset_005f0);

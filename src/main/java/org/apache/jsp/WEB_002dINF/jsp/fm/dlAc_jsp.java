@@ -82,7 +82,7 @@ public final class dlAc_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${frPlNm}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
       out.write("DlFrmFs\" type=\"submit\"/>\n  <button type=\"button\" onclick=\"bsSbFrmAjxCf('");
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${frPlNm}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
-      out.write("DlFrm',false);\">");
+      out.write("DlFrm',false,'rnd=lcfj');\">");
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${i18n.getMsg(\"Delete\", rvs.upf.lng.iid)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
       out.write("</button>\n  <button type=\"button\" onclick=\"bsClsDlgCf('");
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${frPlNm}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));

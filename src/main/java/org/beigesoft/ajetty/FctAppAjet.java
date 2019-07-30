@@ -55,6 +55,7 @@ import org.beigesoft.jdbc.FctSqlite;
 import org.beigesoft.acc.fct.FctAcc;
 import org.beigesoft.acc.fct.FcEnPrAc;
 import org.beigesoft.acc.fct.FcPrNtAc;
+import org.beigesoft.acc.fct.FcPrNtAd;
 import org.beigesoft.acc.fct.FcPrFlAc;
 import org.beigesoft.acc.fct.FcCnToStAi;
 import org.beigesoft.acc.fct.FcFlFdAi;
@@ -104,6 +105,9 @@ public class FctAppAjet implements IFctAsm<ResultSet> {
     FcPrNtAdAj<ResultSet> fctPrcNtrAj = new FcPrNtAdAj<ResultSet>();
     fctPrcNtrAj.setFctApp(this);
     fpasad.add(fctPrcNtrAj);
+    FcPrNtAd<ResultSet> fctPrcNtrAd = new FcPrNtAd<ResultSet>();
+    fctPrcNtrAd.setFctBlc(this.fctBlc);
+    fpasad.add(fctPrcNtrAd);
     this.fctBlc.getFctDt().setFctsPrcAd(fpasad);
     Set<IFctPrcFl> fcspf = new HashSet<IFctPrcFl>();
     FcPrFlAc<ResultSet> fcpf = new FcPrFlAc<ResultSet>();

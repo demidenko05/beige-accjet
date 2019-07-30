@@ -17,6 +17,7 @@
         <include>${file.separator}README.txt</include>
         <include>${file.separator}LICENSE</include>
         <include>${file.separator}pom.xml</include>
+        <include>${file.separator}asm-zip.xml</include>
         <include>${file.separator}assembly.xml</include>
         <include>${file.separator}maven-central-deploy.sh</include>
         <include>${file.separator}findbug-exclude.xml</include>

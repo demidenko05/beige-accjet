@@ -291,7 +291,7 @@ public final class explToPa_jsp extends org.apache.jasper.runtime.HttpJspBase
     // /WEB-INF/jsp/fl/explToPa.jsp(5,0) name = var type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_c_005fset_005f2.setVar("parVal");
     // /WEB-INF/jsp/fl/explToPa.jsp(5,0) name = value type = javax.el.ValueExpression reqTime = true required = false fragment = false deferredValue = true expectedTypeName = java.lang.Object deferredMethod = false methodSignature = null
-    _jspx_th_c_005fset_005f2.setValue(new org.apache.jasper.el.JspValueExpression("/WEB-INF/jsp/fl/explToPa.jsp(5,0) '${prfFlOr}${fdNm}Val'",_jsp_getExpressionFactory().createValueExpression(_jspx_page_context.getELContext(),"${prfFlOr}${fdNm}Val",java.lang.Object.class)).getValue(_jspx_page_context.getELContext()));
+    _jspx_th_c_005fset_005f2.setValue(new org.apache.jasper.el.JspValueExpression("/WEB-INF/jsp/fl/explToPa.jsp(5,0) '${prfFlOr}${fdNm}Vl'",_jsp_getExpressionFactory().createValueExpression(_jspx_page_context.getELContext(),"${prfFlOr}${fdNm}Vl",java.lang.Object.class)).getValue(_jspx_page_context.getELContext()));
     int _jspx_eval_c_005fset_005f2 = _jspx_th_c_005fset_005f2.doStartTag();
     if (_jspx_th_c_005fset_005f2.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
       _005fjspx_005ftagPool_005fc_005fset_0026_005fvar_005fvalue_005fnobody.reuse(_jspx_th_c_005fset_005f2);
@@ -375,7 +375,7 @@ public final class explToPa_jsp extends org.apache.jasper.runtime.HttpJspBase
     // /WEB-INF/jsp/fl/explToPa.jsp(9,0) name = var type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_c_005fset_005f6.setVar("valGteq30");
     // /WEB-INF/jsp/fl/explToPa.jsp(9,0) name = value type = javax.el.ValueExpression reqTime = true required = false fragment = false deferredValue = true expectedTypeName = java.lang.Object deferredMethod = false methodSignature = null
-    _jspx_th_c_005fset_005f6.setValue(new org.apache.jasper.el.JspValueExpression("/WEB-INF/jsp/fl/explToPa.jsp(9,0) 'TOPA/${invNm}.TOT gte 0.30'",_jsp_getExpressionFactory().createValueExpression(_jspx_page_context.getELContext(),"TOPA/${invNm}.TOT gte 0.30",java.lang.Object.class)).getValue(_jspx_page_context.getELContext()));
+    _jspx_th_c_005fset_005f6.setValue(new org.apache.jasper.el.JspValueExpression("/WEB-INF/jsp/fl/explToPa.jsp(9,0) '${invNm}.TOT gt 0 and TOPA/${invNm}.TOT gte 0.30'",_jsp_getExpressionFactory().createValueExpression(_jspx_page_context.getELContext(),"${invNm}.TOT gt 0 and TOPA/${invNm}.TOT gte 0.30",java.lang.Object.class)).getValue(_jspx_page_context.getELContext()));
     int _jspx_eval_c_005fset_005f6 = _jspx_th_c_005fset_005f6.doStartTag();
     if (_jspx_th_c_005fset_005f6.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
       _005fjspx_005ftagPool_005fc_005fset_0026_005fvar_005fvalue_005fnobody.reuse(_jspx_th_c_005fset_005f6);
@@ -522,7 +522,7 @@ public final class explToPa_jsp extends org.apache.jasper.runtime.HttpJspBase
     // /WEB-INF/jsp/fl/explToPa.jsp(16,0) name = var type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_c_005fset_005f11.setVar("valGteq50");
     // /WEB-INF/jsp/fl/explToPa.jsp(16,0) name = value type = javax.el.ValueExpression reqTime = true required = false fragment = false deferredValue = true expectedTypeName = java.lang.Object deferredMethod = false methodSignature = null
-    _jspx_th_c_005fset_005f11.setValue(new org.apache.jasper.el.JspValueExpression("/WEB-INF/jsp/fl/explToPa.jsp(16,0) 'TOPA/${invNm}.TOT gte 0.50'",_jsp_getExpressionFactory().createValueExpression(_jspx_page_context.getELContext(),"TOPA/${invNm}.TOT gte 0.50",java.lang.Object.class)).getValue(_jspx_page_context.getELContext()));
+    _jspx_th_c_005fset_005f11.setValue(new org.apache.jasper.el.JspValueExpression("/WEB-INF/jsp/fl/explToPa.jsp(16,0) '${invNm}.TOT gt 0 and TOPA/${invNm}.TOT gte 0.50'",_jsp_getExpressionFactory().createValueExpression(_jspx_page_context.getELContext(),"${invNm}.TOT gt 0 and TOPA/${invNm}.TOT gte 0.50",java.lang.Object.class)).getValue(_jspx_page_context.getELContext()));
     int _jspx_eval_c_005fset_005f11 = _jspx_th_c_005fset_005f11.doStartTag();
     if (_jspx_th_c_005fset_005f11.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
       _005fjspx_005ftagPool_005fc_005fset_0026_005fvar_005fvalue_005fnobody.reuse(_jspx_th_c_005fset_005f11);
@@ -669,7 +669,7 @@ public final class explToPa_jsp extends org.apache.jasper.runtime.HttpJspBase
     // /WEB-INF/jsp/fl/explToPa.jsp(23,0) name = var type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_c_005fset_005f16.setVar("valGteq100");
     // /WEB-INF/jsp/fl/explToPa.jsp(23,0) name = value type = javax.el.ValueExpression reqTime = true required = false fragment = false deferredValue = true expectedTypeName = java.lang.Object deferredMethod = false methodSignature = null
-    _jspx_th_c_005fset_005f16.setValue(new org.apache.jasper.el.JspValueExpression("/WEB-INF/jsp/fl/explToPa.jsp(23,0) 'TOPA/${invNm}.TOT gte 1'",_jsp_getExpressionFactory().createValueExpression(_jspx_page_context.getELContext(),"TOPA/${invNm}.TOT gte 1",java.lang.Object.class)).getValue(_jspx_page_context.getELContext()));
+    _jspx_th_c_005fset_005f16.setValue(new org.apache.jasper.el.JspValueExpression("/WEB-INF/jsp/fl/explToPa.jsp(23,0) '${invNm}.TOT gt 0 and TOPA/${invNm}.TOT gte 1'",_jsp_getExpressionFactory().createValueExpression(_jspx_page_context.getELContext(),"${invNm}.TOT gt 0 and TOPA/${invNm}.TOT gte 1",java.lang.Object.class)).getValue(_jspx_page_context.getELContext()));
     int _jspx_eval_c_005fset_005f16 = _jspx_th_c_005fset_005f16.doStartTag();
     if (_jspx_th_c_005fset_005f16.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
       _005fjspx_005ftagPool_005fc_005fset_0026_005fvar_005fvalue_005fnobody.reuse(_jspx_th_c_005fset_005f16);
@@ -816,7 +816,7 @@ public final class explToPa_jsp extends org.apache.jasper.runtime.HttpJspBase
     // /WEB-INF/jsp/fl/explToPa.jsp(30,0) name = var type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_c_005fset_005f21.setVar("valLt30");
     // /WEB-INF/jsp/fl/explToPa.jsp(30,0) name = value type = javax.el.ValueExpression reqTime = true required = false fragment = false deferredValue = true expectedTypeName = java.lang.Object deferredMethod = false methodSignature = null
-    _jspx_th_c_005fset_005f21.setValue(new org.apache.jasper.el.JspValueExpression("/WEB-INF/jsp/fl/explToPa.jsp(30,0) 'TOPA/${invNm}.TOT lt 0.30'",_jsp_getExpressionFactory().createValueExpression(_jspx_page_context.getELContext(),"TOPA/${invNm}.TOT lt 0.30",java.lang.Object.class)).getValue(_jspx_page_context.getELContext()));
+    _jspx_th_c_005fset_005f21.setValue(new org.apache.jasper.el.JspValueExpression("/WEB-INF/jsp/fl/explToPa.jsp(30,0) '${invNm}.TOT gt 0 and TOPA/${invNm}.TOT lt 0.30'",_jsp_getExpressionFactory().createValueExpression(_jspx_page_context.getELContext(),"${invNm}.TOT gt 0 and TOPA/${invNm}.TOT lt 0.30",java.lang.Object.class)).getValue(_jspx_page_context.getELContext()));
     int _jspx_eval_c_005fset_005f21 = _jspx_th_c_005fset_005f21.doStartTag();
     if (_jspx_th_c_005fset_005f21.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
       _005fjspx_005ftagPool_005fc_005fset_0026_005fvar_005fvalue_005fnobody.reuse(_jspx_th_c_005fset_005f21);
@@ -963,7 +963,7 @@ public final class explToPa_jsp extends org.apache.jasper.runtime.HttpJspBase
     // /WEB-INF/jsp/fl/explToPa.jsp(37,0) name = var type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_c_005fset_005f26.setVar("valLt50");
     // /WEB-INF/jsp/fl/explToPa.jsp(37,0) name = value type = javax.el.ValueExpression reqTime = true required = false fragment = false deferredValue = true expectedTypeName = java.lang.Object deferredMethod = false methodSignature = null
-    _jspx_th_c_005fset_005f26.setValue(new org.apache.jasper.el.JspValueExpression("/WEB-INF/jsp/fl/explToPa.jsp(37,0) 'TOPA/${invNm}.TOT lt 0.50'",_jsp_getExpressionFactory().createValueExpression(_jspx_page_context.getELContext(),"TOPA/${invNm}.TOT lt 0.50",java.lang.Object.class)).getValue(_jspx_page_context.getELContext()));
+    _jspx_th_c_005fset_005f26.setValue(new org.apache.jasper.el.JspValueExpression("/WEB-INF/jsp/fl/explToPa.jsp(37,0) '${invNm}.TOT gt 0 and TOPA/${invNm}.TOT lt 0.50'",_jsp_getExpressionFactory().createValueExpression(_jspx_page_context.getELContext(),"${invNm}.TOT gt 0 and TOPA/${invNm}.TOT lt 0.50",java.lang.Object.class)).getValue(_jspx_page_context.getELContext()));
     int _jspx_eval_c_005fset_005f26 = _jspx_th_c_005fset_005f26.doStartTag();
     if (_jspx_th_c_005fset_005f26.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
       _005fjspx_005ftagPool_005fc_005fset_0026_005fvar_005fvalue_005fnobody.reuse(_jspx_th_c_005fset_005f26);
@@ -1131,7 +1131,7 @@ public final class explToPa_jsp extends org.apache.jasper.runtime.HttpJspBase
     // /WEB-INF/jsp/fl/explToPa.jsp(45,0) name = var type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_c_005fset_005f32.setVar("valLt100");
     // /WEB-INF/jsp/fl/explToPa.jsp(45,0) name = value type = javax.el.ValueExpression reqTime = true required = false fragment = false deferredValue = true expectedTypeName = java.lang.Object deferredMethod = false methodSignature = null
-    _jspx_th_c_005fset_005f32.setValue(new org.apache.jasper.el.JspValueExpression("/WEB-INF/jsp/fl/explToPa.jsp(45,0) 'TOPA/${invNm}.TOT lt 1'",_jsp_getExpressionFactory().createValueExpression(_jspx_page_context.getELContext(),"TOPA/${invNm}.TOT lt 1",java.lang.Object.class)).getValue(_jspx_page_context.getELContext()));
+    _jspx_th_c_005fset_005f32.setValue(new org.apache.jasper.el.JspValueExpression("/WEB-INF/jsp/fl/explToPa.jsp(45,0) '${invNm}.TOT 0 and TOPA/${invNm}.TOT lt 1'",_jsp_getExpressionFactory().createValueExpression(_jspx_page_context.getELContext(),"${invNm}.TOT 0 and TOPA/${invNm}.TOT lt 1",java.lang.Object.class)).getValue(_jspx_page_context.getELContext()));
     int _jspx_eval_c_005fset_005f32 = _jspx_th_c_005fset_005f32.doStartTag();
     if (_jspx_th_c_005fset_005f32.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
       _005fjspx_005ftagPool_005fc_005fset_0026_005fvar_005fvalue_005fnobody.reuse(_jspx_th_c_005fset_005f32);

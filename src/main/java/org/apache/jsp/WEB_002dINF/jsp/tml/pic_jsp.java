@@ -99,7 +99,7 @@ public final class pic_jsp extends org.apache.jasper.runtime.HttpJspBase
       if (_jspx_meth_c_005fif_005f0(_jspx_page_context))
         return;
       out.write("\n<table>\n  <tr>\n    ");
-      org.apache.jasper.runtime.JspRuntimeLibrary.include(request, response, (java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("../${param.mbl}pi/roHe.jsp", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false), out, false);
+      org.apache.jasper.runtime.JspRuntimeLibrary.include(request, response, "../pi/roHe.jsp", out, false);
       out.write("\n    <th class=\"column-actions\">");
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${i18n.getMsg('Actions', rvs.upf.lng.iid)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
       out.write("</th>\n  </tr>\n  ");
@@ -208,7 +208,7 @@ public final class pic_jsp extends org.apache.jasper.runtime.HttpJspBase
           if (_jspx_meth_c_005fset_005f1(_jspx_th_c_005fforEach_005f0, _jspx_page_context, _jspx_push_body_count_c_005fforEach_005f0))
             return true;
           out.write("\n    <tr>\n      ");
-          org.apache.jasper.runtime.JspRuntimeLibrary.include(request, response, (java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("../${param.mbl}pi/roDe.jsp", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false), out, false);
+          org.apache.jasper.runtime.JspRuntimeLibrary.include(request, response, "../pi/roDe.jsp", out, false);
           out.write("\n      <td class=\"column-actions\">\n        ");
           if (_jspx_meth_c_005fif_005f1(_jspx_th_c_005fforEach_005f0, _jspx_page_context, _jspx_push_body_count_c_005fforEach_005f0))
             return true;

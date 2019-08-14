@@ -61,6 +61,8 @@ import org.beigesoft.acc.fct.FcCnToStAi;
 import org.beigesoft.acc.fct.FcFlFdAi;
 import org.beigesoft.acc.hld.HlAcEnPr;
 import org.beigesoft.ws.fct.FctWs;
+import org.beigesoft.ws.fct.FcEnPrTr;
+import org.beigesoft.ws.hld.HlTrEnPr;
 
 /**
  * <p>Final configuration factory for Sqlite JDBC.</p>
@@ -91,6 +93,9 @@ public class FctAppAjet implements IFctAsm<ResultSet> {
     FcEnPrAc<ResultSet> fcep = new FcEnPrAc<ResultSet>();
     fcep.setFctBlc(this.fctBlc);
     fcsenpr.add(fcep);
+    FcEnPrTr<ResultSet> fcepws = new FcEnPrTr<ResultSet>();
+    fcepws.setFctBlc(this.fctBlc);
+    fcsenpr.add(fcepws);
     this.fctBlc.getFctDt().setFctsPrcEnt(fcsenpr);
     Set<IHlNmClSt> hldsBsEnPr = new LinkedHashSet<IHlNmClSt>();
     hldsBsEnPr.add(new HlAcEnPr());
@@ -126,6 +131,9 @@ public class FctAppAjet implements IFctAsm<ResultSet> {
     ffdst.setFctBlc(this.fctBlc);
     fcsFlFdSt.add(ffdst);
     this.fctBlc.getFctDt().setFcsFlFdSt(fcsFlFdSt);
+    Set<IHlNmClSt> hldsAdEnPr = new LinkedHashSet<IHlNmClSt>();
+    hldsAdEnPr.add(new HlTrEnPr());
+    this.fctBlc.getFctDt().setHldsAdEnPr(hldsAdEnPr);
   }
 
   /**

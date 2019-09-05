@@ -114,6 +114,8 @@ public final class ind_jsp extends org.apache.jasper.runtime.HttpJspBase
         return;
       out.write("\n        <a href=\"adm/ntr?prc=MngSft\">");
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${i18n.getMsg(\"SoftwareManagement\", rvs.upf.lng.iid)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
+      out.write("</a>\n        <a href=\"?prc=WsPg\" target=\"_blank\">");
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${i18n.getMsg(\"WebStore\", rvs.upf.lng.iid)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
       out.write("</a>\n      </div>\n    </div>\n    <div class=\"nav-right\">\n      <a href=\"https://sites.google.com/site/beigesoftware\" target=\"_blank\"></a>\n    </div>\n  </div>  \n</body>\n</html>\n");
     } catch (java.lang.Throwable t) {
       if (!(t instanceof javax.servlet.jsp.SkipPageException)){

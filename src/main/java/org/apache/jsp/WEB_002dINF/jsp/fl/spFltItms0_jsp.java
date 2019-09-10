@@ -87,7 +87,7 @@ public final class spFltItms0_jsp extends org.apache.jasper.runtime.HttpJspBase
       _jspx_out = out;
 
       out.write("\n\n<div class=\"row\">\n  <div class=\"col-12 col-md-3 mb-3\">\n    <label>");
-      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${fltSpf.catSpf.spec.nme}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${utlTrJsp.specToStr(fltSpf.catSpf.spec, rvs.i18ItmSps, rvs.upf.lng.iid)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
       out.write(":</label>\n  </div>\n  <div class=\"col-12 col-md-3 mb-3\">\n    <select name=\"fltSp");
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${fltSpf.catSpf.spec.iid}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
       out.write("Op\" class=\"form-control\">\n      ");
@@ -478,7 +478,7 @@ public final class spFltItms0_jsp extends org.apache.jasper.runtime.HttpJspBase
           out.write(' ');
           out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${itmSel}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
           out.write('>');
-          out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${itma.nme}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
+          out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${utlTrJsp.choSpToStr(itma, rvs.i18ChoSps, rvs.upf.lng.iid)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
           out.write("</option>\n      ");
           int evalDoAfterBody = _jspx_th_c_005fforEach_005f0.doAfterBody();
           if (evalDoAfterBody != javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN)

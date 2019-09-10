@@ -169,7 +169,7 @@ public final class wsEnd_jsp extends org.apache.jasper.runtime.HttpJspBase
         out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${i18n.getMsg(\"logout\", rvs.upf.lng.iid)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
         out.write("</h5>\n          <button type=\"button\" class=\"close\" data-dismiss=\"modal\" aria-label=\"Close\"><span aria-hidden=\"true\">&times;</span></button>\n        </div>\n        <div class=\"modal-body\">\n          <h5><a href=\"");
         out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${urlPrf}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
-        out.write("?prc=PrBuOr&rnd=wors&prcRed=");
+        out.write("?prc=PrBuOr&prcRed=");
         out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${prcRed}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
         out.write('"');
         out.write('>');
@@ -180,9 +180,7 @@ public final class wsEnd_jsp extends org.apache.jasper.runtime.HttpJspBase
         out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${i18n.getMsg(\"shipping_address\", rvs.upf.lng.iid)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
         out.write(" <span class=\"oi oi-pencil\" aria-hidden=\"true\"></span></a></h5>\n        </div>\n        <div class=\"modal-footer\">\n          <a type=\"button\" class=\"btn btn-outline-primary\" href=\"");
         out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${urlPrf}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
-        out.write("?rnd=");
-        out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${rndRed}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
-        out.write("&prc=PrLog&prcRed=");
+        out.write("?prc=PrLog&prcRed=");
         out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${prcRed}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
         out.write('"');
         out.write('>');
@@ -195,12 +193,8 @@ public final class wsEnd_jsp extends org.apache.jasper.runtime.HttpJspBase
         out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${i18n.getMsg(\"shipping_address\", rvs.upf.lng.iid)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
         out.write("</h5>\n          <button type=\"button\" class=\"close\" data-dismiss=\"modal\" aria-label=\"Close\"><span aria-hidden=\"true\">&times;</span></button>\n        </div>\n        <div class=\"modal-body\">\n          <form action=\"");
         out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${urlPrf}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
-        out.write("?\" method=\"POST\">\n            <input type=\"hidden\" name=\"rnd\" value=\"");
-        out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${param.rnd}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
-        out.write("\">\n            <input type=\"hidden\" name=\"prcRed\" value=\"");
+        out.write("?\" method=\"POST\">\n            <input type=\"hidden\" name=\"prcRed\" value=\"");
         out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${prcRed}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
-        out.write("\">\n            <input type=\"hidden\" name=\"rndRed\" value=\"");
-        out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${rndRed}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
         out.write("\">\n            <input type=\"hidden\" name=\"prc\" value=\"PrLog\">\n            ");
         if (_jspx_meth_c_005fforEach_005f0(_jspx_th_c_005fif_005f1, _jspx_page_context))
           return true;
@@ -258,10 +252,10 @@ public final class wsEnd_jsp extends org.apache.jasper.runtime.HttpJspBase
     org.apache.taglibs.standard.tag.rt.core.ForEachTag _jspx_th_c_005fforEach_005f0 = (org.apache.taglibs.standard.tag.rt.core.ForEachTag) _005fjspx_005ftagPool_005fc_005fforEach_0026_005fvar_005fitems.get(org.apache.taglibs.standard.tag.rt.core.ForEachTag.class);
     _jspx_th_c_005fforEach_005f0.setPageContext(_jspx_page_context);
     _jspx_th_c_005fforEach_005f0.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_c_005fif_005f1);
-    // /WEB-INF/jsp/wsEnd.jsp(76,12) name = var type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /WEB-INF/jsp/wsEnd.jsp(74,12) name = var type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_c_005fforEach_005f0.setVar("enr");
-    // /WEB-INF/jsp/wsEnd.jsp(76,12) name = items type = javax.el.ValueExpression reqTime = true required = false fragment = false deferredValue = true expectedTypeName = java.lang.Object deferredMethod = false methodSignature = null
-    _jspx_th_c_005fforEach_005f0.setItems(new org.apache.jasper.el.JspValueExpression("/WEB-INF/jsp/wsEnd.jsp(76,12) '${fltUrlFrm.entrySet()}'",_jsp_getExpressionFactory().createValueExpression(_jspx_page_context.getELContext(),"${fltUrlFrm.entrySet()}",java.lang.Object.class)).getValue(_jspx_page_context.getELContext()));
+    // /WEB-INF/jsp/wsEnd.jsp(74,12) name = items type = javax.el.ValueExpression reqTime = true required = false fragment = false deferredValue = true expectedTypeName = java.lang.Object deferredMethod = false methodSignature = null
+    _jspx_th_c_005fforEach_005f0.setItems(new org.apache.jasper.el.JspValueExpression("/WEB-INF/jsp/wsEnd.jsp(74,12) '${fltUrlFrm.entrySet()}'",_jsp_getExpressionFactory().createValueExpression(_jspx_page_context.getELContext(),"${fltUrlFrm.entrySet()}",java.lang.Object.class)).getValue(_jspx_page_context.getELContext()));
     int[] _jspx_push_body_count_c_005fforEach_005f0 = new int[] { 0 };
     try {
       int _jspx_eval_c_005fforEach_005f0 = _jspx_th_c_005fforEach_005f0.doStartTag();
@@ -301,7 +295,7 @@ public final class wsEnd_jsp extends org.apache.jasper.runtime.HttpJspBase
     org.apache.taglibs.standard.tag.rt.core.IfTag _jspx_th_c_005fif_005f2 = (org.apache.taglibs.standard.tag.rt.core.IfTag) _005fjspx_005ftagPool_005fc_005fif_0026_005ftest.get(org.apache.taglibs.standard.tag.rt.core.IfTag.class);
     _jspx_th_c_005fif_005f2.setPageContext(_jspx_page_context);
     _jspx_th_c_005fif_005f2.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_c_005fforEach_005f0);
-    // /WEB-INF/jsp/wsEnd.jsp(77,14) name = test type = boolean reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /WEB-INF/jsp/wsEnd.jsp(75,14) name = test type = boolean reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_c_005fif_005f2.setTest(((java.lang.Boolean) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${enr.key ne 'fltCtVal'}", java.lang.Boolean.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false)).booleanValue());
     int _jspx_eval_c_005fif_005f2 = _jspx_th_c_005fif_005f2.doStartTag();
     if (_jspx_eval_c_005fif_005f2 != javax.servlet.jsp.tagext.Tag.SKIP_BODY) {
@@ -334,7 +328,7 @@ public final class wsEnd_jsp extends org.apache.jasper.runtime.HttpJspBase
     org.apache.taglibs.standard.tag.rt.core.IfTag _jspx_th_c_005fif_005f3 = (org.apache.taglibs.standard.tag.rt.core.IfTag) _005fjspx_005ftagPool_005fc_005fif_0026_005ftest.get(org.apache.taglibs.standard.tag.rt.core.IfTag.class);
     _jspx_th_c_005fif_005f3.setPageContext(_jspx_page_context);
     _jspx_th_c_005fif_005f3.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_c_005fif_005f2);
-    // /WEB-INF/jsp/wsEnd.jsp(78,16) name = test type = boolean reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /WEB-INF/jsp/wsEnd.jsp(76,16) name = test type = boolean reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_c_005fif_005f3.setTest(((java.lang.Boolean) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${!(enr.key.startsWith('fltSp') && enr.value.indexOf(';') != -1)}", java.lang.Boolean.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false)).booleanValue());
     int _jspx_eval_c_005fif_005f3 = _jspx_th_c_005fif_005f3.doStartTag();
     if (_jspx_eval_c_005fif_005f3 != javax.servlet.jsp.tagext.Tag.SKIP_BODY) {
@@ -365,7 +359,7 @@ public final class wsEnd_jsp extends org.apache.jasper.runtime.HttpJspBase
     org.apache.taglibs.standard.tag.rt.core.IfTag _jspx_th_c_005fif_005f4 = (org.apache.taglibs.standard.tag.rt.core.IfTag) _005fjspx_005ftagPool_005fc_005fif_0026_005ftest.get(org.apache.taglibs.standard.tag.rt.core.IfTag.class);
     _jspx_th_c_005fif_005f4.setPageContext(_jspx_page_context);
     _jspx_th_c_005fif_005f4.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_c_005fif_005f2);
-    // /WEB-INF/jsp/wsEnd.jsp(81,16) name = test type = boolean reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /WEB-INF/jsp/wsEnd.jsp(79,16) name = test type = boolean reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_c_005fif_005f4.setTest(((java.lang.Boolean) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${enr.key.startsWith('fltSp') && enr.value.indexOf(';') != -1}", java.lang.Boolean.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false)).booleanValue());
     int _jspx_eval_c_005fif_005f4 = _jspx_th_c_005fif_005f4.doStartTag();
     if (_jspx_eval_c_005fif_005f4 != javax.servlet.jsp.tagext.Tag.SKIP_BODY) {
@@ -395,10 +389,10 @@ public final class wsEnd_jsp extends org.apache.jasper.runtime.HttpJspBase
     org.apache.taglibs.standard.tag.rt.core.ForEachTag _jspx_th_c_005fforEach_005f1 = (org.apache.taglibs.standard.tag.rt.core.ForEachTag) _005fjspx_005ftagPool_005fc_005fforEach_0026_005fvar_005fitems.get(org.apache.taglibs.standard.tag.rt.core.ForEachTag.class);
     _jspx_th_c_005fforEach_005f1.setPageContext(_jspx_page_context);
     _jspx_th_c_005fforEach_005f1.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_c_005fif_005f4);
-    // /WEB-INF/jsp/wsEnd.jsp(82,18) name = var type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /WEB-INF/jsp/wsEnd.jsp(80,18) name = var type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_c_005fforEach_005f1.setVar("cv");
-    // /WEB-INF/jsp/wsEnd.jsp(82,18) name = items type = javax.el.ValueExpression reqTime = true required = false fragment = false deferredValue = true expectedTypeName = java.lang.Object deferredMethod = false methodSignature = null
-    _jspx_th_c_005fforEach_005f1.setItems(new org.apache.jasper.el.JspValueExpression("/WEB-INF/jsp/wsEnd.jsp(82,18) '${enr.value.split(';')}'",_jsp_getExpressionFactory().createValueExpression(_jspx_page_context.getELContext(),"${enr.value.split(';')}",java.lang.Object.class)).getValue(_jspx_page_context.getELContext()));
+    // /WEB-INF/jsp/wsEnd.jsp(80,18) name = items type = javax.el.ValueExpression reqTime = true required = false fragment = false deferredValue = true expectedTypeName = java.lang.Object deferredMethod = false methodSignature = null
+    _jspx_th_c_005fforEach_005f1.setItems(new org.apache.jasper.el.JspValueExpression("/WEB-INF/jsp/wsEnd.jsp(80,18) '${enr.value.split(';')}'",_jsp_getExpressionFactory().createValueExpression(_jspx_page_context.getELContext(),"${enr.value.split(';')}",java.lang.Object.class)).getValue(_jspx_page_context.getELContext()));
     int[] _jspx_push_body_count_c_005fforEach_005f1 = new int[] { 0 };
     try {
       int _jspx_eval_c_005fforEach_005f1 = _jspx_th_c_005fforEach_005f1.doStartTag();
@@ -436,7 +430,7 @@ public final class wsEnd_jsp extends org.apache.jasper.runtime.HttpJspBase
     org.apache.taglibs.standard.tag.rt.core.IfTag _jspx_th_c_005fif_005f5 = (org.apache.taglibs.standard.tag.rt.core.IfTag) _005fjspx_005ftagPool_005fc_005fif_0026_005ftest.get(org.apache.taglibs.standard.tag.rt.core.IfTag.class);
     _jspx_th_c_005fif_005f5.setPageContext(_jspx_page_context);
     _jspx_th_c_005fif_005f5.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_c_005fforEach_005f0);
-    // /WEB-INF/jsp/wsEnd.jsp(87,14) name = test type = boolean reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /WEB-INF/jsp/wsEnd.jsp(85,14) name = test type = boolean reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_c_005fif_005f5.setTest(((java.lang.Boolean) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${enr.key eq 'fltCtVal'}", java.lang.Boolean.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false)).booleanValue());
     int _jspx_eval_c_005fif_005f5 = _jspx_th_c_005fif_005f5.doStartTag();
     if (_jspx_eval_c_005fif_005f5 != javax.servlet.jsp.tagext.Tag.SKIP_BODY) {
@@ -466,10 +460,10 @@ public final class wsEnd_jsp extends org.apache.jasper.runtime.HttpJspBase
     org.apache.taglibs.standard.tag.rt.core.ForEachTag _jspx_th_c_005fforEach_005f2 = (org.apache.taglibs.standard.tag.rt.core.ForEachTag) _005fjspx_005ftagPool_005fc_005fforEach_0026_005fvar_005fitems.get(org.apache.taglibs.standard.tag.rt.core.ForEachTag.class);
     _jspx_th_c_005fforEach_005f2.setPageContext(_jspx_page_context);
     _jspx_th_c_005fforEach_005f2.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_c_005fif_005f5);
-    // /WEB-INF/jsp/wsEnd.jsp(88,16) name = var type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /WEB-INF/jsp/wsEnd.jsp(86,16) name = var type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_c_005fforEach_005f2.setVar("cv");
-    // /WEB-INF/jsp/wsEnd.jsp(88,16) name = items type = javax.el.ValueExpression reqTime = true required = false fragment = false deferredValue = true expectedTypeName = java.lang.Object deferredMethod = false methodSignature = null
-    _jspx_th_c_005fforEach_005f2.setItems(new org.apache.jasper.el.JspValueExpression("/WEB-INF/jsp/wsEnd.jsp(88,16) '${enr.value.split(';')}'",_jsp_getExpressionFactory().createValueExpression(_jspx_page_context.getELContext(),"${enr.value.split(';')}",java.lang.Object.class)).getValue(_jspx_page_context.getELContext()));
+    // /WEB-INF/jsp/wsEnd.jsp(86,16) name = items type = javax.el.ValueExpression reqTime = true required = false fragment = false deferredValue = true expectedTypeName = java.lang.Object deferredMethod = false methodSignature = null
+    _jspx_th_c_005fforEach_005f2.setItems(new org.apache.jasper.el.JspValueExpression("/WEB-INF/jsp/wsEnd.jsp(86,16) '${enr.value.split(';')}'",_jsp_getExpressionFactory().createValueExpression(_jspx_page_context.getELContext(),"${enr.value.split(';')}",java.lang.Object.class)).getValue(_jspx_page_context.getELContext()));
     int[] _jspx_push_body_count_c_005fforEach_005f2 = new int[] { 0 };
     try {
       int _jspx_eval_c_005fforEach_005f2 = _jspx_th_c_005fforEach_005f2.doStartTag();

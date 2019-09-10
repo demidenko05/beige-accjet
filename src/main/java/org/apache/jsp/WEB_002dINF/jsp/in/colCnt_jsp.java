@@ -91,7 +91,7 @@ public final class colCnt_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${fdNm}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
       out.write('"');
       out.write('>');
-      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${srvI18n.getMsg(fdNm, rvs.upf.lng.iid)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${i18n.getMsg(fdNm, rvs.upf.lng.iid)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
       out.write("</label>\n  </td>\n  <td>\n    <div class=\"input-line\">\n      <select name=\"");
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${cls.simpleName}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
       out.write('.');

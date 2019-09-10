@@ -373,7 +373,7 @@ public final class wors_jsp extends org.apache.jasper.runtime.HttpJspBase
           out.write("\n      ");
           if (_jspx_meth_c_005fif_005f5(_jspx_th_c_005fforEach_005f0, _jspx_page_context, _jspx_push_body_count_c_005fforEach_005f0))
             return true;
-          out.write("</h6>\n      <a href=\"#\" onclick=\"window.open('?rnd=prn&prc=PrBuOr&orId=");
+          out.write("</h6>\n      <a href=\"#\" onclick=\"window.open('?prc=PrBuOr&orId=");
           out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${ord.iid}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
           out.write("');\" type=\"button\" class=\"btn btn-outline-primary\">");
           out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${i18n.getMsg(\"print\", rvs.upf.lng.iid)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
@@ -684,7 +684,7 @@ public final class wors_jsp extends org.apache.jasper.runtime.HttpJspBase
     int _jspx_eval_c_005fif_005f9 = _jspx_th_c_005fif_005f9.doStartTag();
     if (_jspx_eval_c_005fif_005f9 != javax.servlet.jsp.tagext.Tag.SKIP_BODY) {
       do {
-        out.write("\n            <li class=\"page-item active\"><a class=\"page-link\" href=\"?rnd=wors&prc=PrBuOr&pg=");
+        out.write("\n            <li class=\"page-item active\"><a class=\"page-link\" href=\"?prc=PrBuOr&pg=");
         out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${pg.val}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
         out.write("&prcRed=");
         out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${prcRed}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
@@ -718,7 +718,7 @@ public final class wors_jsp extends org.apache.jasper.runtime.HttpJspBase
     int _jspx_eval_c_005fif_005f10 = _jspx_th_c_005fif_005f10.doStartTag();
     if (_jspx_eval_c_005fif_005f10 != javax.servlet.jsp.tagext.Tag.SKIP_BODY) {
       do {
-        out.write("\n            <li class=\"page-item\"><a class=\"page-link\" href=\"?rnd=wors&prc=PrBuOr&pg=");
+        out.write("\n            <li class=\"page-item\"><a class=\"page-link\" href=\"?prc=PrBuOr&pg=");
         out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${pg.val}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
         out.write("&prcRed=");
         out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${prcRed}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
@@ -922,7 +922,7 @@ public final class wors_jsp extends org.apache.jasper.runtime.HttpJspBase
           if (_jspx_meth_fmt_005fformatDate_005f1(_jspx_th_c_005fforEach_005f2, _jspx_page_context, _jspx_push_body_count_c_005fforEach_005f2))
             return true;
           out.write(",\n      ");
-          out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${i18n.getMsg(\"dbcr\", rvs.upf.lng.iid)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
+          out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${i18n.getMsg(\"selr\", rvs.upf.lng.iid)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
           out.write(':');
           out.write(' ');
           out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${ord.selr.dbcr.nme}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
@@ -959,7 +959,7 @@ public final class wors_jsp extends org.apache.jasper.runtime.HttpJspBase
           out.write("\n      ");
           if (_jspx_meth_c_005fif_005f16(_jspx_th_c_005fforEach_005f2, _jspx_page_context, _jspx_push_body_count_c_005fforEach_005f2))
             return true;
-          out.write("</h6>\n      <a href=\"#\" onclick=\"window.open('?rnd=printEntity&prc=PrBuOr&sorId=");
+          out.write("</h6>\n      <a href=\"#\" onclick=\"window.open('?prc=PrBuOr&sorId=");
           out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${ord.iid}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
           out.write("');\" type=\"button\" class=\"btn btn-outline-primary\">");
           out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${i18n.getMsg(\"print\", rvs.upf.lng.iid)}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
@@ -1270,7 +1270,7 @@ public final class wors_jsp extends org.apache.jasper.runtime.HttpJspBase
     int _jspx_eval_c_005fif_005f20 = _jspx_th_c_005fif_005f20.doStartTag();
     if (_jspx_eval_c_005fif_005f20 != javax.servlet.jsp.tagext.Tag.SKIP_BODY) {
       do {
-        out.write("\n            <li class=\"page-item active\"><a class=\"page-link\" href=\"?rnd=wors&prc=PrBuOr&spg=");
+        out.write("\n            <li class=\"page-item active\"><a class=\"page-link\" href=\"?prc=PrBuOr&spg=");
         out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${pg.val}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
         out.write("&prcRed=");
         out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${prcRed}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
@@ -1337,7 +1337,7 @@ public final class wors_jsp extends org.apache.jasper.runtime.HttpJspBase
     int _jspx_eval_c_005fif_005f22 = _jspx_th_c_005fif_005f22.doStartTag();
     if (_jspx_eval_c_005fif_005f22 != javax.servlet.jsp.tagext.Tag.SKIP_BODY) {
       do {
-        out.write("\n              <li class=\"page-item\"><a class=\"page-link\" href=\"?rnd=wors&prc=PrBuOr&spg=");
+        out.write("\n              <li class=\"page-item\"><a class=\"page-link\" href=\"?prc=PrBuOr&spg=");
         out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${pg.val}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));
         out.write("&prcRed=");
         out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${prcRed}", java.lang.String.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false));

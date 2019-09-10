@@ -8,7 +8,7 @@
   <name>Beigesoft™ Enterprise Information System standalone WEB-application.</name>
 
   <description>Beigesoft™ Enterprise Information System is standalone JEE web application that runs on embedded A-Jetty.
-    Web-Store is included for study and tests purposes and you are also able to make full DB copy from cloud version,
+    Web-Store is included for study and tests purposes, and you are also able to make full DB copy from cloud version,
     and you can make price lists (in different price categories) and export it in CSV file to your customers or POS.</description>
   <url>https://sites.google.com/site/beigesoftware</url>
   <inceptionYear>2019</inceptionYear>

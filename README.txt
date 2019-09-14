@@ -12,13 +12,15 @@ At first you should better read article Beigesoft™ Accounting on Android: http
 
 This application never waste your time because of:
   1. It provides sufficient functionality:  
-* Double entry accounting system including ledger and balance reports.
+* Double entry accounting system
+* Ledger, trial balance, balance sheet and other reports.
 * COGS FIFO/LIFO automatically for sales, sales returns, inventory losses.
 * Automatically sales taxes accounting entries for sales, purchases and their returns.
 * Sales tax methods: item/invoice basis, destination-based, aggregate rate, price inclusive of tax.
 * Prepayments/payments tracking for sales/purchases (including invoices with foreign currency).
 * Payroll - automatically taxes calculation (by percentage tax table method) and accounting entries.
 * Manufacturing - automatically cost calculation from used materials and direct labor (and other) costs.
+* Inventory - two dimension (warehouse, place) registering, inside moving items, etc.
 * Multi-databases (organizations).
 * Embedded Web-Store
 * There is Beigesoft™ Accounting version for MS Windows/Mac/*Nix and SQLite database, so you can work with the same database anywhere.

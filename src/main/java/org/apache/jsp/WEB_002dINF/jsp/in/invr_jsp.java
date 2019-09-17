@@ -178,7 +178,7 @@ public final class invr_jsp extends org.apache.jasper.runtime.HttpJspBase
     // /WEB-INF/jsp/in/invr.jsp(3,0) name = var type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_c_005fset_005f0.setVar("txbl");
     // /WEB-INF/jsp/in/invr.jsp(3,0) name = value type = javax.el.ValueExpression reqTime = true required = false fragment = false deferredValue = true expectedTypeName = java.lang.Object deferredMethod = false methodSignature = null
-    _jspx_th_c_005fset_005f0.setValue(new org.apache.jasper.el.JspValueExpression("/WEB-INF/jsp/in/invr.jsp(3,0) '${ent.inv != null && ent.inv.toTx.compareTo(java.math.BigDecimal.ZERO) eq 1}'",_jsp_getExpressionFactory().createValueExpression(_jspx_page_context.getELContext(),"${ent.inv != null && ent.inv.toTx.compareTo(java.math.BigDecimal.ZERO) eq 1}",java.lang.Object.class)).getValue(_jspx_page_context.getELContext()));
+    _jspx_th_c_005fset_005f0.setValue(new org.apache.jasper.el.JspValueExpression("/WEB-INF/jsp/in/invr.jsp(3,0) '${ent.inv != null && ent.inv.toTx.unscaledValue() gt 0}'",_jsp_getExpressionFactory().createValueExpression(_jspx_page_context.getELContext(),"${ent.inv != null && ent.inv.toTx.unscaledValue() gt 0}",java.lang.Object.class)).getValue(_jspx_page_context.getELContext()));
     // /WEB-INF/jsp/in/invr.jsp(3,0) name = scope type = java.lang.String reqTime = false required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_c_005fset_005f0.setScope("request");
     int _jspx_eval_c_005fset_005f0 = _jspx_th_c_005fset_005f0.doStartTag();
@@ -851,7 +851,7 @@ public final class invr_jsp extends org.apache.jasper.runtime.HttpJspBase
     _jspx_th_c_005fif_005f8.setPageContext(_jspx_page_context);
     _jspx_th_c_005fif_005f8.setParent(null);
     // /WEB-INF/jsp/in/invr.jsp(39,6) name = test type = boolean reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
-    _jspx_th_c_005fif_005f8.setTest(((java.lang.Boolean) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${ent.tot.compareTo(java.math.BigDecimal.ZERO) eq 0}", java.lang.Boolean.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false)).booleanValue());
+    _jspx_th_c_005fif_005f8.setTest(((java.lang.Boolean) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${ent.tot.unscaledValue() eq 0}", java.lang.Boolean.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false)).booleanValue());
     int _jspx_eval_c_005fif_005f8 = _jspx_th_c_005fif_005f8.doStartTag();
     if (_jspx_eval_c_005fif_005f8 != javax.servlet.jsp.tagext.Tag.SKIP_BODY) {
       do {

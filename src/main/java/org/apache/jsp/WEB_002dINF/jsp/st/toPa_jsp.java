@@ -203,7 +203,7 @@ public final class toPa_jsp extends org.apache.jasper.runtime.HttpJspBase
     _jspx_th_c_005fif_005f2.setPageContext(_jspx_page_context);
     _jspx_th_c_005fif_005f2.setParent(null);
     // /WEB-INF/jsp/st/toPa.jsp(9,0) name = test type = boolean reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
-    _jspx_th_c_005fif_005f2.setTest(((java.lang.Boolean) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${ent.toPa.doubleValue() eq 0 && ent.toPa.doubleValue() eq 0}", java.lang.Boolean.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false)).booleanValue());
+    _jspx_th_c_005fif_005f2.setTest(((java.lang.Boolean) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${ent.toPa.unscaledValue() eq 0 && ent.toPa.unscaledValue() eq 0}", java.lang.Boolean.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false)).booleanValue());
     int _jspx_eval_c_005fif_005f2 = _jspx_th_c_005fif_005f2.doStartTag();
     if (_jspx_eval_c_005fif_005f2 != javax.servlet.jsp.tagext.Tag.SKIP_BODY) {
       do {
@@ -234,7 +234,7 @@ public final class toPa_jsp extends org.apache.jasper.runtime.HttpJspBase
     _jspx_th_c_005fif_005f3.setPageContext(_jspx_page_context);
     _jspx_th_c_005fif_005f3.setParent(null);
     // /WEB-INF/jsp/st/toPa.jsp(12,0) name = test type = boolean reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
-    _jspx_th_c_005fif_005f3.setTest(((java.lang.Boolean) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${empty ent.cuFr && (ent.toPa.doubleValue() eq ent.tot.doubleValue() && ent.tot.doubleValue() gt 0)\n  || (ent.toPa.doubleValue() eq -ent.tot.doubleValue() && ent.tot.doubleValue() lt 0)}", java.lang.Boolean.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false)).booleanValue());
+    _jspx_th_c_005fif_005f3.setTest(((java.lang.Boolean) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${empty ent.cuFr && (ent.tot.unscaledValue() gt 0 && ent.toPa.compareTo(ent.tot) eq 0)\n  || (ent.tot.unscaledValue() lt 0 && ent.toPa.compareTo(ent.tot.negate()) eq 0)}", java.lang.Boolean.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false)).booleanValue());
     int _jspx_eval_c_005fif_005f3 = _jspx_th_c_005fif_005f3.doStartTag();
     if (_jspx_eval_c_005fif_005f3 != javax.servlet.jsp.tagext.Tag.SKIP_BODY) {
       do {
@@ -265,7 +265,7 @@ public final class toPa_jsp extends org.apache.jasper.runtime.HttpJspBase
     _jspx_th_c_005fif_005f4.setPageContext(_jspx_page_context);
     _jspx_th_c_005fif_005f4.setParent(null);
     // /WEB-INF/jsp/st/toPa.jsp(16,0) name = test type = boolean reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
-    _jspx_th_c_005fif_005f4.setTest(((java.lang.Boolean) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${empty ent.cuFr && (ent.toPa.doubleValue() gt ent.tot.doubleValue() && ent.tot.doubleValue() gt 0)\n    || (ent.toPa.doubleValue() gt -ent.tot.doubleValue() && ent.tot.doubleValue() lt 0)}", java.lang.Boolean.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false)).booleanValue());
+    _jspx_th_c_005fif_005f4.setTest(((java.lang.Boolean) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${empty ent.cuFr && (ent.tot.unscaledValue() gt 0 && ent.toPa.compareTo(ent.tot) gt 0)\n    || (ent.tot.unscaledValue() lt 0 && ent.toPa.compareTo(ent.tot.negate()) gt 0)}", java.lang.Boolean.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false)).booleanValue());
     int _jspx_eval_c_005fif_005f4 = _jspx_th_c_005fif_005f4.doStartTag();
     if (_jspx_eval_c_005fif_005f4 != javax.servlet.jsp.tagext.Tag.SKIP_BODY) {
       do {
@@ -296,7 +296,7 @@ public final class toPa_jsp extends org.apache.jasper.runtime.HttpJspBase
     _jspx_th_c_005fif_005f5.setPageContext(_jspx_page_context);
     _jspx_th_c_005fif_005f5.setParent(null);
     // /WEB-INF/jsp/st/toPa.jsp(20,0) name = test type = boolean reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
-    _jspx_th_c_005fif_005f5.setTest(((java.lang.Boolean) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${empty ent.cuFr && (ent.toPa.doubleValue() gt 0 && ent.toPa.doubleValue() lt ent.tot.doubleValue() && ent.tot.doubleValue() gt 0)\n    || (ent.toPa.doubleValue() gt 0 && ent.toPa.doubleValue() lt -ent.tot.doubleValue() && ent.tot.doubleValue() lt 0)}", java.lang.Boolean.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false)).booleanValue());
+    _jspx_th_c_005fif_005f5.setTest(((java.lang.Boolean) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${empty ent.cuFr && (ent.tot.unscaledValue() gt 0 && ent.toPa.unscaledValue() gt 0 && ent.toPa.compareTo(ent.tot) lt 0)\n    || (ent.tot.unscaledValue() lt 0 && ent.toPa.unscaledValue() gt 0 && ent.toPa.compareTo(ent.tot.negate()) lt 0)}", java.lang.Boolean.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false)).booleanValue());
     int _jspx_eval_c_005fif_005f5 = _jspx_th_c_005fif_005f5.doStartTag();
     if (_jspx_eval_c_005fif_005f5 != javax.servlet.jsp.tagext.Tag.SKIP_BODY) {
       do {
@@ -327,7 +327,7 @@ public final class toPa_jsp extends org.apache.jasper.runtime.HttpJspBase
     _jspx_th_c_005fif_005f6.setPageContext(_jspx_page_context);
     _jspx_th_c_005fif_005f6.setParent(null);
     // /WEB-INF/jsp/st/toPa.jsp(24,0) name = test type = boolean reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
-    _jspx_th_c_005fif_005f6.setTest(((java.lang.Boolean) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${not empty ent.cuFr && (ent.paFc.doubleValue() eq ent.toFc.doubleValue() && ent.toFc.doubleValue() gt 0)\n  || (ent.paFc.doubleValue() eq -ent.toFc.doubleValue() && ent.toFc.doubleValue() lt 0)}", java.lang.Boolean.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false)).booleanValue());
+    _jspx_th_c_005fif_005f6.setTest(((java.lang.Boolean) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${not empty ent.cuFr && (ent.toFc.unscaledValue() gt 0 && ent.paFc.compareTo(ent.toFc) eq 0)\n  || (ent.toFc.unscaledValue() lt 0 && ent.paFc.compareTo(ent.toFc.negate()) eq 0)}", java.lang.Boolean.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false)).booleanValue());
     int _jspx_eval_c_005fif_005f6 = _jspx_th_c_005fif_005f6.doStartTag();
     if (_jspx_eval_c_005fif_005f6 != javax.servlet.jsp.tagext.Tag.SKIP_BODY) {
       do {
@@ -358,7 +358,7 @@ public final class toPa_jsp extends org.apache.jasper.runtime.HttpJspBase
     _jspx_th_c_005fif_005f7.setPageContext(_jspx_page_context);
     _jspx_th_c_005fif_005f7.setParent(null);
     // /WEB-INF/jsp/st/toPa.jsp(28,0) name = test type = boolean reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
-    _jspx_th_c_005fif_005f7.setTest(((java.lang.Boolean) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${not empty ent.cuFr && (ent.paFc.doubleValue() gt ent.toFc.doubleValue() && ent.toFc.doubleValue() gt 0)\n    || (ent.paFc.doubleValue() gt -ent.toFc.doubleValue() && ent.toFc.doubleValue() lt 0)}", java.lang.Boolean.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false)).booleanValue());
+    _jspx_th_c_005fif_005f7.setTest(((java.lang.Boolean) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${not empty ent.cuFr && (ent.toFc.unscaledValue() gt 0 && ent.paFc.compareTo(ent.toFc) gt 0)\n    || (ent.toFc.unscaledValue() lt 0 && ent.paFc.compareTo(ent.toFc.negate()) gt 0)}", java.lang.Boolean.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false)).booleanValue());
     int _jspx_eval_c_005fif_005f7 = _jspx_th_c_005fif_005f7.doStartTag();
     if (_jspx_eval_c_005fif_005f7 != javax.servlet.jsp.tagext.Tag.SKIP_BODY) {
       do {
@@ -389,7 +389,7 @@ public final class toPa_jsp extends org.apache.jasper.runtime.HttpJspBase
     _jspx_th_c_005fif_005f8.setPageContext(_jspx_page_context);
     _jspx_th_c_005fif_005f8.setParent(null);
     // /WEB-INF/jsp/st/toPa.jsp(32,0) name = test type = boolean reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
-    _jspx_th_c_005fif_005f8.setTest(((java.lang.Boolean) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${not empty ent.cuFr && (ent.paFc.doubleValue() gt 0 && ent.paFc.doubleValue() lt ent.toFc.doubleValue() && ent.toFc.doubleValue() gt 0)\n    || (ent.paFc.doubleValue() gt 0 && ent.paFc.doubleValue() lt -ent.toFc.doubleValue() && ent.toFc.doubleValue() lt 0)}", java.lang.Boolean.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false)).booleanValue());
+    _jspx_th_c_005fif_005f8.setTest(((java.lang.Boolean) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${not empty ent.cuFr && (ent.toFc.unscaledValue() gt 0 && ent.paFc.unscaledValue() gt 0 && ent.paFc.compareTo(ent.toFc) lt 0)\n    || (ent.toFc.unscaledValue() lt 0 && ent.paFc.unscaledValue() gt 0 && ent.paFc.compareTo(ent.toFc.negate()) lt 0)}", java.lang.Boolean.class, (javax.servlet.jsp.PageContext)_jspx_page_context, null, false)).booleanValue());
     int _jspx_eval_c_005fif_005f8 = _jspx_th_c_005fif_005f8.doStartTag();
     if (_jspx_eval_c_005fif_005f8 != javax.servlet.jsp.tagext.Tag.SKIP_BODY) {
       do {

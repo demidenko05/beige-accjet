@@ -80,13 +80,15 @@ public class UsrPwd<RS> implements IUsrPwd {
       }
       this.rdb.commit();
     } catch (Exception ex) {
-      this.rdb.rollBack();
+      if (!rdb.getAcmt()) {
+        rdb.rollBack();
+      }
       throw ex;
     } finally {
-      this.rdb.release();
       if (recordSet != null) {
         recordSet.close();
       }
+      this.rdb.release();
     }
     return result;
   }
@@ -123,13 +125,15 @@ public class UsrPwd<RS> implements IUsrPwd {
       this.rdb.commit();
       this.isThereAnyUser = true;
     } catch (Exception ex) {
-      this.rdb.rollBack();
+      if (!rdb.getAcmt()) {
+        rdb.rollBack();
+      }
       throw ex;
     } finally {
-      this.rdb.release();
       if (recordSet != null) {
         recordSet.close();
       }
+      this.rdb.release();
     }
   }
 
@@ -162,13 +166,15 @@ public class UsrPwd<RS> implements IUsrPwd {
       this.rdb.commit();
       return true;
     } catch (Exception ex) {
-      this.rdb.rollBack();
+      if (!rdb.getAcmt()) {
+        rdb.rollBack();
+      }
       throw ex;
     } finally {
-      this.rdb.release();
       if (recordSet != null) {
         recordSet.close();
       }
+      this.rdb.release();
     }
   }
 

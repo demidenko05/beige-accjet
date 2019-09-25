@@ -78,13 +78,15 @@ public class GetUsrCrd<RS> implements ISrvGetUserCredentials {
       }
       this.rdb.commit();
     } catch (Exception ex) {
-      this.rdb.rollBack();
+      if (!rdb.getAcmt()) {
+        rdb.rollBack();
+      }
       throw ex;
     } finally {
-      this.rdb.release();
       if (recSet != null) {
         recSet.close();
       }
+      this.rdb.release();
     }
     return result;
   }
@@ -130,13 +132,15 @@ public class GetUsrCrd<RS> implements ISrvGetUserCredentials {
       }
       this.rdb.commit();
     } catch (Exception ex) {
-      this.rdb.rollBack();
+      if (!rdb.getAcmt()) {
+        rdb.rollBack();
+      }
       throw ex;
     } finally {
-      this.rdb.release();
       if (recSet != null) {
         recSet.close();
       }
+      this.rdb.release();
     }
     if (result == null) {
       return null;

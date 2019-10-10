@@ -1,6 +1,6 @@
 site: https://sites.google.com/site/beigesoftware
 
-beigesoft-accjet.zip is archive of standalone JEE web application that runs on embedded A-Jetty.
+beige-accjet-bin.zip is archive of standalone JEE web application that runs on embedded A-Jetty.
 
 Beigesoft™ Enterprise Information System for MS Windows/Mac/*Nix beige-accjet.bin.zip
 you can find in central Maven repository https://search.maven.org/#search%7Cga%7C1%7Cg%3A%22org.beigesoft%22
@@ -8,7 +8,7 @@ or https://repo1.maven.org/maven2/org/beigesoft/beige-accjet/
 
 ------------------------------------------------------------------------------------------------------------
 
-At first you should better read article Beigesoft™ Accounting on Android: https://sites.google.com/site/beigesoftware/bobs-pizza/acc-android
+At first you should better read article Beigesoft™ EIS on Android: https://sites.google.com/site/beigesoftware/eis-bobs-pizza/eis-android
 
 This application never waste your time because of:
   1. It provides sufficient functionality:  
@@ -23,7 +23,7 @@ This application never waste your time because of:
 * Inventory - two dimension (warehouse, place) registering, inside moving items, etc.
 * Multi-databases (organizations).
 * Embedded Web-Store
-* There is Beigesoft™ Accounting version for MS Windows/Mac/*Nix and SQLite database, so you can work with the same database anywhere.
+* There is Beigesoft™ EIS version for MS Windows/Mac/*Nix and SQLite database, so you can work with the same database anywhere.
 
 You can check functionality without installation by reading the articles (see above).
   
@@ -36,9 +36,9 @@ Web-Store is included for pricing, study, and tests purposes and you are also ab
 You can make price lists (in different price categories) and export it in CSV file to your customers or POS.
 
 --------------------------------------------------------------------------------------------------------------
-Вам лучше прочесть для начала Пример использования Беижсофт Бухгалтерии: https://sites.google.com/site/beigesoftware/acc-iv
+Вам лучше прочесть для начала Пример использования Беижсофт Информационная Система Предприятия: https://sites.google.com/site/beigesoftware/eis-iv
 
-Преимущества Беижсофт Бухгалтерии:
+Преимущества Беижсофт ЕИС:
 
   Первое - это функциональность:
 *Оценить функциональность можно без установки, просто читая документацию данную выше.
@@ -56,7 +56,7 @@ You can make price lists (in different price categories) and export it in CSV fi
 
 --------------------------------------------------------------------------------------------------------------
 
-Since 1.1.5 version Beigesoft Accounting is always in secure enabled mode (protected from scams).
+Beigesoft EIS is always in secure enabled mode (protected from scams).
 It requires user authentication with strong password.
 It uses encryption for HTTPS and file exchange - modern algorithms asymmetric RSA 2048bit key size and symmetric AES 256bit size.
 In *nix OS you are able to create "accountant" user, then under your regular account (e.g. Bob)
@@ -71,7 +71,7 @@ To start application:
   Do it with beige-accjet-jar-with-dependencies.jar.
   You also can launch "JAR" file from command prompt (power shell, terminal) with command:
   "java -jar beige-accjet-jar-with-dependencies.jar"
-3. Application menu to start/stop server will be appeared. You should enter strong (see below) password to start Beigesoft Accounting.
+3. Application menu to start/stop server will be appeared. You should enter strong (see below) password to start Beigesoft EIS.
 4. Press "Start" button, then wait while server has been started (for the 1-st time it may takes up to 1 minute to create database).
   * If you got error, then see starter.log file in application folder. If it's saying:
     a) ...provider BC... then you should install Bouncy Castle crypto-provider in static way:

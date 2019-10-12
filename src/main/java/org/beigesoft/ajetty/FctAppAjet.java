@@ -89,6 +89,15 @@ public class FctAppAjet implements IFctAsm<ResultSet> {
     this.fctBlc.getFctsAux().add(new FctWs<ResultSet>());
     this.fctBlc.getFctsAux().add(new FctFlRep<ResultSet>());
     this.fctBlc.getFctsAux().add(new FctAjet<ResultSet>());
+    addAux();
+  }
+
+
+  /**
+   * <p>Add auxiliary factories.</p>
+   * @throws Exception - an exception
+   */
+  public final void addAux() throws Exception {
     Set<IFctPrcEnt> fcsenpr = new HashSet<IFctPrcEnt>();
     FcEnPrAc<ResultSet> fcep = new FcEnPrAc<ResultSet>();
     fcep.setFctBlc(this.fctBlc);
@@ -191,6 +200,7 @@ public class FctAppAjet implements IFctAsm<ResultSet> {
   @Override
   public final void init(final Map<String, Object> pRvs,
     final IAttrs pCtxAttrs) throws Exception {
+    addAux();
     //creating/upgrading DB on start:
     Orm<ResultSet> orm = this.fctBlc.lazOrm(pRvs);
     orm.init(pRvs);

@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>org.beigesoft</groupId>
-  <version>1.0-SNAPSHOT</version>
+  <version>1.0</version>
   <artifactId>beige-accjet</artifactId>
   <name>Beigesoft™ Enterprise Information System standalone WEB-application.</name>
 
@@ -310,7 +310,7 @@
     <url>https://github.com/demidenko05/beige-accjet.git</url>
     <connection>scm:git:git@github.com:demidenko05/beige-accjet.git</connection>
     <developerConnection>scm:git:git@github.com:demidenko05/beige-accjet.git</developerConnection>
-    <tag>HEAD</tag>
+    <tag>beige-accjet-1.0</tag>
   </scm>
 
 </project>

@@ -6,24 +6,27 @@ Beigesoft™ Enterprise Information System for MS Windows/Mac/*Nix beige-accjet.
 you can find in central Maven repository https://search.maven.org/#search%7Cga%7C1%7Cg%3A%22org.beigesoft%22
 or https://repo1.maven.org/maven2/org/beigesoft/beige-accjet/
 
+This is the first version of the successor to Beige Accounting All In One.
+The main goal was successfully achieved, it works noticeably faster on weak devices such as a smartphone than its predecessor.
+
 ------------------------------------------------------------------------------------------------------------
 
-At first you should better read article Beigesoft™ EIS on Android: https://sites.google.com/site/beigesoftware/eis-bobs-pizza/eis-android
+At first you should better read articles: https://sites.google.com/site/beigesoftware/eis-bobs-pizza
 
 This application never waste your time because of:
   1. It provides sufficient functionality:  
-* Double entry accounting system
-* Ledger, trial balance, balance sheet and other reports.
-* COGS FIFO/LIFO automatically for sales, sales returns, inventory losses.
-* Automatically sales taxes accounting entries for sales, purchases and their returns.
-* Sales tax methods: item/invoice basis, destination-based, aggregate rate, price inclusive of tax.
-* Prepayments/payments tracking for sales/purchases (including invoices with foreign currency).
-* Payroll - automatically taxes calculation (by percentage tax table method) and accounting entries.
-* Manufacturing - automatically cost calculation from used materials and direct labor (and other) costs.
-* Inventory - two dimension (warehouse, place) registering, inside moving items, etc.
+* Double entry accounting system.
+* General ledger, trial balance, balance sheet, stock items and other reports.
+* It makes COGS FIFO/LIFO automatically for sales, sales returns, inventory losses.
+* It makes sales tax (VAT) automatically for sales, purchases and their returns.
+* Sales tax (VAT) methods: item/invoice basis, destination-based, aggregate rate, tax included in the price.
+* Tracking payments for sales/purchases in national and foreign currencies.
+* Payroll - automatic calculation of the taxes using withholding tax tables.
+* Production - automatic calculation of the cost of a product from used materials, direct labor costs and other costs.
+* Inventory - two dimensional (warehouse, place) registration, moving items inside warehouse, etc.
 * Multi-databases (organizations).
-* Embedded Web-Store
-* There is Beigesoft™ EIS version for MS Windows/Mac/*Nix and SQLite database, so you can work with the same database anywhere.
+* Embedded Web-Store. Pricing - multicurrency, price depends on buyer's category, exporting price list to CSV.
+* There is Beigesoft™ EIS version for Android, so you can work with the same database anywhere.
 
 You can check functionality without installation by reading the articles (see above).
   
@@ -33,19 +36,24 @@ You can check functionality without installation by reading the articles (see ab
 * It will never be downgraded or disappeared. You always can find it (binary and source code) in Central Maven Repository.
 
 Web-Store is included for pricing, study, and tests purposes and you are also able to make full DB copy from cloud version.
-You can make price lists (in different price categories) and export it in CSV file to your customers or POS.
+You can create price lists in different price categories and export them to a CSV file to your customers or POS.
 
 --------------------------------------------------------------------------------------------------------------
-Вам лучше прочесть для начала Пример использования Беижсофт Информационная Система Предприятия: https://sites.google.com/site/beigesoftware/eis-iv
+Вам лучше прочесть для начала Пример ведения коммерческого бухгалтерского учета в Беижсофт™ Информационная Система Предприятия: https://sites.google.com/site/beigesoftware/eis-iv
 
-Преимущества Беижсофт ЕИС:
+Преимущества Беижсофт™ ЕИС:
 
   Первое - это функциональность:
-*Оценить функциональность можно без установки, просто читая документацию данную выше.
-*Это готовое решение для ведения коммерческого учета методом двойной записи по рыночным правилам.
-*НДС методы: по отгрузке/оплате.
-*Автоматическое вычисление себестоимости методами ФИФО/ЛИФО и по стоимости единицы.
-*Веб-магазин включен в локальные версии для изучения, тренировки и возможности копирования полной базы данных из Интернет-версии.
+* Это готовое решение для ведения коммерческого учета методом двойной записи по рыночным правилам.
+* Отчеты - баланс, отчет по счету детальный, остатки склада...
+* НДС методы: по отгрузке/оплате, расчет построчно/по документу, НДС включен в цену.
+* Отслеживание платежей за покупки/продажи в нациннальной и иностранной валютах.
+* Автоматическое вычисление себестоимости методами ФИФО/ЛИФО и по стоимости единицы.
+* Производство - автоматическое вычисление себестоимости продукции из стоимости использованных материалов и других прямых затрат (труд).
+* Склад - двумерная регистрация хранения "Склад-Место".
+* Нет ограничения на количество баз данных (организаций).
+* Есть версия Беижсофт™ ИСП для МС Виндоус, Мак, Юникс-подобных ОС. Вы можете работать с одинаковой СКЛайт базой данных везде.
+* Веб-магазин включен в локальные версии для изучения, тренировки и возможности копирования полной базы данных из Интернет-версии.
  Вы также можете с помощью Веб-магазина создавать прайс листы с различными ценами (магазин в центре, оптовые покупатели А...) и экспортировать их в CSV файлах оптовым покупателям и в POS-терминалы.
 ...
 
@@ -53,7 +61,7 @@ You can make price lists (in different price categories) and export it in CSV fi
 *Лицензии всех частей гарантируют отсутствие возможных проблем в будущем.
 *Открытый код - возможность доработки, исправление ошибок.
 *Дистрибутивы и исходный код находятся в центральном Мавен репозитории. Нет риска даунгрэйда, исчезновения.
-
+...
 --------------------------------------------------------------------------------------------------------------
 
 Beigesoft EIS is always in secure enabled mode (protected from scams).
@@ -116,13 +124,13 @@ Oracle JEE:
 CDDL + GPLv2 with classpath exception
 https://javaee.github.io/glassfish/LICENSE
 
+https://github.com/demidenko05/a-jetty-all - Jetty 9.2 by Mort Bay Consulting Pty. Ltd adapted for Android:
+The Eclipse Public License, Version 1.0
+http://www.eclipse.org/legal/epl-v10.html
+
 https://github.com/demidenko05/a-tomcat-all - part of Apache Tomcat/JSTL by Apache Software Foundation, adapted for Android to precompile and run JSP/JSTL:
 The Apache Software License, Version 2.0
 http://www.apache.org/licenses/LICENSE-2.0.txt
-
-https://github.com/demidenko05/a-jetty-all - part of Jetty 9.2 by Mort Bay Consulting Pty. Ltd adapted for Android:
-The Eclipse Public License, Version 1.0
-http://www.eclipse.org/legal/epl-v10.html
 
 https://github.com/demidenko05/a-javabeans8 - adapted OpenJDK8 javabeans for Android:
 GNU General Public License, version 2, with the Classpath Exception

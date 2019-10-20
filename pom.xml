@@ -215,12 +215,18 @@
     <dependency>
       <groupId>org.beigesoft</groupId>
       <artifactId>beige-acc</artifactId>
-      <version>1.0</version>
+      <version>1.1-SNAPSHOT</version>
     </dependency>
     <dependency>
       <groupId>org.beigesoft</groupId>
       <artifactId>beige-web-jar</artifactId>
       <version>1.0</version>
+      <exclusions>
+        <exclusion>
+          <groupId>org.beigesoft</groupId>
+          <artifactId>beige-blc</artifactId>
+        </exclusion>
+      </exclusions>
     </dependency>
     <dependency>
       <groupId>com.github.demidenko05</groupId>

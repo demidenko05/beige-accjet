@@ -136,6 +136,16 @@ https://github.com/demidenko05/a-javabeans8 - adapted OpenJDK8 javabeans for And
 GNU General Public License, version 2, with the Classpath Exception
 http://openjdk.java.net/legal/gplv2+ce.html
 
+SQLite JDBC (included SQLite database) by Taro L. Saito (http://xerial.org/software/)
+The Apache Software License, Version 2.0
+http://www.apache.org/licenses/LICENSE-2.0.txt
+SQLite database is Public Domain:
+https://www.sqlite.org/copyright.html
+
+HikariCP JDBC-pool by Brett Wooldridge:
+The Apache Software License, Version 2.0
+http://www.apache.org/licenses/LICENSE-2.0.txt
+
 JavaMail API (compat) 1.4 plus JavaBeans(TM) Activation Framework:
 Common Development and Distribution License (CDDL) v1.0
 https://glassfish.dev.java.net/public/CDDLv1.0.html

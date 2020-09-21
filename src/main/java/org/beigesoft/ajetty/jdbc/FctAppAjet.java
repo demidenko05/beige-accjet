@@ -26,7 +26,7 @@ OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
 OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-package org.beigesoft.ajetty;
+package org.beigesoft.ajetty.jdbc;
 
 import java.util.Set;
 import java.util.HashSet;
@@ -63,6 +63,12 @@ import org.beigesoft.acc.hld.HlAcEnPr;
 import org.beigesoft.ws.fct.FctWs;
 import org.beigesoft.ws.fct.FcEnPrTr;
 import org.beigesoft.ws.hld.HlTrEnPr;
+import org.beigesoft.ajetty.IHpCrypt;
+import org.beigesoft.ajetty.HpCrypt;
+import org.beigesoft.ajetty.FctAjet;
+import org.beigesoft.ajetty.FcPrNtAj;
+import org.beigesoft.ajetty.FcPrNtAdAj;
+import org.beigesoft.ajetty.GetUsrCrd;
 
 /**
  * <p>Final configuration factory for Sqlite JDBC.</p>

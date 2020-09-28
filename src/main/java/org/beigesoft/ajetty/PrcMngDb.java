@@ -36,7 +36,7 @@ import org.beigesoft.log.ILog;
 import org.beigesoft.prc.IPrc;
 
 /**
- * <p>Manager databases processor.</p>
+ * <p>Manager databases and logs in backup folder processor.</p>
  *
  * @author Yury Demidenko
  */
@@ -73,21 +73,27 @@ public class PrcMngDb implements IPrc {
   public final void process(final Map<String, Object> pRvs,
     final IReqDt pRqDt) throws Exception {
     String act = pRqDt.getParam("act");
-    String dbNm = pRqDt.getParam("dbNm");
-    if (dbNm != null && dbNm.length() > 2) {
+    String nm = pRqDt.getParam("nm"); //DB or log name!
+    if (nm != null && nm.length() > 2) {
       if ("change".equals(act)) {
-        this.mngDb.changeDb(pRvs, dbNm);
+        this.mngDb.changeDb(pRvs, nm);
         pRqDt.setAttr("srvlRd", "/?logoff=true");
       } else if ("delete".equals(act)) {
-        this.mngDb.deleteDb(pRvs, dbNm);
+        this.mngDb.deleteDb(pRvs, nm);
+      } else if ("delEnDb".equals(act)) {
+        this.mngDb.deleteEnDb(pRvs, nm);
+      } else if ("delEnLog".equals(act)) {
+        this.mngDb.deleteEnLog(pRvs, nm);
+      } else if ("delLog".equals(act)) {
+        this.mngDb.deleteLog(pRvs, nm);
       } else if ("backup".equals(act)) {
-        this.mngDb.backupDb(pRvs, dbNm);
+        this.mngDb.backupDb(pRvs, nm);
       } else if ("restore".equals(act)) {
-        this.mngDb.restoreDb(pRvs, dbNm);
+        this.mngDb.restoreDb(pRvs, nm);
       } else if ("create".equals(act)) {
         String dbIdStr = pRqDt.getParam("dbId");
         int dbId = Integer.parseInt(dbIdStr);
-        this.mngDb.createDb(pRvs, dbNm, dbId);
+        this.mngDb.createDb(pRvs, nm, dbId);
         pRqDt.setAttr("srvlRd", "/?logoff=true");
       }
     } else if ("encryptLogs".equals(act)) {
@@ -110,8 +116,12 @@ public class PrcMngDb implements IPrc {
     }
     List<String> databases = this.mngDb.retLst(pRvs);
     List<String> bkDatabases = this.mngDb.retBckLst(pRvs);
+    List<String> bkLogs = this.mngDb.retLogLst(pRvs);
+    List<String> bkEnLogs = this.mngDb.retEnLogLst(pRvs);
     pRqDt.setAttr("databases", databases);
     pRqDt.setAttr("bkDatabases", bkDatabases);
+    pRqDt.setAttr("bkLogs", bkLogs);
+    pRqDt.setAttr("bkEnLogs", bkEnLogs);
     pRqDt.setAttr("backupDir", this.mngDb.getBackupDir());
     pRqDt.setAttr("currDb", this.mngDb.retCurDbNm(pRvs));
     pRqDt.setAttr("rnd", "mndb");

@@ -84,12 +84,52 @@ public interface IMngDb {
   List<String> retBckLst(Map<String, Object> pRvs) throws Exception;
 
   /**
+   * <p>Lists logs in backup folder.</p>
+   * @param pRvs request scoped vars
+   * @return List<String> list of backup database files.
+   * @throws Exception - an exception
+   **/
+  List<String> retLogLst(Map<String, Object> pRvs) throws Exception;
+
+  /**
+   * <p>Lists encrypted logs in backup folder.</p>
+   * @param pRvs request scoped vars
+   * @return List<String> list of backup database files.
+   * @throws Exception - an exception
+   **/
+  List<String> retEnLogLst(Map<String, Object> pRvs) throws Exception;
+
+  /**
    * <p>Deletes database.</p>
    * @param pRvs request scoped vars
    * @param pDbNm database name without extension
    * @throws Exception - an exception
    **/
   void deleteDb(Map<String, Object> pRvs, String pDbNm) throws Exception;
+
+  /**
+   * <p>Delete all encrypted database files.</p>
+   * @param pRvs request scoped vars
+   * @param pNm database name without extension
+   * @throws Exception - an exception
+   **/
+  void deleteEnDb(Map<String, Object> pRvs, String pNm) throws Exception;
+
+  /**
+   * <p>Delete all encrypted log files.</p>
+   * @param pRvs request scoped vars
+   * @param pNm log name without extension
+   * @throws Exception - an exception
+   **/
+  void deleteEnLog(Map<String, Object> pRvs, String pNm) throws Exception;
+
+  /**
+   * <p>Delete log file.</p>
+   * @param pRvs request scoped vars
+   * @param pNm log name without extension
+   * @throws Exception - an exception
+   **/
+  void deleteLog(Map<String, Object> pRvs, String pNm) throws Exception;
 
   /**
    * <p>Backups database.</p>

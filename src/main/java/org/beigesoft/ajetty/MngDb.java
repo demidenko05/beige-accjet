@@ -133,6 +133,60 @@ public class MngDb<RS> implements IMngDb {
   }
 
   /**
+   * <p>Lists logs in backup folder.</p>
+   * @param pRvs request scoped vars
+   * @return List<String> list of backup database files.
+   * @throws Exception - an exception
+   **/
+  @Override
+  public final List<String> retLogLst(
+    final Map<String, Object> pRvs) throws Exception {
+    List<String> result = new ArrayList<String>();
+    File dbDr = new File(this.backupDir);
+    if (dbDr.exists() && dbDr.isDirectory()) {
+      String[] files = dbDr.list();
+      if (files != null) {
+        for (String flNm : files) {
+          if (flNm.endsWith(".log")) {
+            result.add(flNm.replace(".log", ""));
+          }
+        }
+      }
+    } else {
+      throw new ExcCode(ExcCode.WRCN,
+        "Backup directory not found: " + this.backupDir);
+    }
+    return result;
+  }
+
+  /**
+   * <p>Lists encrypted logs in backup folder.</p>
+   * @param pRvs request scoped vars
+   * @return List<String> list of backup database files.
+   * @throws Exception - an exception
+   **/
+  @Override
+  public final List<String> retEnLogLst(
+    final Map<String, Object> pRvs) throws Exception {
+    List<String> result = new ArrayList<String>();
+    File dbDr = new File(this.backupDir);
+    if (dbDr.exists() && dbDr.isDirectory()) {
+      String[] files = dbDr.list();
+      if (files != null) {
+        for (String flNm : files) {
+          if (flNm.endsWith(".logen")) {
+            result.add(flNm.replace(".logen", ""));
+          }
+        }
+      }
+    } else {
+      throw new ExcCode(ExcCode.WRCN,
+        "Backup directory not found: " + this.backupDir);
+    }
+    return result;
+  }
+
+  /**
    * <p>Retrieves current DB name.</p>
    * @param pRvs request scoped vars
    * @return String DB name.
@@ -201,6 +255,76 @@ public class MngDb<RS> implements IMngDb {
       if (dbFile.exists() && !dbFile.delete()) {
         throw new ExcCode(ExcCode.WR, "Can't delete file: " + dbFile);
       }
+    }
+  }
+
+
+  /**
+   * <p>Delete all encrypted database files.</p>
+   * @param pRvs request scoped vars
+   * @param pNm database name without extension
+   * @throws Exception - an exception
+   **/
+  @Override
+  public final void deleteEnDb(final Map<String, Object> pRvs,
+    final String pNm) throws Exception {
+    File fl = new File(this.backupDir + File.separator + pNm + ".sqlten");
+    if (fl.exists() && !fl.delete()) {
+      throw new ExcCode(ExcCode.WR, "Can't delete file: " + fl);
+    }
+    fl = new File(this.backupDir + File.separator + pNm + ".sqlten.sig");
+    if (fl.exists() && !fl.delete()) {
+      throw new ExcCode(ExcCode.WR, "Can't delete file: " + fl);
+    }
+    fl = new File(this.backupDir + File.separator + pNm + ".sqlten.sken");
+    if (fl.exists() && !fl.delete()) {
+      throw new ExcCode(ExcCode.WR, "Can't delete file: " + fl);
+    }
+    fl = new File(this.backupDir + File.separator + pNm + ".sqlten.sken.sig");
+    if (fl.exists() && !fl.delete()) {
+      throw new ExcCode(ExcCode.WR, "Can't delete file: " + fl);
+    }
+  }
+
+  /**
+   * <p>Delete all encrypted log files.</p>
+   * @param pRvs request scoped vars
+   * @param pNm log name without extension
+   * @throws Exception - an exception
+   **/
+  @Override
+  public final void deleteEnLog(final Map<String, Object> pRvs,
+    final String pNm) throws Exception {
+    File fl = new File(this.backupDir + File.separator + pNm + ".logen");
+    if (fl.exists() && !fl.delete()) {
+      throw new ExcCode(ExcCode.WR, "Can't delete file: " + fl);
+    }
+    fl = new File(this.backupDir + File.separator + pNm + ".logen.sig");
+    if (fl.exists() && !fl.delete()) {
+      throw new ExcCode(ExcCode.WR, "Can't delete file: " + fl);
+    }
+    fl = new File(this.backupDir + File.separator + pNm + ".logen.sken");
+    if (fl.exists() && !fl.delete()) {
+      throw new ExcCode(ExcCode.WR, "Can't delete file: " + fl);
+    }
+    fl = new File(this.backupDir + File.separator + pNm + ".logen.sken.sig");
+    if (fl.exists() && !fl.delete()) {
+      throw new ExcCode(ExcCode.WR, "Can't delete file: " + fl);
+    }
+  }
+
+  /**
+   * <p>Delete encrypted log file.</p>
+   * @param pRvs request scoped vars
+   * @param pNm log name without extension
+   * @throws Exception - an exception
+   **/
+  @Override
+  public final void deleteLog(final Map<String, Object> pRvs,
+    final String pNm) throws Exception {
+    File fl = new File(this.backupDir + File.separator + pNm + ".log");
+    if (fl.exists() && !fl.delete()) {
+      throw new ExcCode(ExcCode.WR, "Can't delete file: " + fl);
     }
   }
 

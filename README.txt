@@ -114,45 +114,53 @@ To start application:
   on MS Windows open Power Shell as ADMIN in beige-accounting folder and run:
   & "C:\Program Files (x86)\Java\jre[version#8]\bin\keytool.exe" -import -trustcacerts -alias ajettyca -file "ajetty-ca.pem" -keystore "C:\Program Files (x86)\Java\jre[version#8]\lib\security\cacerts"
 
+It's based on previous beigesoft-accountingoio-ajetty project.
+
+debug range #15 (15000..15999)
+
+-------------------------------------------------------------------------------
 license / лицензия:
 BSD 2-Clause License
 https://sites.google.com/site/beigesoftware/bsd2csl
 
 3-D PARTY LICENSES / лицензии стороннего ПО:
 
-Oracle JEE:
-CDDL + GPLv2 with classpath exception
+Oracle Java Servlet/JSP API implementations and other JEE files:
+CDDLv1 + GPLv2 with classpath exception
 https://javaee.github.io/glassfish/LICENSE
 
 https://github.com/demidenko05/a-jetty-all - Jetty 9.2 by Mort Bay Consulting Pty. Ltd adapted for Android:
 The Eclipse Public License, Version 1.0
-http://www.eclipse.org/legal/epl-v10.html
+https://www.eclipse.org/legal/epl-v10.html
 
 https://github.com/demidenko05/a-tomcat-all - part of Apache Tomcat/JSTL by Apache Software Foundation, adapted for Android to precompile and run JSP/JSTL:
 The Apache Software License, Version 2.0
-http://www.apache.org/licenses/LICENSE-2.0.txt
+https://www.apache.org/licenses/LICENSE-2.0.txt
 
 https://github.com/demidenko05/a-javabeans8 - adapted OpenJDK8 javabeans for Android:
 GNU General Public License, version 2, with the Classpath Exception
-http://openjdk.java.net/legal/gplv2+ce.html
+https://openjdk.java.net/legal/gplv2+ce.html
 
-SQLite JDBC (included SQLite database) by Taro L. Saito (http://xerial.org/software/)
+SQLite JDBC (included SQLite database) by Taro L. Saito (https://xerial.org/software/)
 The Apache Software License, Version 2.0
-http://www.apache.org/licenses/LICENSE-2.0.txt
+https://github.com/xerial/sqlite-jdbc/blob/master/LICENSE
+
 SQLite database is Public Domain:
 https://www.sqlite.org/copyright.html
 
 HikariCP JDBC-pool by Brett Wooldridge:
 The Apache Software License, Version 2.0
-http://www.apache.org/licenses/LICENSE-2.0.txt
+https://github.com/brettwooldridge/HikariCP/blob/dev/LICENSE
 
-JavaMail API (compat) 1.4 plus JavaBeans(TM) Activation Framework:
-Common Development and Distribution License (CDDL) v1.0
-https://glassfish.dev.java.net/public/CDDLv1.0.html
+JavaMail API plus JavaBeans(TM) Activation Framework: CDDL/GPLv2+CE:
+https://javaee.github.io/javamail/LICENSE
 
 Bouncy Castle Crypto APIs by the Legion of the Bouncy Castle Inc:
 Bouncy Castle License (actually MIT)
-http://www.bouncycastle.org/licence.html
+https://www.bouncycastle.org/licence.html
+
+DejaVu fonts by Bitstream:
+https://dejavu-fonts.github.io/License.html 
 
 CSS/Javascript framework Bootstrap by Twitter, Inc and the Bootstrap Authors:
 MIT License
@@ -165,17 +173,11 @@ https://jquery.org/license
 Open Iconic icon fonts by Waybury:
 SIL OPEN FONT LICENSE Version 1.1
 http://scripts.sil.org/cms/scripts/page.php?item_id=OFL_web
+
 Open Iconic to Bootstrap CSS by Waybury:
 MIT License
-https://github.com/twbs/bootstrap/blob/master/LICENSE
-
-DejaVu fonts by Bitstream:
-https://dejavu-fonts.github.io/License.html 
+https://github.com/iconic/open-iconic/blob/master/ICON-LICENSE
 
 flag-icon-css collection of all country flags in SVG by Panayiotis Lipiridis
 MIT License
 https://github.com/lipis/flag-icon-css
-
-It's based on previous beigesoft-accountingoio-ajetty project.
-
-debug range #15 (15000..15999)

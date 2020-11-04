@@ -249,7 +249,7 @@
     </dependency>
     <dependency>
       <groupId>com.github.demidenko05</groupId>
-      <artifactId>a-jetty-swing</artifactId><!--TODO check-->
+      <artifactId>a-jetty-swing</artifactId><!--1.0.5 checked-->
       <version>1.0.5</version>
       <exclusions>
         <exclusion>
